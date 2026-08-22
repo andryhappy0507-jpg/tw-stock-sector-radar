@@ -50,6 +50,35 @@ def fetch_json(session: requests.Session, url: str):
     return r.json()
 
 
+def classify_security(row) -> str:
+    """Return an explicit instrument type for the classification master.
+
+    Official company master takes priority. For non-company instruments, current
+    market-data universe is primarily four-digit codes; ETF/ETN markers are
+    separated instead of grouping them into a generic non-company bucket.
+    Anything still unresolved remains `unclassified` for later official-list
+    reconciliation rather than being guessed into an equity industry.
+    """
+    if bool(row.get("is_official_company", False)):
+        return "company_stock"
+
+    stock_id = str(row.get("stock_id", "")).strip()
+    name = str(row.get("stock_name", "")).upper()
+
+    # Taiwan ETNs commonly use 020xxx series; keep keyword detection for future
+    # expansion beyond the current four-digit market-data filter.
+    if stock_id.startswith("020") or "ETN" in name:
+        return "ETN"
+
+    # Listed Taiwan ETFs in the current four-digit universe are predominantly
+    # 00xx codes. This rule is only for separating obvious non-company products;
+    # later versions can reconcile against dedicated official ETF lists.
+    if stock_id.startswith("00") or "ETF" in name:
+        return "ETF"
+
+    return "unclassified"
+
+
 def main():
     if not STOCK_MASTER.exists():
         raise FileNotFoundError("data/stock_master.csv 尚未產生")
@@ -73,15 +102,15 @@ def main():
 
     enriched = master.merge(official, on="stock_id", how="left")
     enriched["is_official_company"] = enriched["is_official_company"].fillna(False).astype(bool)
-    enriched["security_type"] = enriched["is_official_company"].map({True: "company_stock", False: "non_company_or_unclassified"})
-    enriched["include_in_equity_universe"] = enriched["is_official_company"]
-    enriched["industry_source"] = enriched["is_official_company"].map({True: "official_openapi", False: "unclassified"})
+    enriched["security_type"] = enriched.apply(classify_security, axis=1)
+    enriched["include_in_equity_universe"] = enriched["security_type"].eq("company_stock")
+    enriched["industry_source"] = enriched["is_official_company"].map({True: "official_openapi", False: "not_applicable_or_pending"})
 
     enriched.to_csv(OUT, index=False, encoding="utf-8-sig")
-    print(
-        f"輸出 {OUT}: {len(enriched)} 檔；官方公司股 {int(enriched['is_official_company'].sum())} 檔；"
-        f"待排除/待分類 {int((~enriched['is_official_company']).sum())} 檔"
-    )
+
+    counts = enriched["security_type"].value_counts().to_dict()
+    print(f"輸出 {OUT}: {len(enriched)} 檔")
+    print("證券類型統計：" + ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
 
 
 if __name__ == "__main__":
