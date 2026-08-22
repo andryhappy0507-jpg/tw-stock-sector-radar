@@ -25,6 +25,16 @@ jobs:
         run: python scripts/fetch_market_data.py
       - name: Build weekly metrics
         run: python scripts/build_weekly_radar.py
+      - name: Upload analysis test outputs
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-analysis-test
+          path: |
+            data/weekly_signal.csv
+            data/stock_master.csv
+          retention-days: 1
+          if-no-files-found: error
       - name: Commit updated data
         if: github.event_name != 'pull_request'
         run: |
