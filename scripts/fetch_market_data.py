@@ -1,25 +1,27 @@
 from __future__ import annotations
 
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
-import io
 import re
+import time
 import requests
 import pandas as pd
 
 DATA = Path("data")
 DATA.mkdir(exist_ok=True)
-HEADERS = {"User-Agent": "tw-stock-sector-radar/1.0"}
+HEADERS = {"User-Agent": "Mozilla/5.0 tw-stock-sector-radar/1.0"}
 
-TWSE_DAILY = "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL"
-# TPEx 官方每日收盤行情頁面提供 CSV；URL 若官方改版，只需修改這一處。
-TPEX_DAILY_CSV = "https://www.tpex.org.tw/www/zh-tw/afterTrading/dailyQuotes?date={date}&id=&response=csv"
+TWSE_HIST = "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX"
+TPEX_HIST = "https://www.tpex.org.tw/www/zh-tw/afterTrading/dailyQuotes"
+BACKFILL_TRADING_DAYS = 60
+MAX_LOOKBACK_CALENDAR_DAYS = 110
 
 
 def number(v):
     if v is None:
         return None
     s = re.sub(r"[,+%]", "", str(v)).strip()
+    s = s.replace("X", "").replace("=", "").replace('"', "")
     if s in {"", "--", "---", "除權", "除息"}:
         return None
     try:
@@ -28,100 +30,170 @@ def number(v):
         return None
 
 
-def fetch_twse() -> pd.DataFrame:
-    r = requests.get(TWSE_DAILY, headers=HEADERS, timeout=30)
-    r.raise_for_status()
-    raw = r.json()
+def clean_header(v):
+    return re.sub(r"<[^>]+>", "", str(v)).strip().replace("\u3000", "")
+
+
+def table_from_payload(payload, required_headers):
+    tables = payload.get("tables", []) if isinstance(payload, dict) else []
+    for table in tables:
+        fields = [clean_header(x) for x in table.get("fields", [])]
+        if all(any(req in f for f in fields) for req in required_headers):
+            return fields, table.get("data", [])
+    return None, None
+
+
+def find_col(fields, *names):
+    for name in names:
+        for i, field in enumerate(fields):
+            if name in field:
+                return i
+    return None
+
+
+def parse_rows(fields, data, trade_date, market):
+    code_i = find_col(fields, "證券代號", "代號")
+    name_i = find_col(fields, "證券名稱", "名稱")
+    open_i = find_col(fields, "開盤價", "開盤")
+    high_i = find_col(fields, "最高價", "最高")
+    low_i = find_col(fields, "最低價", "最低")
+    close_i = find_col(fields, "收盤價", "收盤")
+    vol_i = find_col(fields, "成交股數", "成交量")
+    val_i = find_col(fields, "成交金額")
+    needed = [code_i, name_i, close_i, vol_i]
+    if any(i is None for i in needed):
+        raise RuntimeError(f"{market} 表格缺少必要欄位: {fields}")
+
     rows = []
-    for x in raw:
-        stock_id = str(x.get("Code", "")).strip()
+    for row in data:
+        if not isinstance(row, list):
+            continue
+        stock_id = str(row[code_i]).strip().replace('="', '').replace('"', '')
         if not re.fullmatch(r"\d{4}", stock_id):
             continue
         rows.append({
-            "date": date.today().isoformat(),
+            "date": trade_date.isoformat(),
             "stock_id": stock_id,
-            "stock_name": x.get("Name"),
-            "market": "TWSE",
-            "open": number(x.get("OpeningPrice")),
-            "high": number(x.get("HighestPrice")),
-            "low": number(x.get("LowestPrice")),
-            "close": number(x.get("ClosingPrice")),
-            "volume_shares": number(x.get("TradeVolume")),
-            "turnover_ntd": number(x.get("TradeValue")),
+            "stock_name": str(row[name_i]).strip(),
+            "market": market,
+            "open": number(row[open_i]) if open_i is not None else None,
+            "high": number(row[high_i]) if high_i is not None else None,
+            "low": number(row[low_i]) if low_i is not None else None,
+            "close": number(row[close_i]),
+            "volume_shares": number(row[vol_i]),
+            "turnover_ntd": number(row[val_i]) if val_i is not None else None,
         })
     return pd.DataFrame(rows)
 
 
-def fetch_tpex() -> pd.DataFrame:
-    roc = date.today().strftime("%Y/%m/%d")
-    r = requests.get(TPEX_DAILY_CSV.format(date=roc), headers=HEADERS, timeout=30)
+def fetch_twse_for_day(session, trade_date):
+    params = {
+        "date": trade_date.strftime("%Y%m%d"),
+        "type": "ALLBUT0999",
+        "response": "json",
+    }
+    r = session.get(TWSE_HIST, params=params, headers=HEADERS, timeout=40)
     r.raise_for_status()
-    text = r.content.decode("utf-8-sig", errors="replace")
-    # 官方 CSV 格式可能含標題/註記；尋找包含代號的表頭開始解析。
-    lines = text.splitlines()
-    start = next((i for i, line in enumerate(lines) if "代號" in line and "名稱" in line), None)
-    if start is None:
-        raise RuntimeError("無法辨識 TPEx 每日行情 CSV 表頭")
-    df = pd.read_csv(io.StringIO("\n".join(lines[start:])))
-    df.columns = [str(c).strip().replace("\ufeff", "") for c in df.columns]
+    payload = r.json()
+    fields, data = table_from_payload(payload, ["證券代號", "成交股數", "收盤價"])
+    if not fields:
+        return pd.DataFrame()
+    return parse_rows(fields, data, trade_date, "TWSE")
 
-    def col(*names):
-        for n in names:
-            for c in df.columns:
-                if n in c:
-                    return c
-        return None
 
-    code_c, name_c = col("代號"), col("名稱")
-    open_c, high_c, low_c, close_c = col("開盤"), col("最高"), col("最低"), col("收盤")
-    vol_c, val_c = col("成交股數", "成交量"), col("成交金額")
-    rows = []
-    for _, x in df.iterrows():
-        stock_id = str(x.get(code_c, "")).strip().replace('="', '').replace('"', '')
-        if not re.fullmatch(r"\d{4}", stock_id):
-            continue
-        rows.append({
-            "date": date.today().isoformat(), "stock_id": stock_id,
-            "stock_name": x.get(name_c), "market": "TPEx",
-            "open": number(x.get(open_c)), "high": number(x.get(high_c)),
-            "low": number(x.get(low_c)), "close": number(x.get(close_c)),
-            "volume_shares": number(x.get(vol_c)), "turnover_ntd": number(x.get(val_c)),
-        })
-    return pd.DataFrame(rows)
+def fetch_tpex_for_day(session, trade_date):
+    params = {
+        "date": trade_date.strftime("%Y/%m/%d"),
+        "id": "",
+        "response": "json",
+    }
+    r = session.get(TPEX_HIST, params=params, headers=HEADERS, timeout=40)
+    r.raise_for_status()
+    payload = r.json()
+    fields, data = table_from_payload(payload, ["代號", "成交", "收盤"])
+    if not fields:
+        # 部分版本不是 tables 結構；保守回傳空資料並讓下一次日更補齊。
+        return pd.DataFrame()
+    return parse_rows(fields, data, trade_date, "TPEx")
+
+
+def fetch_day(session, trade_date):
+    frames = []
+    errors = []
+    for name, fn in [("TWSE", fetch_twse_for_day), ("TPEx", fetch_tpex_for_day)]:
+        try:
+            part = fn(session, trade_date)
+            if not part.empty:
+                frames.append(part)
+        except Exception as exc:
+            errors.append(f"{name}: {exc}")
+    if frames:
+        return pd.concat(frames, ignore_index=True), errors
+    return pd.DataFrame(), errors
+
+
+def backfill(session):
+    print(f"market_data.csv 不存在：開始自動回補最近 {BACKFILL_TRADING_DAYS} 個交易日")
+    collected = []
+    trading_dates = 0
+    cursor = date.today()
+    checked = 0
+    while trading_dates < BACKFILL_TRADING_DAYS and checked < MAX_LOOKBACK_CALENDAR_DAYS:
+        if cursor.weekday() < 5:
+            day_df, errors = fetch_day(session, cursor)
+            if not day_df.empty:
+                collected.append(day_df)
+                trading_dates += 1
+                print(f"{cursor}: {len(day_df)} 筆（第 {trading_dates}/{BACKFILL_TRADING_DAYS} 個交易日）")
+            elif errors:
+                print(f"{cursor}: 無資料；{' | '.join(errors)}")
+            time.sleep(0.35)
+        cursor -= timedelta(days=1)
+        checked += 1
+
+    if trading_dates < 25:
+        raise RuntimeError(f"歷史回補不足，只取得 {trading_dates} 個交易日；至少需要 25 日")
+    return pd.concat(collected, ignore_index=True)
 
 
 def main():
-    frames = []
-    errors = []
-    for name, fn in [("TWSE", fetch_twse), ("TPEx", fetch_tpex)]:
-        try:
-            part = fn()
-            if not part.empty:
-                frames.append(part)
-                print(f"{name}: {len(part)} 檔")
-        except Exception as exc:
-            errors.append(f"{name}: {exc}")
-            print(f"WARNING {name}: {exc}")
-
-    if not frames:
-        raise RuntimeError("TWSE / TPEx 均未取得資料: " + " | ".join(errors))
-
-    today = pd.concat(frames, ignore_index=True)
-    today = today.dropna(subset=["close", "volume_shares"])
     out = DATA / "market_data.csv"
+    session = requests.Session()
+
     if out.exists():
         old = pd.read_csv(out, dtype={"stock_id": str})
-        all_data = pd.concat([old, today], ignore_index=True)
-        all_data = all_data.drop_duplicates(["date", "stock_id"], keep="last")
+        latest_date = pd.to_datetime(old["date"]).max().date()
+        # 補抓 latest_date 到今天之間所有平日，可修補 GitHub Actions 偶發漏跑。
+        days = []
+        cursor = latest_date
+        while cursor <= date.today():
+            if cursor.weekday() < 5:
+                days.append(cursor)
+            cursor += timedelta(days=1)
+        frames = [old]
+        for d in days:
+            part, errors = fetch_day(session, d)
+            if not part.empty:
+                frames.append(part)
+                print(f"更新 {d}: {len(part)} 筆")
+            elif errors:
+                print(f"{d}: {' | '.join(errors)}")
+            time.sleep(0.25)
+        all_data = pd.concat(frames, ignore_index=True)
     else:
-        all_data = today
-    all_data.sort_values(["date", "stock_id"]).to_csv(out, index=False, encoding="utf-8-sig")
+        all_data = backfill(session)
 
-    master = today[["stock_id", "stock_name", "market"]].drop_duplicates("stock_id")
-    master.to_csv(DATA / "stock_master.csv", index=False, encoding="utf-8-sig")
-    print(f"market_data 累計 {len(all_data)} 列；今日 {len(today)} 檔")
-    if errors:
-        print("部分來源警告: " + " | ".join(errors))
+    all_data = all_data.dropna(subset=["close", "volume_shares"])
+    all_data = all_data.drop_duplicates(["date", "stock_id"], keep="last")
+    all_data = all_data.sort_values(["date", "stock_id"])
+    all_data.to_csv(out, index=False, encoding="utf-8-sig")
+
+    latest = all_data.sort_values("date").groupby("stock_id", as_index=False).tail(1)
+    master = latest[["stock_id", "stock_name", "market"]].drop_duplicates("stock_id")
+    master.sort_values(["market", "stock_id"]).to_csv(DATA / "stock_master.csv", index=False, encoding="utf-8-sig")
+
+    unique_dates = all_data["date"].nunique()
+    print(f"完成：market_data 共 {len(all_data)} 列、{unique_dates} 個交易日、{master['stock_id'].nunique()} 檔代號")
 
 
 if __name__ == "__main__":
