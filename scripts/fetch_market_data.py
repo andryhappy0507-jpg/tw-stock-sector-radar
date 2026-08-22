@@ -15,6 +15,9 @@ TWSE_HIST = "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX"
 TPEX_HIST = "https://www.tpex.org.tw/www/zh-tw/afterTrading/dailyQuotes"
 BACKFILL_TRADING_DAYS = 60
 MAX_LOOKBACK_CALENDAR_DAYS = 110
+MIN_TWSE_ROWS = 900
+MIN_TPEX_ROWS = 700
+RETRIES = 3
 
 
 def number(v):
@@ -87,11 +90,7 @@ def parse_rows(fields, data, trade_date, market):
 
 
 def fetch_twse_for_day(session, trade_date):
-    params = {
-        "date": trade_date.strftime("%Y%m%d"),
-        "type": "ALLBUT0999",
-        "response": "json",
-    }
+    params = {"date": trade_date.strftime("%Y%m%d"), "type": "ALLBUT0999", "response": "json"}
     r = session.get(TWSE_HIST, params=params, headers=HEADERS, timeout=40)
     r.raise_for_status()
     payload = r.json()
@@ -102,57 +101,70 @@ def fetch_twse_for_day(session, trade_date):
 
 
 def fetch_tpex_for_day(session, trade_date):
-    params = {
-        "date": trade_date.strftime("%Y/%m/%d"),
-        "id": "",
-        "response": "json",
-    }
+    params = {"date": trade_date.strftime("%Y/%m/%d"), "id": "", "response": "json"}
     r = session.get(TPEX_HIST, params=params, headers=HEADERS, timeout=40)
     r.raise_for_status()
     payload = r.json()
     fields, data = table_from_payload(payload, ["代號", "成交", "收盤"])
     if not fields:
-        # 部分版本不是 tables 結構；保守回傳空資料並讓下一次日更補齊。
         return pd.DataFrame()
     return parse_rows(fields, data, trade_date, "TPEx")
 
 
-def fetch_day(session, trade_date):
-    frames = []
-    errors = []
-    for name, fn in [("TWSE", fetch_twse_for_day), ("TPEx", fetch_tpex_for_day)]:
+def fetch_complete_day(session, trade_date):
+    last_error = None
+    for attempt in range(1, RETRIES + 1):
         try:
-            part = fn(session, trade_date)
-            if not part.empty:
-                frames.append(part)
+            twse = fetch_twse_for_day(session, trade_date)
+            tpex = fetch_tpex_for_day(session, trade_date)
+            twse_n, tpex_n = len(twse), len(tpex)
+            if twse_n >= MIN_TWSE_ROWS and tpex_n >= MIN_TPEX_ROWS:
+                print(f"{trade_date}: TWSE {twse_n} + TPEx {tpex_n} = {twse_n + tpex_n} PASS")
+                return pd.concat([twse, tpex], ignore_index=True), None
+            last_error = f"資料不完整：TWSE {twse_n}、TPEx {tpex_n}"
         except Exception as exc:
-            errors.append(f"{name}: {exc}")
-    if frames:
-        return pd.concat(frames, ignore_index=True), errors
-    return pd.DataFrame(), errors
+            last_error = str(exc)
+        if attempt < RETRIES:
+            time.sleep(1.0 * attempt)
+    print(f"{trade_date}: FAIL - {last_error}")
+    return pd.DataFrame(), last_error
+
+
+def is_complete_in_existing(df, trade_date):
+    day = df[df["date"] == trade_date.isoformat()]
+    if day.empty or "market" not in day.columns:
+        return False
+    counts = day.groupby("market")["stock_id"].nunique().to_dict()
+    return counts.get("TWSE", 0) >= MIN_TWSE_ROWS and counts.get("TPEx", 0) >= MIN_TPEX_ROWS
+
+
+def merge_without_duplicates(old, new):
+    if old is None or old.empty:
+        merged = new.copy()
+    else:
+        merged = pd.concat([old, new], ignore_index=True)
+    return merged.drop_duplicates(["date", "stock_id"], keep="last")
 
 
 def backfill(session):
-    print(f"market_data.csv 不存在：開始自動回補最近 {BACKFILL_TRADING_DAYS} 個交易日")
+    print(f"market_data.csv 不存在：開始建立最近 {BACKFILL_TRADING_DAYS} 個完整交易日基準資料")
     collected = []
     trading_dates = 0
     cursor = date.today()
     checked = 0
     while trading_dates < BACKFILL_TRADING_DAYS and checked < MAX_LOOKBACK_CALENDAR_DAYS:
         if cursor.weekday() < 5:
-            day_df, errors = fetch_day(session, cursor)
+            day_df, _ = fetch_complete_day(session, cursor)
             if not day_df.empty:
                 collected.append(day_df)
                 trading_dates += 1
-                print(f"{cursor}: {len(day_df)} 筆（第 {trading_dates}/{BACKFILL_TRADING_DAYS} 個交易日）")
-            elif errors:
-                print(f"{cursor}: 無資料；{' | '.join(errors)}")
+                print(f"進度：{trading_dates}/{BACKFILL_TRADING_DAYS}")
             time.sleep(0.35)
         cursor -= timedelta(days=1)
         checked += 1
 
-    if trading_dates < 25:
-        raise RuntimeError(f"歷史回補不足，只取得 {trading_dates} 個交易日；至少需要 25 日")
+    if trading_dates < BACKFILL_TRADING_DAYS:
+        raise RuntimeError(f"完整歷史回補不足，只取得 {trading_dates}/{BACKFILL_TRADING_DAYS} 個完整交易日")
     return pd.concat(collected, ignore_index=True)
 
 
@@ -162,24 +174,30 @@ def main():
 
     if out.exists():
         old = pd.read_csv(out, dtype={"stock_id": str})
+        old["date"] = old["date"].astype(str)
+        frames = [old]
+
+        existing_dates = sorted(pd.to_datetime(old["date"].unique()).date)
+        repair_dates = [d for d in existing_dates if not is_complete_in_existing(old, d)]
+        if repair_dates:
+            print("偵測到不完整日期，只回補這些日期：" + ", ".join(map(str, repair_dates)))
+            for d in repair_dates:
+                part, _ = fetch_complete_day(session, d)
+                if not part.empty:
+                    old = old[old["date"] != d.isoformat()]
+                    old = merge_without_duplicates(old, part)
+                time.sleep(0.25)
+
         latest_date = pd.to_datetime(old["date"]).max().date()
-        # 補抓 latest_date 到今天之間所有平日，可修補 GitHub Actions 偶發漏跑。
-        days = []
-        cursor = latest_date
+        cursor = latest_date + timedelta(days=1)
         while cursor <= date.today():
             if cursor.weekday() < 5:
-                days.append(cursor)
+                part, _ = fetch_complete_day(session, cursor)
+                if not part.empty:
+                    old = merge_without_duplicates(old, part)
             cursor += timedelta(days=1)
-        frames = [old]
-        for d in days:
-            part, errors = fetch_day(session, d)
-            if not part.empty:
-                frames.append(part)
-                print(f"更新 {d}: {len(part)} 筆")
-            elif errors:
-                print(f"{d}: {' | '.join(errors)}")
             time.sleep(0.25)
-        all_data = pd.concat(frames, ignore_index=True)
+        all_data = old
     else:
         all_data = backfill(session)
 
