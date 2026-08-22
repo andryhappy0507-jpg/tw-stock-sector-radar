@@ -3,6 +3,8 @@ import pandas as pd
 
 DATA = Path("data")
 OUT = DATA / "weekly_signal.csv"
+SCREEN_OUT = DATA / "weekly_screen.csv"
+SUMMARY_OUT = DATA / "weekly_summary.csv"
 
 
 def main():
@@ -38,7 +40,26 @@ def main():
         latest = latest.merge(pd.read_csv(master, dtype={"stock_id": str}), on="stock_id", how="left")
 
     latest.to_csv(OUT, index=False, encoding="utf-8-sig")
+
+    # 第一階段分析：全部週漲幅 >= 5% 個股，不先限縮為前 N 名。
+    screen = latest[latest["price_strong"]].copy()
+    screen["price_and_volume_strong"] = screen["price_strong"] & screen["volume_strong"]
+    screen = screen.sort_values(["price_and_volume_strong", "weekly_return_pct", "volume_ratio"], ascending=[False, False, False])
+    screen.to_csv(SCREEN_OUT, index=False, encoding="utf-8-sig")
+
+    latest_date = latest["date"].max()
+    summary = pd.DataFrame([{
+        "latest_date": latest_date.date().isoformat() if pd.notna(latest_date) else "",
+        "stocks_total": int(len(latest)),
+        "price_ge_5pct": int(latest["price_strong"].sum()),
+        "volume_ge_1_5x": int(latest["volume_strong"].sum()),
+        "price_ge_5pct_and_volume_ge_1_5x": int((latest["price_strong"] & latest["volume_strong"]).sum()),
+        "price_ge_5pct_and_liquid": int((latest["price_strong"] & latest["liquid"]).sum()),
+    }])
+    summary.to_csv(SUMMARY_OUT, index=False, encoding="utf-8-sig")
+
     print(f"輸出 {OUT}: {len(latest)} 檔")
+    print(f"週漲幅 >= 5%: {len(screen)} 檔，其中量增 >= 1.5x: {int(screen['volume_strong'].sum())} 檔")
 
 
 if __name__ == "__main__":
