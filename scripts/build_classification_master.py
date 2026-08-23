@@ -13,34 +13,55 @@ TPEX_URL = "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O"
 HEADERS = {"User-Agent": "Mozilla/5.0 tw-stock-sector-radar/1.0"}
 
 
+def clean_text(value) -> str:
+    if value is None:
+        return ""
+    text = str(value).replace("\u3000", " ").strip()
+    return "" if text in {"", "－", "-", "--", "nan", "None"} else text
+
+
 def first_value(row: dict, names: list[str]):
     for name in names:
         if name in row and row[name] not in (None, ""):
             return row[name]
-    for key, value in row.items():
-        if any(name in str(key) for name in names) and value not in (None, ""):
-            return value
     return None
 
 
 def normalize_company_rows(payload, market: str) -> pd.DataFrame:
     rows = payload if isinstance(payload, list) else payload.get("data", []) if isinstance(payload, dict) else []
     out = []
+
+    if market == "TWSE":
+        id_keys = ["公司代號", "股票代號", "證券代號"]
+        name_keys = ["公司簡稱", "公司名稱", "股票名稱"]
+        industry_keys = ["產業別", "產業類別"]
+    else:
+        # TPEx mopsfin_t187ap03_O uses English field names.
+        id_keys = ["SecuritiesCompanyCode", "公司代號", "股票代號", "證券代號"]
+        name_keys = ["CompanyAbbreviation", "CompanyName", "公司簡稱", "公司名稱"]
+        industry_keys = ["SecuritiesIndustryCode", "產業別", "產業類別"]
+
     for row in rows:
         if not isinstance(row, dict):
             continue
-        stock_id = str(first_value(row, ["公司代號", "股票代號", "證券代號"]) or "").strip()
+        stock_id = clean_text(first_value(row, id_keys))
         if len(stock_id) != 4 or not stock_id.isdigit():
             continue
-        name = str(first_value(row, ["公司簡稱", "公司名稱", "股票名稱"]) or "").strip()
-        industry = str(first_value(row, ["產業別", "產業類別"]) or "").strip()
+
+        name = clean_text(first_value(row, name_keys))
+        industry_code = clean_text(first_value(row, industry_keys))
+        if industry_code.endswith(".0"):
+            industry_code = industry_code[:-2]
+        industry_code = industry_code.zfill(2) if industry_code.isdigit() else industry_code
+
         out.append({
             "stock_id": stock_id,
             "official_company_name": name,
-            "official_industry": industry,
+            "official_industry_code": industry_code,
             "official_market": market,
             "is_official_company": True,
         })
+
     return pd.DataFrame(out)
 
 
@@ -51,31 +72,16 @@ def fetch_json(session: requests.Session, url: str):
 
 
 def classify_security(row) -> str:
-    """Return an explicit instrument type for the classification master.
-
-    Official company master takes priority. For non-company instruments, current
-    market-data universe is primarily four-digit codes; ETF/ETN markers are
-    separated instead of grouping them into a generic non-company bucket.
-    Anything still unresolved remains `unclassified` for later official-list
-    reconciliation rather than being guessed into an equity industry.
-    """
     if bool(row.get("is_official_company", False)):
         return "company_stock"
 
     stock_id = str(row.get("stock_id", "")).strip()
     name = str(row.get("stock_name", "")).upper()
 
-    # Taiwan ETNs commonly use 020xxx series; keep keyword detection for future
-    # expansion beyond the current four-digit market-data filter.
     if stock_id.startswith("020") or "ETN" in name:
         return "ETN"
-
-    # Listed Taiwan ETFs in the current four-digit universe are predominantly
-    # 00xx codes. This rule is only for separating obvious non-company products;
-    # later versions can reconcile against dedicated official ETF lists.
     if stock_id.startswith("00") or "ETF" in name:
         return "ETF"
-
     return "unclassified"
 
 
@@ -96,7 +102,10 @@ def main():
             print(f"{market} 官方產業資料抓取失敗：{exc}")
 
     official = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(
-        columns=["stock_id", "official_company_name", "official_industry", "official_market", "is_official_company"]
+        columns=[
+            "stock_id", "official_company_name", "official_industry_code",
+            "official_market", "is_official_company"
+        ]
     )
     official = official.drop_duplicates("stock_id", keep="last")
 
@@ -104,13 +113,23 @@ def main():
     enriched["is_official_company"] = enriched["is_official_company"].fillna(False).astype(bool)
     enriched["security_type"] = enriched.apply(classify_security, axis=1)
     enriched["include_in_equity_universe"] = enriched["security_type"].eq("company_stock")
-    enriched["industry_source"] = enriched["is_official_company"].map({True: "official_openapi", False: "not_applicable_or_pending"})
+    enriched["industry_source"] = enriched["is_official_company"].map(
+        {True: "official_openapi", False: "not_applicable_or_pending"}
+    )
 
     enriched.to_csv(OUT, index=False, encoding="utf-8-sig")
 
     counts = enriched["security_type"].value_counts().to_dict()
+    official_count = int(enriched["is_official_company"].sum())
+    industry_count = int(
+        enriched.loc[enriched["is_official_company"], "official_industry_code"]
+        .fillna("").astype(str).str.strip().ne("").sum()
+    )
+    industry_rate = (industry_count / official_count * 100.0) if official_count else 0.0
+
     print(f"輸出 {OUT}: {len(enriched)} 檔")
     print("證券類型統計：" + ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
+    print(f"官方公司股產業代碼覆蓋率：{industry_count}/{official_count} = {industry_rate:.2f}%")
 
 
 if __name__ == "__main__":
