@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import time
 import requests
 import pandas as pd
 
@@ -12,6 +13,7 @@ OUT = DATA / "stock_classification_master.csv"
 TWSE_URL = "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
 TPEX_URL = "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O"
 HEADERS = {"User-Agent": "Mozilla/5.0 tw-stock-sector-radar/1.0"}
+MIN_EXPECTED_ROWS = {"TWSE": 1000, "TPEx": 800}
 
 
 def clean_text(value) -> str:
@@ -65,10 +67,18 @@ def normalize_company_rows(payload, market: str) -> pd.DataFrame:
     return pd.DataFrame(out)
 
 
-def fetch_json(session: requests.Session, url: str):
-    r = session.get(url, headers=HEADERS, timeout=45)
-    r.raise_for_status()
-    return r.json()
+def fetch_json(session: requests.Session, url: str, attempts: int = 4):
+    last_exc = None
+    for attempt in range(1, attempts + 1):
+        try:
+            r = session.get(url, headers=HEADERS, timeout=45)
+            r.raise_for_status()
+            return r.json()
+        except Exception as exc:
+            last_exc = exc
+            if attempt < attempts:
+                time.sleep(attempt * 2)
+    raise RuntimeError(f"官方 API 連續 {attempts} 次失敗: {last_exc}")
 
 
 def classify_security(row) -> str:
@@ -83,7 +93,6 @@ def classify_security(row) -> str:
         industry_code = industry_code[:-2]
     industry_code = industry_code.zfill(2) if industry_code.isdigit() else industry_code
 
-    # TWSE foreign depositary receipts are not ordinary common shares.
     if name.endswith("-DR") or industry_code == "91":
         return "DR"
 
@@ -105,20 +114,24 @@ def main():
     session = requests.Session()
 
     frames = []
+    errors = []
     for market, url in [("TWSE", TWSE_URL), ("TPEx", TPEX_URL)]:
         try:
             df = normalize_company_rows(fetch_json(session, url), market)
+            min_rows = MIN_EXPECTED_ROWS[market]
+            if len(df) < min_rows:
+                raise RuntimeError(f"{market} 官方公司基本資料筆數異常：{len(df)} < {min_rows}")
             print(f"{market} 官方公司基本資料：{len(df)} 檔")
             frames.append(df)
         except Exception as exc:
-            print(f"{market} 官方產業資料抓取失敗：{exc}")
+            msg = f"{market} 官方產業資料抓取失敗：{exc}"
+            print(msg)
+            errors.append(msg)
 
-    official = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(
-        columns=[
-            "stock_id", "official_company_name", "official_industry_code",
-            "official_market", "is_official_company"
-        ]
-    )
+    if errors:
+        raise RuntimeError("官方分類來源不完整，為避免把上市/上櫃公司誤降級而停止流程。" + " | ".join(errors))
+
+    official = pd.concat(frames, ignore_index=True)
     official = official.drop_duplicates("stock_id", keep="last")
 
     enriched = master.merge(official, on="stock_id", how="left")
@@ -150,6 +163,9 @@ def main():
         .fillna("").astype(str).str.strip().ne("").sum()
     )
     industry_rate = (industry_count / official_count * 100.0) if official_count else 0.0
+
+    if official_count < 1900:
+        raise RuntimeError(f"company_stock 數量異常：{official_count}，停止產出以避免污染分類資料")
 
     print(f"輸出 {OUT}: {len(enriched)} 檔")
     print("證券類型統計：" + ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
