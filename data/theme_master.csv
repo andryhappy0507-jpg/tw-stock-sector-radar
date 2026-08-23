@@ -35,7 +35,7 @@ SMART_GRID,智慧電網,,active,輸配電智慧電表能源管理與電網數位
 SMART_METER,智慧電表,SMART_GRID,active,AMI高低壓智慧電表與相關設備,2026-08-23
 ENERGY_MANAGEMENT,能源管理,SMART_GRID,active,能源管理平台需量管理與智慧電網應用服務,2026-08-23
 WIND_POWER,風力發電,GREEN_ENERGY,active,陸域與離岸風力發電及相關供應鏈,2026-08-23
-WIND_EQUIPMENT,風電設備,WIND_POWER,active,風機材料零組件塔架電纜電力系統與相關設備,2026-08-23
+WIND_EQUIPMENT,風電設備,WIND_POWER,active,風機材料零組配件塔架電纜電力系統與相關設備,2026-08-23
 WIND_SERVICE,風場工程維運,WIND_POWER,active,風場規劃營造施工與風機維護服務,2026-08-23
 WIND_OPERATION,風場開發營運,WIND_POWER,active,風場開發投資與風力發電營運,2026-08-23
 DEFENSE,軍工,,active,國防與航太供應鏈,2026-08-23
@@ -72,3 +72,10 @@ FINANCE,金融保險,,active,銀行保險證券金控與金融服務,2026-08-23
 TOURISM,觀光餐旅,,active,飯店餐飲旅行休閒與觀光服務,2026-08-23
 CHEMICAL,化學,,active,化學材料特用化學與相關供應鏈,2026-08-23
 RETAIL,貿易百貨,,active,零售百貨通路貿易與消費服務,2026-08-23
+ELECTRONIC_DISTRIBUTION,電子通路,,active,電子零組件半導體與資訊產品代理經銷通路,2026-08-23
+HOME_LIVING,居家生活,,active,家具家用品居家設備與生活消費相關,2026-08-23
+CULTURAL_CREATIVE,文化創意,,active,內容媒體遊戲文創與數位娛樂相關,2026-08-23
+SPORTS_LEISURE,運動休閒,,active,運動用品健身休閒與相關消費服務,2026-08-23
+DIGITAL_CLOUD,數位雲端,,active,數位平台雲端服務與網路應用相關,2026-08-23
+INFORMATION_SERVICES,資訊服務,,active,企業資訊軟體系統服務與IT服務相關,2026-08-23
+OIL_GAS,油電燃氣,,active,油品燃氣能源供應與相關服務,2026-08-23
