@@ -9,6 +9,12 @@ THEME_MASTER = DATA / "theme_master.csv"
 SOURCES = DATA / "theme_candidate_sources.csv"
 OUT = DATA / "stock_theme_candidate_map.csv"
 
+# Legacy source aliases keep historical source files backward compatible while
+# preventing a broad official industry chain from being labeled too narrowly.
+SOURCE_THEME_ALIASES = {
+    "LOW_ORBIT_SATELLITE": "SATELLITE",
+}
+
 
 def main():
     stocks = pd.read_csv(CLASSIFICATION, dtype={"stock_id": str}).fillna("")
@@ -21,7 +27,8 @@ def main():
     rows = []
     skipped = []
     for _, src in sources.iterrows():
-        theme_id = src["theme_id"].strip()
+        source_theme_id = src["theme_id"].strip()
+        theme_id = SOURCE_THEME_ALIASES.get(source_theme_id, source_theme_id)
         if theme_id not in valid_themes:
             raise SystemExit(f"候選 Theme 不存在或非 active：{theme_id}")
 
@@ -30,6 +37,9 @@ def main():
             if stock_id not in eligible:
                 skipped.append((stock_id, theme_id))
                 continue
+            evidence = src["evidence_summary"].strip()
+            if source_theme_id == "LOW_ORBIT_SATELLITE":
+                evidence += "；此來源為廣義太空衛星科技產業鏈，不直接等同低軌衛星"
             rows.append({
                 "stock_id": stock_id,
                 "theme_id": theme_id,
@@ -37,7 +47,7 @@ def main():
                 "source_type": "tpex_industry_value_chain",
                 "source_date": "2026-08-23",
                 "source_ref": src["source_ref"],
-                "evidence_summary": src["evidence_summary"],
+                "evidence_summary": evidence,
                 "last_verified": "2026-08-23",
                 "status": "watch",
                 "approval_status": "pending",
