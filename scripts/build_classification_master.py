@@ -76,11 +76,19 @@ def classify_security(row) -> str:
     if override:
         return override
 
+    stock_id = str(row.get("stock_id", "")).strip()
+    name = str(row.get("stock_name", "")).strip().upper()
+    industry_code = clean_text(row.get("official_industry_code"))
+    if industry_code.endswith(".0"):
+        industry_code = industry_code[:-2]
+    industry_code = industry_code.zfill(2) if industry_code.isdigit() else industry_code
+
+    # TWSE foreign depositary receipts are not ordinary common shares.
+    if name.endswith("-DR") or industry_code == "91":
+        return "DR"
+
     if bool(row.get("is_official_company", False)):
         return "company_stock"
-
-    stock_id = str(row.get("stock_id", "")).strip()
-    name = str(row.get("stock_name", "")).upper()
 
     if stock_id.startswith("020") or "ETN" in name:
         return "ETN"
