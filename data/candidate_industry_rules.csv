@@ -7,3 +7,10 @@ FINANCE,17,官方產業分類代碼17金融保險,official_openapi
 TOURISM,16,官方產業分類代碼16觀光餐旅,official_openapi
 CHEMICAL,21,官方產業分類代碼21化學工業,official_openapi
 RETAIL,18,官方產業分類代碼18貿易百貨,official_openapi
+ELECTRONIC_DISTRIBUTION,29,官方產業分類代碼29電子通路業,official_openapi
+HOME_LIVING,38,官方產業分類代碼38居家生活,official_openapi
+CULTURAL_CREATIVE,32,官方產業分類代碼32文化創意業,official_openapi
+SPORTS_LEISURE,37,官方產業分類代碼37運動休閒,official_openapi
+DIGITAL_CLOUD,36,官方產業分類代碼36數位雲端,official_openapi
+INFORMATION_SERVICES,30,官方產業分類代碼30資訊服務業,official_openapi
+OIL_GAS,23,官方產業分類代碼23油電燃氣業,official_openapi
