@@ -1,1 +1,14 @@
 stock_id,theme_id,confidence,source_type,source_date,source_ref,evidence_summary,last_verified,status,approval_status
+2382,AI_SERVER,high,company_website,,https://www.quantatw.com/Quanta/english/esg/ESG2024/ch02.html,廣達官方永續資料指出AI資料中心基礎建設擴張帶動伺服器業務大幅成長,2026-08-23,active,auto_approved
+6669,AI_SERVER,high,annual_report,,https://www.wiwynn.com/hubfs/Investors/Shareholders_Services/2026_Annual_Report_EN.pdf,緯穎年報明確指出AI相關產品營收占比超過50%並深耕資料中心與雲端伺服器,2026-08-23,active,auto_approved
+3017,COOLING,high,company_website,,https://www.avc.co/zh-tw/About-AVC/CompanyProfile,奇鋐官方公司介紹明確定位為整體散熱解決方案專業供應商,2026-08-23,active,auto_approved
+3324,LIQUID_COOLING,high,annual_report,,https://www.auras.com.tw/CMSFS/Shareholders/FinancialAnnualChinese/ed4475a3-db60-455c-9ce9-93699a2fe601.pdf,雙鴻年報明確揭露直接式與浸沒式液冷及CDU等完整液冷方案,2026-08-23,active,auto_approved
+2383,CCL,high,annual_report,2023-05-08,https://www.emctw.com/upload/media/New_Investors/Financial_Information/Annual_Reports/CH/2022.pdf,台光電年報明確揭露銅箔基板CCL產能與營運,2026-08-23,active,auto_approved
+2330,COWOS,high,annual_report,,https://investor.tsmc.com/sites/ir/annual-report/2025/2025%20TSMC%20Annual%20Report_E.pdf,台積電年報明確揭露CoWoS先進封裝服務與量產進展,2026-08-23,active,auto_approved
+2330,CPO,high,annual_report,,https://investor.tsmc.com/sites/ir/annual-report/2025/2025%20TSMC%20Annual%20Report_E.pdf,台積電年報明確揭露CoWoS共同封裝光學CPO方案開發,2026-08-23,active,auto_approved
+2330,SILICON_PHOTONICS,high,annual_report,,https://investor.tsmc.com/sites/ir/annual-report/2025/2025%20TSMC%20Annual%20Report_E.pdf,台積電年報明確揭露COUPE矽光子與光學IO整合技術,2026-08-23,active,auto_approved
+8234,ROBOTICS,high,company_website,,https://www.aiotmart.nexcom.com/faq.php?lang=tw&tb=1,新漢官方資料明確列出工業機器人控制器與自主移動機器人等應用,2026-08-23,active,auto_approved
+8234,EDGE_AI,high,company_website,,https://www.aiotmart.nexcom.com/faq.php?lang=tw&tb=1,新漢官方資料明確列出AI邊緣運算電腦與邊緣運算解決方案,2026-08-23,active,auto_approved
+2634,AEROSPACE,high,annual_report,,https://www.aidc.com.tw/Content/File/107Q4Consolidated_tw.pdf,漢翔官方財報揭露飛機發動機航電及航太零組件設計製造維修為主要業務,2026-08-23,active,auto_approved
+2609,CONTAINER_SHIPPING,high,company_website,,https://esg.yangming.com/en/investors/,陽明官方投資人資料明確說明貨櫃航運市場與貨櫃船隊營運,2026-08-23,active,auto_approved
+1519,HEAVY_ELECTRICAL,high,annual_report,,https://www.fortune.com.tw/WEB_Manage/attached/file/shareholder/20250225/2021_2021_AnnualReport.pdf,華城官方年報揭露超高壓變壓器相關業務與子公司營運,2026-08-23,active,auto_approved
