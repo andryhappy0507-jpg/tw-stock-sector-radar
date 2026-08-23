@@ -1,0 +1,9 @@
+theme_id,industry_code,evidence_summary,source_ref
+OPTOELECTRONICS,26,官方產業分類代碼26光電業,official_openapi
+ELECTRONIC_COMPONENTS,28,官方產業分類代碼28電子零組件業,official_openapi
+COMPUTER_PERIPHERALS,25,官方產業分類代碼25電腦及週邊設備業,official_openapi
+AUTOMOTIVE,12,官方產業分類代碼12汽車工業,official_openapi
+FINANCE,17,官方產業分類代碼17金融保險,official_openapi
+TOURISM,16,官方產業分類代碼16觀光餐旅,official_openapi
+CHEMICAL,21,官方產業分類代碼21化學工業,official_openapi
+RETAIL,18,官方產業分類代碼18貿易百貨,official_openapi
