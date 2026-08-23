@@ -19,6 +19,7 @@ PASSIVE,被動元件,,active,MLCC/電阻/電感等,2026-08-23
 ROBOTICS,機器人,,active,工業與服務型機器人,2026-08-23
 ROBOT_VISION,機器人視覺,ROBOTICS,active,機器視覺與感測,2026-08-23
 ROBOT_COMPONENTS,機器人零組件,ROBOTICS,active,減速機/伺服/線性傳動等,2026-08-23
+AUTOMATION,自動化,ROBOTICS,active,工業自動化設備控制系統智慧工廠與自動化解決方案,2026-08-23
 HEAVY_ELECTRICAL,重電,,active,變壓器/開關設備/電網設備,2026-08-23
 GREEN_ENERGY,綠能,,active,再生能源與能源轉型,2026-08-23
 SOLAR,太陽能,GREEN_ENERGY,active,太陽能材料與系統,2026-08-23
@@ -31,3 +32,5 @@ CONTAINER_SHIPPING,貨櫃航運,SHIPPING,active,貨櫃海運,2026-08-23
 BULK_SHIPPING,散裝航運,SHIPPING,active,散裝海運,2026-08-23
 LOW_ORBIT_SATELLITE,低軌衛星,,active,低軌衛星與地面設備,2026-08-23
 EDGE_AI,邊緣AI,AI,active,終端裝置與邊緣運算AI,2026-08-23
+BIG_DATA,大數據,AI,active,資料分析資料庫雲端資料處理與數據應用,2026-08-23
+COMMUNICATION_NETWORK,通信網路,,active,有線無線網路設備光通訊與電信相關,2026-08-23
