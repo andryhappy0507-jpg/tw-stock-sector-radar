@@ -9,6 +9,8 @@ PCB,PCB,,active,印刷電路板,2026-08-23
 CCL,CCL,PCB,active,銅箔基板,2026-08-23
 ABF,ABF載板,PCB,active,ABF IC載板,2026-08-23
 SEMICONDUCTOR,半導體,,active,半導體總題材,2026-08-23
+SEMICONDUCTOR_EQUIPMENT,半導體設備,SEMICONDUCTOR,active,半導體製程量測檢測與廠務設備,2026-08-23
+SEMICONDUCTOR_MATERIALS,半導體材料,SEMICONDUCTOR,active,半導體製程化學品與材料供應鏈,2026-08-23
 ADV_PACKAGING,先進封裝,SEMICONDUCTOR,active,先進封裝與封測,2026-08-23
 COWOS,CoWoS,ADV_PACKAGING,active,CoWoS及相關先進封裝供應鏈,2026-08-23
 MEMORY,記憶體,SEMICONDUCTOR,active,DRAM/NAND/HBM等記憶體,2026-08-23
@@ -20,6 +22,7 @@ ROBOTICS,機器人,,active,工業與服務型機器人,2026-08-23
 ROBOT_VISION,機器人視覺,ROBOTICS,active,機器視覺與感測,2026-08-23
 ROBOT_COMPONENTS,機器人零組件,ROBOTICS,active,減速機/伺服/線性傳動等,2026-08-23
 AUTOMATION,自動化,ROBOTICS,active,工業自動化設備控制系統智慧工廠與自動化解決方案,2026-08-23
+INDUSTRIAL_PC,工業電腦,EDGE_AI,active,工業電腦嵌入式系統邊緣運算與工業場域運算平台,2026-08-23
 HEAVY_ELECTRICAL,重電,,active,變壓器/開關設備/電網設備,2026-08-23
 GREEN_ENERGY,綠能,,active,再生能源與能源轉型,2026-08-23
 SOLAR,太陽能,GREEN_ENERGY,active,太陽能材料與系統,2026-08-23
@@ -34,3 +37,4 @@ LOW_ORBIT_SATELLITE,低軌衛星,,active,低軌衛星與地面設備,2026-08-23
 EDGE_AI,邊緣AI,AI,active,終端裝置與邊緣運算AI,2026-08-23
 BIG_DATA,大數據,AI,active,資料分析資料庫雲端資料處理與數據應用,2026-08-23
 COMMUNICATION_NETWORK,通信網路,,active,有線無線網路設備光通訊與電信相關,2026-08-23
+OPTICAL_COMMUNICATION,光通訊,COMMUNICATION_NETWORK,active,光纖光收發模組光主被動元件與高速光傳輸設備,2026-08-23
