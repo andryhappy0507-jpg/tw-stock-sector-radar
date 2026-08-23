@@ -6,6 +6,7 @@ import pandas as pd
 
 DATA = Path("data")
 STOCK_MASTER = DATA / "stock_master.csv"
+STATUS_OVERRIDES = DATA / "security_status_overrides.csv"
 OUT = DATA / "stock_classification_master.csv"
 
 TWSE_URL = "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
@@ -36,7 +37,6 @@ def normalize_company_rows(payload, market: str) -> pd.DataFrame:
         name_keys = ["公司簡稱", "公司名稱", "股票名稱"]
         industry_keys = ["產業別", "產業類別"]
     else:
-        # TPEx mopsfin_t187ap03_O uses English field names.
         id_keys = ["SecuritiesCompanyCode", "公司代號", "股票代號", "證券代號"]
         name_keys = ["CompanyAbbreviation", "CompanyName", "公司簡稱", "公司名稱"]
         industry_keys = ["SecuritiesIndustryCode", "產業別", "產業類別"]
@@ -72,6 +72,10 @@ def fetch_json(session: requests.Session, url: str):
 
 
 def classify_security(row) -> str:
+    override = clean_text(row.get("override_security_type"))
+    if override:
+        return override
+
     if bool(row.get("is_official_company", False)):
         return "company_stock"
 
@@ -110,6 +114,18 @@ def main():
     official = official.drop_duplicates("stock_id", keep="last")
 
     enriched = master.merge(official, on="stock_id", how="left")
+
+    if STATUS_OVERRIDES.exists():
+        overrides = pd.read_csv(STATUS_OVERRIDES, dtype={"stock_id": str}).rename(
+            columns={"security_type": "override_security_type"}
+        )
+        enriched = enriched.merge(overrides, on="stock_id", how="left")
+    else:
+        enriched["override_security_type"] = ""
+        enriched["status_date"] = ""
+        enriched["reason"] = ""
+        enriched["source_ref"] = ""
+
     enriched["is_official_company"] = enriched["is_official_company"].fillna(False).astype(bool)
     enriched["security_type"] = enriched.apply(classify_security, axis=1)
     enriched["include_in_equity_universe"] = enriched["security_type"].eq("company_stock")
@@ -120,16 +136,16 @@ def main():
     enriched.to_csv(OUT, index=False, encoding="utf-8-sig")
 
     counts = enriched["security_type"].value_counts().to_dict()
-    official_count = int(enriched["is_official_company"].sum())
+    official_count = int(enriched["security_type"].eq("company_stock").sum())
     industry_count = int(
-        enriched.loc[enriched["is_official_company"], "official_industry_code"]
+        enriched.loc[enriched["security_type"].eq("company_stock"), "official_industry_code"]
         .fillna("").astype(str).str.strip().ne("").sum()
     )
     industry_rate = (industry_count / official_count * 100.0) if official_count else 0.0
 
     print(f"輸出 {OUT}: {len(enriched)} 檔")
     print("證券類型統計：" + ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
-    print(f"官方公司股產業代碼覆蓋率：{industry_count}/{official_count} = {industry_rate:.2f}%")
+    print(f"現行 company_stock 產業代碼覆蓋率：{industry_count}/{official_count} = {industry_rate:.2f}%")
 
 
 if __name__ == "__main__":
