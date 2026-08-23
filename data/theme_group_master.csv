@@ -5,8 +5,9 @@ PCB_CHAIN,PCB供應鏈族群,active,PCB CCL ABF載板等電路板供應鏈,2026-
 ADV_PACKAGING_CHAIN,先進封裝族群,active,先進封裝CoWoS相關供應鏈,2026-08-23
 MEMORY_CHAIN,記憶體族群,active,DRAM NAND HBM等記憶體供應鏈,2026-08-23
 OPTICAL_INTERCONNECT,高速光通訊族群,active,CPO矽光子與高速光互連相關,2026-08-23
-ROBOTICS_CHAIN,機器人族群,active,機器人本體視覺感測與關鍵零組件,2026-08-23
+ROBOTICS_CHAIN,機器人族群,active,機器人本體視覺感測自動化與關鍵零組件,2026-08-23
 AI_EDGE,邊緣AI族群,active,終端AI工業電腦與邊緣運算相關,2026-08-23
+DIGITAL_INFRA,數位基礎建設族群,active,通信網路資料中心大數據與雲端資料處理相關,2026-08-23
 ENERGY_INFRA,能源基建族群,active,重電電網綠能與儲能基礎建設,2026-08-23
 DEFENSE_AERO,軍工航太族群,active,國防航太衛星相關供應鏈,2026-08-23
 SHIPPING_CLUSTER,航運族群,active,貨櫃散裝與海運相關,2026-08-23
