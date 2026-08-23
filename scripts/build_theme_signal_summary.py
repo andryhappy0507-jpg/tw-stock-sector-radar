@@ -6,7 +6,8 @@ import pandas as pd
 DATA = Path("data")
 WEEKLY = DATA / "weekly_signal.csv"
 THEME_MASTER = DATA / "theme_master.csv"
-THEME_MAP = DATA / "stock_theme_map.csv"
+CURATED_THEME_MAP = DATA / "stock_theme_map.csv"
+AUTO_THEME_MAP = DATA / "stock_theme_auto_map.csv"
 GROUP_MASTER = DATA / "theme_group_master.csv"
 GROUP_MAP = DATA / "theme_group_map.csv"
 THEME_OUT = DATA / "theme_signal_summary.csv"
@@ -45,14 +46,30 @@ def aggregate(df: pd.DataFrame, key: str, name_col: str) -> pd.DataFrame:
     )
 
 
+def load_mapping() -> pd.DataFrame:
+    frames = []
+    for path in (CURATED_THEME_MAP, AUTO_THEME_MAP):
+        if path.exists():
+            df = pd.read_csv(path, dtype=str).fillna("")
+            df["mapping_origin"] = "curated" if path == CURATED_THEME_MAP else "official_auto"
+            frames.append(df)
+    if not frames:
+        raise FileNotFoundError("缺少 Theme mapping")
+    mapping = pd.concat(frames, ignore_index=True)
+    # Curated evidence wins if the same stock+theme also exists in the broad official layer.
+    mapping["origin_rank"] = mapping["mapping_origin"].map({"curated": 0, "official_auto": 1}).fillna(9)
+    mapping = mapping.sort_values("origin_rank").drop_duplicates(["stock_id", "theme_id"], keep="first")
+    return mapping.drop(columns=["origin_rank"])
+
+
 def main():
-    for path in (WEEKLY, THEME_MASTER, THEME_MAP, GROUP_MASTER, GROUP_MAP):
+    for path in (WEEKLY, THEME_MASTER, GROUP_MASTER, GROUP_MAP):
         if not path.exists():
             raise FileNotFoundError(f"缺少必要檔案：{path}")
 
     weekly = pd.read_csv(WEEKLY, dtype={"stock_id": str})
     themes = pd.read_csv(THEME_MASTER, dtype=str).fillna("")
-    mapping = pd.read_csv(THEME_MAP, dtype=str).fillna("")
+    mapping = load_mapping()
     group_master = pd.read_csv(GROUP_MASTER, dtype=str).fillna("")
     group_map = pd.read_csv(GROUP_MAP, dtype=str).fillna("")
 
@@ -72,6 +89,7 @@ def main():
     group_summary = aggregate(group_join, "group_id", "group_name")
     group_summary.to_csv(GROUP_OUT, index=False, encoding="utf-8-sig")
 
+    print(f"Active Theme mappings (curated+official auto): {len(active_mapping)}")
     print(f"Fine-theme summary: {len(theme_summary)} 個 Theme")
     print(f"Related-group summary: {len(group_summary)} 個族群")
     print("族群統計已對同一股票去重，避免一檔同時屬於多個子Theme時重複計算。")
