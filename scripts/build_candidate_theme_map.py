@@ -7,6 +7,7 @@ DATA = Path("data")
 CLASSIFICATION = DATA / "stock_classification_master.csv"
 THEME_MASTER = DATA / "theme_master.csv"
 SOURCES = DATA / "theme_candidate_sources.csv"
+INDUSTRY_RULES = DATA / "candidate_industry_rules.csv"
 OUT = DATA / "stock_theme_candidate_map.csv"
 
 # Legacy source aliases keep historical source files backward compatible while
@@ -16,12 +17,28 @@ SOURCE_THEME_ALIASES = {
 }
 
 
+def candidate_row(stock_id: str, theme_id: str, source_type: str, source_ref: str, evidence: str) -> dict:
+    return {
+        "stock_id": stock_id,
+        "theme_id": theme_id,
+        "confidence": "medium",
+        "source_type": source_type,
+        "source_date": "2026-08-23",
+        "source_ref": source_ref,
+        "evidence_summary": evidence,
+        "last_verified": "2026-08-23",
+        "status": "watch",
+        "approval_status": "pending",
+    }
+
+
 def main():
-    stocks = pd.read_csv(CLASSIFICATION, dtype={"stock_id": str}).fillna("")
+    stocks = pd.read_csv(CLASSIFICATION, dtype={"stock_id": str, "official_industry_code": str}).fillna("")
     themes = pd.read_csv(THEME_MASTER, dtype=str).fillna("")
     sources = pd.read_csv(SOURCES, dtype=str).fillna("")
 
-    eligible = set(stocks.loc[stocks["security_type"].eq("company_stock"), "stock_id"])
+    eligible_stocks = stocks.loc[stocks["security_type"].eq("company_stock")].copy()
+    eligible = set(eligible_stocks["stock_id"])
     valid_themes = set(themes.loc[themes["status"].eq("active"), "theme_id"])
 
     rows = []
@@ -40,18 +57,31 @@ def main():
             evidence = src["evidence_summary"].strip()
             if source_theme_id == "LOW_ORBIT_SATELLITE":
                 evidence += "；此來源為廣義太空衛星科技產業鏈，不直接等同低軌衛星"
-            rows.append({
-                "stock_id": stock_id,
-                "theme_id": theme_id,
-                "confidence": "medium",
-                "source_type": "tpex_industry_value_chain",
-                "source_date": "2026-08-23",
-                "source_ref": src["source_ref"],
-                "evidence_summary": evidence,
-                "last_verified": "2026-08-23",
-                "status": "watch",
-                "approval_status": "pending",
-            })
+            rows.append(candidate_row(
+                stock_id,
+                theme_id,
+                "tpex_industry_value_chain",
+                src["source_ref"],
+                evidence,
+            ))
+
+    if INDUSTRY_RULES.exists():
+        rules = pd.read_csv(INDUSTRY_RULES, dtype=str).fillna("")
+        normalized_codes = eligible_stocks["official_industry_code"].str.replace(".0", "", regex=False)
+        for _, rule in rules.iterrows():
+            theme_id = rule["theme_id"].strip()
+            industry_code = rule["industry_code"].strip()
+            if theme_id not in valid_themes:
+                raise SystemExit(f"官方產業候選 Theme 不存在或非 active：{theme_id}")
+            matched = eligible_stocks.loc[normalized_codes.eq(industry_code), "stock_id"]
+            for stock_id in matched:
+                rows.append(candidate_row(
+                    stock_id,
+                    theme_id,
+                    "official_industry_classification",
+                    rule["source_ref"].strip() or "official_openapi",
+                    rule["evidence_summary"].strip(),
+                ))
 
     out = pd.DataFrame(rows).drop_duplicates(["stock_id", "theme_id"]).sort_values(["theme_id", "stock_id"])
     out.to_csv(OUT, index=False, encoding="utf-8-sig")
