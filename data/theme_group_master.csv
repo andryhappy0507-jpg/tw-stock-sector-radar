@@ -2,9 +2,10 @@ group_id,group_name,status,description,created_at
 AI_INFRA,AI基礎建設族群,active,AI伺服器資料中心散熱電源等AI基礎建設供應鏈,2026-08-23
 COOLING_CLUSTER,散熱族群,active,風冷散熱液冷CDU等熱管理相關,2026-08-23
 PCB_CHAIN,PCB供應鏈族群,active,PCB CCL ABF載板等電路板供應鏈,2026-08-23
+SEMICONDUCTOR_SUPPLY,半導體供應鏈族群,active,半導體設備材料製程與相關供應鏈,2026-08-23
 ADV_PACKAGING_CHAIN,先進封裝族群,active,先進封裝CoWoS相關供應鏈,2026-08-23
 MEMORY_CHAIN,記憶體族群,active,DRAM NAND HBM等記憶體供應鏈,2026-08-23
-OPTICAL_INTERCONNECT,高速光通訊族群,active,CPO矽光子與高速光互連相關,2026-08-23
+OPTICAL_INTERCONNECT,高速光通訊族群,active,CPO矽光子光通訊與高速光互連相關,2026-08-23
 ROBOTICS_CHAIN,機器人族群,active,機器人本體視覺感測自動化與關鍵零組件,2026-08-23
 AI_EDGE,邊緣AI族群,active,終端AI工業電腦與邊緣運算相關,2026-08-23
 DIGITAL_INFRA,數位基礎建設族群,active,通信網路資料中心大數據與雲端資料處理相關,2026-08-23
