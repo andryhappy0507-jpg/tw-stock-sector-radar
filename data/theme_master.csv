@@ -44,3 +44,6 @@ EV,電動車,,active,電動汽車電動機車電動自行車與相關供應鏈,2
 EV_BATTERY_MATERIALS,電動車電池材料,EV,active,鋰電池正負極隔離膜電解液銅箔與相關材料,2026-08-23
 EV_COMPONENTS,電動車零組件,EV,active,電池模組BMS動力馬達電源與其他電動車關鍵零組件,2026-08-23
 EV_VEHICLE,電動車整車/二輪,EV,active,電動汽車電動機車與電動自行車整車相關,2026-08-23
+CYBERSECURITY,資通訊安全,,active,資安產品網路安全端點安全雲端安全與資安服務,2026-08-23
+CLOUD_COMPUTING,雲端運算,,active,IaaS PaaS SaaS雲端應用與相關平台服務,2026-08-23
+SYSTEM_INTEGRATION,系統整合,,active,企業IT OT資訊系統整合導入部署與相關服務,2026-08-23
