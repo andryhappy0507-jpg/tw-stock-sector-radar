@@ -34,6 +34,10 @@ BATTERY_MODULE,電池模組,ENERGY_STORAGE,active,電池模組電池管理與儲
 SMART_GRID,智慧電網,,active,輸配電智慧電表能源管理與電網數位化,2026-08-23
 SMART_METER,智慧電表,SMART_GRID,active,AMI高低壓智慧電表與相關設備,2026-08-23
 ENERGY_MANAGEMENT,能源管理,SMART_GRID,active,能源管理平台需量管理與智慧電網應用服務,2026-08-23
+WIND_POWER,風力發電,GREEN_ENERGY,active,陸域與離岸風力發電及相關供應鏈,2026-08-23
+WIND_EQUIPMENT,風電設備,WIND_POWER,active,風機材料零組件塔架電纜電力系統與相關設備,2026-08-23
+WIND_SERVICE,風場工程維運,WIND_POWER,active,風場規劃營造施工與風機維護服務,2026-08-23
+WIND_OPERATION,風場開發營運,WIND_POWER,active,風場開發投資與風力發電營運,2026-08-23
 DEFENSE,軍工,,active,國防與航太供應鏈,2026-08-23
 AEROSPACE,航太,DEFENSE,active,航空航太零組件與系統,2026-08-23
 BIOTECH,生技,,active,生技醫療總題材,2026-08-23
