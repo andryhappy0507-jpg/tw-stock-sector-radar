@@ -25,7 +25,9 @@ jobs:
         run: python scripts/fetch_market_data.py
       - name: Build official classification master
         run: python scripts/build_classification_master.py
-      - name: Validate theme mappings
+      - name: Build base theme coverage
+        run: python scripts/build_base_theme_map.py
+      - name: Validate market theme mappings
         run: python scripts/validate_theme_map.py
       - name: Build weekly metrics
         run: python scripts/build_weekly_radar.py
@@ -41,6 +43,8 @@ jobs:
             data/weekly_summary.csv
             data/stock_master.csv
             data/stock_classification_master.csv
+            data/base_theme_master.csv
+            data/stock_base_theme_map.csv
             data/theme_master.csv
             data/stock_theme_map.csv
           retention-days: 1
@@ -50,7 +54,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- data/market_data.csv data/stock_master.csv data/stock_classification_master.csv data/theme_master.csv data/stock_theme_map.csv data/weekly_signal.csv data/previous_week_signal.csv data/weekly_screen.csv data/weekly_summary.csv
+          git add -- data/market_data.csv data/stock_master.csv data/stock_classification_master.csv data/base_theme_master.csv data/stock_base_theme_map.csv data/theme_master.csv data/stock_theme_map.csv data/weekly_signal.csv data/previous_week_signal.csv data/weekly_screen.csv data/weekly_summary.csv
           if git diff --cached --quiet; then
             echo "No data changes"
           else
