@@ -13,6 +13,7 @@ VALID_STATUS = {"active", "watch", "stale", "inactive"}
 VALID_APPROVAL = {"auto_approved", "approved", "pending", "rejected"}
 DIRECT_HIGH_SOURCES = {
     "company_announcement",
+    "company_website",
     "mops",
     "investor_conference",
     "annual_report",
