@@ -79,3 +79,6 @@ SPORTS_LEISURE,運動休閒,,active,運動用品健身休閒與相關消費服�
 DIGITAL_CLOUD,數位雲端,,active,數位平台雲端服務與網路應用相關,2026-08-23
 INFORMATION_SERVICES,資訊服務,,active,企業資訊軟體系統服務與IT服務相關,2026-08-23
 OIL_GAS,油電燃氣,,active,油品燃氣能源供應與相關服務,2026-08-23
+IC_DESIGN_SERVICE,IC設計服務,SEMICONDUCTOR,active,IP設計IC設計代工服務與ASIC設計服務,2026-08-23
+WAFER_MANUFACTURING,晶圓製造,SEMICONDUCTOR,active,晶圓代工IDM晶圓與化合物半導體製造,2026-08-23
+IC_PACKAGING_TEST,IC封裝測試,SEMICONDUCTOR,active,IC封裝晶圓測試成品測試與封測服務,2026-08-23
