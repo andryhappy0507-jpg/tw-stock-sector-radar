@@ -5,6 +5,8 @@ DATA_CENTER,資料中心,AI,active,雲端與資料中心基礎建設,2026-08-23
 COOLING,散熱,AI_SERVER,active,伺服器與電子設備散熱,2026-08-23
 LIQUID_COOLING,液冷,COOLING,active,冷板/CDU/液冷相關,2026-08-23
 POWER,電源,AI_SERVER,active,伺服器電源與電源管理,2026-08-23
+POWER_SUPPLY,電源供應器,POWER,active,伺服器電腦與電子設備電源供應器及電源轉換相關,2026-08-23
+UPS_BBU,UPS/BBU備援電力,POWER,active,不斷電系統資料中心UPS與BBU備援電力模組,2026-08-23
 PCB,PCB,,active,印刷電路板,2026-08-23
 CCL,CCL,PCB,active,銅箔基板,2026-08-23
 ABF,ABF載板,PCB,active,ABF IC載板,2026-08-23
