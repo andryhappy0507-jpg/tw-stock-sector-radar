@@ -40,3 +40,7 @@ EDGE_AI,邊緣AI,AI,active,終端裝置與邊緣運算AI,2026-08-23
 BIG_DATA,大數據,AI,active,資料分析資料庫雲端資料處理與數據應用,2026-08-23
 COMMUNICATION_NETWORK,通信網路,,active,有線無線網路設備光通訊與電信相關,2026-08-23
 OPTICAL_COMMUNICATION,光通訊,COMMUNICATION_NETWORK,active,光纖光收發模組光主被動元件與高速光傳輸設備,2026-08-23
+EV,電動車,,active,電動汽車電動機車電動自行車與相關供應鏈,2026-08-23
+EV_BATTERY_MATERIALS,電動車電池材料,EV,active,鋰電池正負極隔離膜電解液銅箔與相關材料,2026-08-23
+EV_COMPONENTS,電動車零組件,EV,active,電池模組BMS動力馬達電源與其他電動車關鍵零組件,2026-08-23
+EV_VEHICLE,電動車整車/二輪,EV,active,電動汽車電動機車與電動自行車整車相關,2026-08-23
