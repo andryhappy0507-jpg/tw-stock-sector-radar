@@ -29,6 +29,11 @@ HEAVY_ELECTRICAL,重電,,active,變壓器/開關設備/電網設備,2026-08-23
 GREEN_ENERGY,綠能,,active,再生能源與能源轉型,2026-08-23
 SOLAR,太陽能,GREEN_ENERGY,active,太陽能材料與系統,2026-08-23
 ENERGY_STORAGE,儲能,GREEN_ENERGY,active,電池與儲能系統,2026-08-23
+BATTERY_CELL,電池芯,ENERGY_STORAGE,active,鋰電池與其他儲能電池芯製造,2026-08-23
+BATTERY_MODULE,電池模組,ENERGY_STORAGE,active,電池模組電池管理與儲能電池系統模組,2026-08-23
+SMART_GRID,智慧電網,,active,輸配電智慧電表能源管理與電網數位化,2026-08-23
+SMART_METER,智慧電表,SMART_GRID,active,AMI高低壓智慧電表與相關設備,2026-08-23
+ENERGY_MANAGEMENT,能源管理,SMART_GRID,active,能源管理平台需量管理與智慧電網應用服務,2026-08-23
 DEFENSE,軍工,,active,國防與航太供應鏈,2026-08-23
 AEROSPACE,航太,DEFENSE,active,航空航太零組件與系統,2026-08-23
 BIOTECH,生技,,active,生技醫療總題材,2026-08-23
