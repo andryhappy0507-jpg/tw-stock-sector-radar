@@ -27,7 +27,9 @@ jobs:
         run: python scripts/build_classification_master.py
       - name: Build base theme coverage
         run: python scripts/build_base_theme_map.py
-      - name: Validate market theme mappings
+      - name: Build official broad market themes
+        run: python scripts/build_official_market_theme_map.py
+      - name: Validate curated market theme mappings
         run: python scripts/validate_theme_map.py
       - name: Build weekly metrics
         run: python scripts/build_weekly_radar.py
@@ -49,6 +51,8 @@ jobs:
             data/stock_base_theme_map.csv
             data/theme_master.csv
             data/stock_theme_map.csv
+            data/official_market_theme_rules.csv
+            data/stock_theme_auto_map.csv
             data/theme_group_master.csv
             data/theme_group_map.csv
             data/theme_signal_summary.csv
@@ -60,7 +64,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- data/market_data.csv data/stock_master.csv data/stock_classification_master.csv data/base_theme_master.csv data/stock_base_theme_map.csv data/theme_master.csv data/stock_theme_map.csv data/theme_group_master.csv data/theme_group_map.csv data/theme_signal_summary.csv data/theme_group_signal_summary.csv data/weekly_signal.csv data/previous_week_signal.csv data/weekly_screen.csv data/weekly_summary.csv
+          git add -- data/market_data.csv data/stock_master.csv data/stock_classification_master.csv data/base_theme_master.csv data/stock_base_theme_map.csv data/theme_master.csv data/stock_theme_map.csv data/official_market_theme_rules.csv data/stock_theme_auto_map.csv data/theme_group_master.csv data/theme_group_map.csv data/theme_signal_summary.csv data/theme_group_signal_summary.csv data/weekly_signal.csv data/previous_week_signal.csv data/weekly_screen.csv data/weekly_summary.csv
           if git diff --cached --quiet; then
             echo "No data changes"
           else
