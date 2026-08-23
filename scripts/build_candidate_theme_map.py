@@ -7,6 +7,7 @@ DATA = Path("data")
 CLASSIFICATION = DATA / "stock_classification_master.csv"
 THEME_MASTER = DATA / "theme_master.csv"
 SOURCES = DATA / "theme_candidate_sources.csv"
+DEPTH_SOURCES = DATA / "theme_depth_candidate_sources.csv"
 INDUSTRY_RULES = DATA / "candidate_industry_rules.csv"
 OUT = DATA / "stock_theme_candidate_map.csv"
 
@@ -32,10 +33,17 @@ def candidate_row(stock_id: str, theme_id: str, source_type: str, source_ref: st
     }
 
 
+def load_sources() -> pd.DataFrame:
+    frames = [pd.read_csv(SOURCES, dtype=str).fillna("")]
+    if DEPTH_SOURCES.exists():
+        frames.append(pd.read_csv(DEPTH_SOURCES, dtype=str).fillna(""))
+    return pd.concat(frames, ignore_index=True)
+
+
 def main():
     stocks = pd.read_csv(CLASSIFICATION, dtype={"stock_id": str, "official_industry_code": str}).fillna("")
     themes = pd.read_csv(THEME_MASTER, dtype=str).fillna("")
-    sources = pd.read_csv(SOURCES, dtype=str).fillna("")
+    sources = load_sources()
 
     eligible_stocks = stocks.loc[stocks["security_type"].eq("company_stock")].copy()
     eligible = set(eligible_stocks["stock_id"])
