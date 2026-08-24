@@ -101,3 +101,6 @@ IC_SUBSTRATE,IC載板,PCB,active,ABF BT及其他IC載板製造相關供應鏈,20
 PCB_PROCESS_EQUIPMENT,PCB製程檢測設備,PCB,active,PCB與IC載板生產製程自動化AOI檢測及相關設備供應鏈,2026-08-24
 PCB_GLASS_FIBER,PCB玻纖布,PCB,active,PCB用玻璃纖維紗玻纖布與低介電高階玻纖材料供應鏈,2026-08-24
 PCB_COPPER_FOIL,PCB銅箔,PCB,active,PCB與高頻高速板用電解銅箔低粗糙度銅箔相關供應鏈,2026-08-24
+AI_SERVER_CONNECTOR,AI伺服器連接器,CONNECTOR,active,AI伺服器資料中心與交換器用高階連接器及互連元件,2026-08-24
+HIGH_SPEED_CONNECTOR,高頻高速連接器,CONNECTOR,active,PCIe高速線纜AEC ALC及高頻高速資料傳輸互連產品,2026-08-24
+HIGH_POWER_CONNECTOR,高功率大電流連接器,CONNECTOR,active,AI伺服器高功率大電流與HVDC電源互連產品,2026-08-24
