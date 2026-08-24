@@ -93,3 +93,5 @@ FILTER_OSCILLATOR,濾波器/振盪器,PASSIVE,active,濾波器石英元件振盪
 MEMORY_IC,記憶體IC,MEMORY,active,DRAM NAND NOR與其他記憶體晶片設計製造相關,2026-08-24
 MCU_IC,微控制器IC,SEMICONDUCTOR,active,MCU微控制器與嵌入式控制晶片相關,2026-08-24
 PMIC,電源管理IC,SEMICONDUCTOR,active,PMIC電源管理穩壓轉換與類比電源晶片相關,2026-08-24
+MECHANICAL_TRANSMISSION,傳動元件,MACHINERY,active,線性傳動減速齒輪軸承與機械傳動元件供應鏈,2026-08-24
+INDUSTRIAL_CONTROL_COMPONENTS,工業電控元件,MACHINERY,active,馬達驅動控制器感測控制與工業電控元件供應鏈,2026-08-24
