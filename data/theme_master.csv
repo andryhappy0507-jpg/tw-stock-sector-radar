@@ -90,3 +90,6 @@ RESISTOR,電阻器,PASSIVE,active,晶片電阻熱敏電阻與其他電阻器相�
 CAPACITOR,電容器,PASSIVE,active,MLCC鋁質電容與其他電容器相關供應鏈,2026-08-24
 INDUCTOR,電感器,PASSIVE,active,功率電感高頻電感與其他電感器相關供應鏈,2026-08-24
 FILTER_OSCILLATOR,濾波器/振盪器,PASSIVE,active,濾波器石英元件振盪器與頻率控制元件相關供應鏈,2026-08-24
+MEMORY_IC,記憶體IC,MEMORY,active,DRAM NAND NOR與其他記憶體晶片設計製造相關,2026-08-24
+MCU_IC,微控制器IC,SEMICONDUCTOR,active,MCU微控制器與嵌入式控制晶片相關,2026-08-24
+PMIC,電源管理IC,SEMICONDUCTOR,active,PMIC電源管理穩壓轉換與類比電源晶片相關,2026-08-24
