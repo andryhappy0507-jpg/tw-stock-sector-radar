@@ -86,3 +86,7 @@ PANEL,面板,OPTOELECTRONICS,active,LCD OLED與其他平面顯示面板製造及
 DISPLAY_MODULE,顯示器模組,OPTOELECTRONICS,active,顯示器模組與面板模組組裝相關供應鏈,2026-08-24
 BACKLIGHT_MODULE,背光模組,OPTOELECTRONICS,active,背光模組導光板與顯示器背光相關供應鏈,2026-08-24
 LED,LED,OPTOELECTRONICS,active,LED磊晶晶粒封裝模組與照明應用供應鏈,2026-08-24
+RESISTOR,電阻器,PASSIVE,active,晶片電阻熱敏電阻與其他電阻器相關供應鏈,2026-08-24
+CAPACITOR,電容器,PASSIVE,active,MLCC鋁質電容與其他電容器相關供應鏈,2026-08-24
+INDUCTOR,電感器,PASSIVE,active,功率電感高頻電感與其他電感器相關供應鏈,2026-08-24
+FILTER_OSCILLATOR,濾波器/振盪器,PASSIVE,active,濾波器石英元件振盪器與頻率控制元件相關供應鏈,2026-08-24
