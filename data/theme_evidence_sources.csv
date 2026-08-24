@@ -1,0 +1,9 @@
+theme_id,stock_ids,source_type,publisher,published_date,source_url,evidence_summary,confidence
+PCB_PROCESS_EQUIPMENT,3485;2493,financial_media,經濟日報,2026-07-22,https://money.udn.com/money/story/5612/9643041,PCB載板擴產帶動高階濕製程設備需求並點名敘豐與揚博,high
+PCB_PROCESS_EQUIPMENT,6438;2467;6664;3485;3563;3455;3030;6658;6727,financial_media,經濟日報,2026-06-29,https://money.udn.com/money/story/11162/9595599,AI高階PCB與載板資本支出帶動設備需求並點名多家設備商,high
+PCB_PROCESS_EQUIPMENT,2467,financial_media,MoneyDJ,2026-08-18,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5bd96489-0ba3-4b95-97ab-c98678491a07,法人看好高階PCB與先進封裝設備雙引擎且PCB設備訂單成長,high
+PCB_COPPER_FOIL,8358,financial_media,MoneyDJ,2026-08-05,https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=e0940ea6-938d-47f2-b93c-0466e360589c,金居高階銅箔鎖定AI伺服器與高功耗平台並進入客戶驗證,high
+PCB_COPPER_FOIL,8358,company_disclosure,公開資訊觀測站,2026-05-08,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fd533747-c852-4d42-935f-1f7c3e1c03cc,金居董事會增加銅箔三廠資本支出以因應AI伺服器高階銅箔需求,high
+PCB_GLASS_FIBER,1815,financial_media,MoneyDJ,2026-07-06,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=508d105a-47c3-44ee-95c7-afb7c5b3deff,富喬新廠聚焦高階玻纖布並鎖定AI伺服器低軌衛星與IC載板,high
+IC_SUBSTRATE,3037;3189;8046,financial_media,經濟日報,2026-01-21,https://money.udn.com/money/story/5612/9279061,法人持續看好載板三雄受惠AI與高階載板需求,high
+PCB,4958;3037;2313;2368;3189;3044,financial_media,經濟日報,2026-05-03,https://money.udn.com/money/story/5612/9478208,法人點名PCB與載板指標廠受惠AI低軌衛星與高階PCB需求,medium_high
