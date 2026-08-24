@@ -15,3 +15,6 @@ MCU_IC,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業�
 PMIC,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入電源管理IC,2308;2436;2454;3034;3257;3588;3592;4952;4961;6719;6756;6799;8016;8081;8261;6415;3122;3288;3317;3438;3527;4923;5299;6129;6130;6138;6291;6435;6651;6679;6693;7712
 MECHANICAL_TRANSMISSION,https://ic.tpex.org.tw/introduce.php?ic=P000,櫃買中心電機機械產業鏈列入傳動元件,1504;1526;1536;1597;2049;2233;2308;4540;4576;4583;4590;1590;2248;3426;4528;4534;4561;4568;4580;4584;6982
 INDUSTRIAL_CONTROL_COMPONENTS,https://ic.tpex.org.tw/introduce.php?ic=P000,櫃買中心電機機械產業鏈列入電控元件,1303;1504;1533;1597;2308;2459;2483;4555;7750;7788;3426;4549;4584;5381;7642;8109
+HARD_PCB,https://ic.tpex.org.tw/introduce.php?ic=L000,櫃買中心PCB產業鏈內文點名主要硬板供應商並由近期法人媒體持續追蹤,2313;2367;3037;3044;4958;5469
+FPCB,https://ic.tpex.org.tw/introduce.php?ic=L000,櫃買中心PCB產業鏈內文點名主要軟板供應商,4958;6153;6269
+IC_SUBSTRATE,https://ic.tpex.org.tw/introduce.php?ic=L000,櫃買中心PCB產業鏈內文點名IC載板主要供應商且近期法人媒體反覆追蹤,3037;3189;8046
