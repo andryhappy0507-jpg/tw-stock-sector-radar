@@ -104,3 +104,5 @@ PCB_COPPER_FOIL,PCB銅箔,PCB,active,PCB與高頻高速板用電解銅箔低粗�
 AI_SERVER_CONNECTOR,AI伺服器連接器,CONNECTOR,active,AI伺服器資料中心與交換器用高階連接器及互連元件,2026-08-24
 HIGH_SPEED_CONNECTOR,高頻高速連接器,CONNECTOR,active,PCIe高速線纜AEC ALC及高頻高速資料傳輸互連產品,2026-08-24
 HIGH_POWER_CONNECTOR,高功率大電流連接器,CONNECTOR,active,AI伺服器高功率大電流與HVDC電源互連產品,2026-08-24
+AUTOMOTIVE_CONNECTOR,車用連接器,CONNECTOR,active,汽車與電動車用端子連接器高壓高頻連接元件及相關供應鏈,2026-08-24
+VEHICLE_WIRE_HARNESS,車用高階線束,CONNECTOR,active,汽車電動車與高階移動載具用線束電纜及互連系統,2026-08-24
