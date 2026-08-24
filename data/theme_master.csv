@@ -98,3 +98,6 @@ INDUSTRIAL_CONTROL_COMPONENTS,工業電控元件,MACHINERY,active,馬達驅動�
 HARD_PCB,硬板PCB,PCB,active,硬式印刷電路板與高多層板等相關供應鏈,2026-08-24
 FPCB,軟板FPCB,PCB,active,軟性印刷電路板與可撓式電路板相關供應鏈,2026-08-24
 IC_SUBSTRATE,IC載板,PCB,active,ABF BT及其他IC載板製造相關供應鏈,2026-08-24
+PCB_PROCESS_EQUIPMENT,PCB製程檢測設備,PCB,active,PCB與IC載板生產製程自動化AOI檢測及相關設備供應鏈,2026-08-24
+PCB_GLASS_FIBER,PCB玻纖布,PCB,active,PCB用玻璃纖維紗玻纖布與低介電高階玻纖材料供應鏈,2026-08-24
+PCB_COPPER_FOIL,PCB銅箔,PCB,active,PCB與高頻高速板用電解銅箔低粗糙度銅箔相關供應鏈,2026-08-24
