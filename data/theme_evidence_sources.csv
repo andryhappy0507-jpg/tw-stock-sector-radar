@@ -18,3 +18,13 @@ HIGH_SPEED_CONNECTOR,3665,financial_media,MoneyDJ,2026-07-23,https://www.moneydj
 HIGH_POWER_CONNECTOR,3526,company_commentary,經濟日報,2026-07-01,https://money.udn.com/money/amp/story/5612/9600615,凡甲法說指出AI伺服器高功率大電流連接器需求強烈,high
 HIGH_POWER_CONNECTOR,3526,financial_media,MoneyDJ,2026-08-19,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=910b2e81-5e69-4508-97a9-aa53ae7f2c8c,凡甲400VDC高功率產品下半年有機會出貨且800VDC持續開發,high
 HIGH_POWER_CONNECTOR,3665,financial_media,MoneyDJ,2026-07-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=128822cd-7b4d-46b1-a6fb-e313eb4b72c1,貿聯KY高功率電源互聯產品與High Power產線持續擴張,high
+AUTOMOTIVE_CONNECTOR,6279,financial_media,MoneyDJ,2026-07-07,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6755fc7d-d6b2-42ec-927e-0e019edc06fc,胡連被明確定位為車用連接器廠且中國車市回升帶動營運,high
+AUTOMOTIVE_CONNECTOR,6279,financial_media,經濟日報,2026-06-06,https://money.udn.com/money/story/5612/9548680,胡連持續研發電動車專用連接器與線束解決方案,high
+AUTOMOTIVE_CONNECTOR,6279,broker_commentary,MoneyDJ,2026-02-26,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=bcf3d1e5-a7d3-4c9f-bc7f-644ead9d3cbd,法人看好胡連高壓高頻連接元件滲透與車載應用,high
+AUTOMOTIVE_CONNECTOR,3023,financial_media,MoneyDJ,2026-02-25,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f9435e2a-ccaa-4c1d-995c-fed0788c5bd2,信邦電動車新能源訂單增加且車用連接器與連接模組比重提升,high
+AUTOMOTIVE_CONNECTOR,3665,financial_media,MoneyDJ,2026-01-29,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0a450763-8ec0-4005-8858-796c5340ece1,貿聯KY高速線束與車用連接方案受Robotaxi及車隊擴充題材關注,medium_high
+AUTOMOTIVE_CONNECTOR,3003,financial_media,MoneyDJ,2026-08-07,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=dd4d9205-d10e-4e11-b5bd-d92cc0906179,健和興大電流連接器應用涵蓋車用充電與高功率場景且營運回升,medium_high
+VEHICLE_WIRE_HARNESS,6279,financial_media,MoneyDJ,2026-08-07,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4204b8c8-b213-4f7d-b21b-94592c3c0a6f,胡連取得義大利線束與電纜系統廠股權並切入法拉利供應鏈,high
+VEHICLE_WIRE_HARNESS,6279,financial_media,MoneyDJ,2026-02-26,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=bcf3d1e5-a7d3-4c9f-bc7f-644ead9d3cbd,胡連台灣市場電動巴士線束投產且車載高頻產品進入新案,high
+VEHICLE_WIRE_HARNESS,3023,financial_media,MoneyDJ,2026-02-25,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f9435e2a-ccaa-4c1d-995c-fed0788c5bd2,信邦車用線束與新能源連接模組訂單能見度提升,high
+VEHICLE_WIRE_HARNESS,3665,financial_media,MoneyDJ,2026-01-29,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0a450763-8ec0-4005-8858-796c5340ece1,貿聯KY高速線束與車用互連方案受Robotaxi及AI資料中心雙題材推動,medium_high
