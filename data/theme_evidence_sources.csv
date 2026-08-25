@@ -40,3 +40,7 @@ HVDC_AI_POWER,2308;2301,broker_commentary,經濟日報,2026-06-15,https://money.
 AI_SERVER_BBU,6781;6121;3211;4931,financial_media,經濟日報,2026-07-09,https://money.udn.com/money/story/11162/9617815,AES-KY新普順達新盛力為台灣AI伺服器BBU重要供應商且近年營運受BBU帶動,high
 AI_SERVER_BBU,6781;3211;4931,financial_media,MoneyDJ,2026-07-31,https://www.moneydj.com/z/DJA/News/DJANewsDetail_CA3E3C95-EAB9-4A9E-B80F-41AC43855AB5.djhtm,AWS ASIC AI平台升級推升BBU需求並點名AES-KY順達新盛力為主要供應商,high
 AI_SERVER_BBU,6781;3211;4931,broker_commentary,MoneyDJ,2026-01-22,https://feibbank.moneydj.com/w/wp/wp05A.djhtm?a=%7BFF5D08B1-9DE8-402A-8136-9A2FB7529DFB%7D&c=NA,法人看好2026年ASIC伺服器顯著成長帶動BBU三雄受惠,high
+AI_POWER_RACK,2308,financial_media,MoneyDJ,2026-08-13,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=be3f70fe-400c-4268-a3d5-56fd73e8a35f,台達電供應內容由電源零組件延伸至Power Rack BBU液冷與整體AI資料中心電力系統,high
+AI_POWER_RACK,2301,company_commentary,MoneyDJ,2026-06-03,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=bccf00d2-6479-4a98-9573-d6c4eeceba6d,光寶科展出800VDC液冷Power Rack與110kW機架式電源並強調集中式Busbar架構,high
+AI_POWER_RACK,6669,company_commentary,經濟日報,2026-05-26,https://money.udn.com/money/story/5612/9526994,緯穎展示800V HVDC Power Rack液冷Busbar與PDB端對端機櫃級電力整合方案,high
+AI_POWER_RACK,3665,company_commentary,MoneyDJ,2026-03-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e4914553-d296-46ab-9b5c-18e54cb4b8d5,貿聯KY展示支援Vera Rubin與800VDC的Power Whip液冷Rack Busbar Shelf Busbar等電源互連方案,high
