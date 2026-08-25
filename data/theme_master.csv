@@ -109,3 +109,4 @@ VEHICLE_WIRE_HARNESS,車用高階線束,CONNECTOR,active,汽車電動車與高�
 HVDC_AI_POWER,HVDC/800V AI電源,POWER,active,AI資料中心HVDC正負400V與800VDC高壓直流電源架構及Power Rack相關供應鏈,2026-08-25
 AI_SERVER_BBU,AI伺服器BBU,UPS_BBU,active,AI伺服器與ASIC機櫃用電池備援模組BBU及高壓備援電力供應鏈,2026-08-25
 AI_POWER_RACK,AI電源機櫃/Power Rack,POWER,active,AI資料中心800VDC Power Rack PowerShelf液冷匯流排Busbar與機櫃級電力整合供應鏈,2026-08-25
+AI_RACK_POWER_DISTRIBUTION,AI機櫃配電/Busbar/PDB,AI_POWER_RACK,active,AI資料中心機櫃級高電流Busbar Power Distribution Board與800VDC至低壓配電整合供應鏈,2026-08-25
