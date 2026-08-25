@@ -44,3 +44,5 @@ AI_POWER_RACK,2308,financial_media,MoneyDJ,2026-08-13,https://www.moneydj.com/km
 AI_POWER_RACK,2301,company_commentary,MoneyDJ,2026-06-03,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=bccf00d2-6479-4a98-9573-d6c4eeceba6d,光寶科展出800VDC液冷Power Rack與110kW機架式電源並強調集中式Busbar架構,high
 AI_POWER_RACK,6669,company_commentary,經濟日報,2026-05-26,https://money.udn.com/money/story/5612/9526994,緯穎展示800V HVDC Power Rack液冷Busbar與PDB端對端機櫃級電力整合方案,high
 AI_POWER_RACK,3665,company_commentary,MoneyDJ,2026-03-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e4914553-d296-46ab-9b5c-18e54cb4b8d5,貿聯KY展示支援Vera Rubin與800VDC的Power Whip液冷Rack Busbar Shelf Busbar等電源互連方案,high
+AI_RACK_POWER_DISTRIBUTION,2308,company_official,Delta Electronics,2026-06-02,https://finance.yahoo.com/sectors/technology/articles/delta-debuts-prefabricated-ai-modular-122400540.html,COMPUTEX 2026展示12kW Power Distribution Board與符合NVIDIA MGX標準的液冷Busbar且支援超過5000A高電流容量,high
+AI_RACK_POWER_DISTRIBUTION,6669,industry_expert,Third Bridge,2026-06-24,https://www.thirdbridge.com/en-us/about-us/media/perspectives/computex-2026,緯穎與台達及TE Connectivity共同展示機櫃級800VDC方案涵蓋Power Rack液冷Busbar與800V轉50V PDB,medium_high
