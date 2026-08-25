@@ -7,6 +7,8 @@ LIQUID_COOLING,AI_INFRA,related,active
 POWER,AI_INFRA,related,active
 POWER_SUPPLY,AI_INFRA,core,active
 UPS_BBU,AI_INFRA,related,active
+HVDC_AI_POWER,AI_INFRA,core,active
+HVDC_AI_POWER,ENERGY_INFRA,related,active
 COOLING,COOLING_CLUSTER,core,active
 LIQUID_COOLING,COOLING_CLUSTER,core,active
 PCB,PCB_CHAIN,core,active
