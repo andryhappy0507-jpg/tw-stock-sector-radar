@@ -12,3 +12,18 @@ stock_id,theme_id,confidence,source_type,source_date,source_ref,evidence_summary
 2634,AEROSPACE,high,annual_report,,https://www.aidc.com.tw/Content/File/107Q4Consolidated_tw.pdf,漢翔官方財報揭露飛機發動機航電及航太零組件設計製造維修為主要業務,2026-08-23,active,auto_approved
 2609,CONTAINER_SHIPPING,high,company_website,,https://esg.yangming.com/en/investors/,陽明官方投資人資料明確說明貨櫃航運市場與貨櫃船隊營運,2026-08-23,active,auto_approved
 1519,HEAVY_ELECTRICAL,high,annual_report,,https://www.fortune.com.tw/WEB_Manage/attached/file/shareholder/20250225/2021_2021_AnnualReport.pdf,華城官方年報揭露超高壓變壓器相關業務與子公司營運,2026-08-23,active,auto_approved
+3533,AI_SERVER_CONNECTOR,medium,financial_media,2026-06-15,https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=58e4b390-115f-49d2-8683-b0c315bbfd46,嘉澤受惠AI伺服器與資料中心需求並擴充GPU Socket與高速線纜互連技術,2026-08-25,active,approved
+3526,AI_SERVER_CONNECTOR,medium,financial_media,2026-04-13,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ccd24825-0aeb-4f06-967e-f06a40575380,AI基礎建設與伺服器交換器需求帶動凡甲等連接元件廠且法人反覆點名,2026-08-25,active,approved
+3665,AI_SERVER_CONNECTOR,medium,financial_media,2026-04-13,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ccd24825-0aeb-4f06-967e-f06a40575380,AI基礎建設與伺服器交換器需求帶動貿聯KY等連接元件廠且法人反覆點名,2026-08-25,active,approved
+3526,HIGH_SPEED_CONNECTOR,medium,broker_commentary,2026-07-24,https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=e021558e-46ea-428d-b12d-e399fe9a0ee4,法人指出凡甲PCIe Gen6與MCIO高速連接器下半年放量,2026-08-25,active,approved
+3533,HIGH_SPEED_CONNECTOR,medium,financial_media,2026-06-15,https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=58e4b390-115f-49d2-8683-b0c315bbfd46,嘉澤投入高速線纜與NPO CPO Socket互連技術開發,2026-08-25,active,approved
+3665,HIGH_SPEED_CONNECTOR,medium,financial_media,2026-07-23,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2ae18541-b33e-44ae-844f-66e5df306757,貿聯KY高速互聯AEC與ALC產品獲客戶採用並擴產,2026-08-25,active,approved
+3526,HIGH_POWER_CONNECTOR,medium,financial_media,2026-08-19,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=910b2e81-5e69-4508-97a9-aa53ae7f2c8c,凡甲400VDC高功率產品下半年有機會出貨且800VDC持續開發,2026-08-25,active,approved
+3665,HIGH_POWER_CONNECTOR,medium,financial_media,2026-07-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=128822cd-7b4d-46b1-a6fb-e313eb4b72c1,貿聯KY高功率電源互聯產品與High Power產線持續擴張,2026-08-25,active,approved
+6279,AUTOMOTIVE_CONNECTOR,medium,financial_media,2026-07-07,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6755fc7d-d6b2-42ec-927e-0e019edc06fc,胡連被明確定位為車用連接器廠且車市回升帶動營運,2026-08-25,active,approved
+3023,AUTOMOTIVE_CONNECTOR,medium,financial_media,2026-02-25,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f9435e2a-ccaa-4c1d-995c-fed0788c5bd2,信邦電動車新能源訂單增加且車用連接器與連接模組比重提升,2026-08-25,active,approved
+3665,AUTOMOTIVE_CONNECTOR,medium,financial_media,2026-01-29,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0a450763-8ec0-4005-8858-796c5340ece1,貿聯KY高速線束與車用連接方案受Robotaxi及車隊擴充題材關注,2026-08-25,active,approved
+3003,AUTOMOTIVE_CONNECTOR,medium,financial_media,2026-08-07,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=dd4d9205-d10e-4e11-b5bd-d92cc0906179,健和興大電流連接器應用涵蓋車用充電與高功率場景且營運回升,2026-08-25,active,approved
+6279,VEHICLE_WIRE_HARNESS,medium,financial_media,2026-08-07,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4204b8c8-b213-4f7d-b21b-94592c3c0a6f,胡連取得義大利線束與電纜系統廠股權並切入高階車用供應鏈,2026-08-25,active,approved
+3023,VEHICLE_WIRE_HARNESS,medium,financial_media,2026-02-25,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f9435e2a-ccaa-4c1d-995c-fed0788c5bd2,信邦車用線束與新能源連接模組訂單能見度提升,2026-08-25,active,approved
+3665,VEHICLE_WIRE_HARNESS,medium,financial_media,2026-01-29,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0a450763-8ec0-4005-8858-796c5340ece1,貿聯KY高速線束與車用互連方案受Robotaxi及AI資料中心雙題材推動,2026-08-25,active,approved
