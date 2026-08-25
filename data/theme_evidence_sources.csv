@@ -28,3 +28,9 @@ VEHICLE_WIRE_HARNESS,6279,financial_media,MoneyDJ,2026-08-07,https://www.moneydj
 VEHICLE_WIRE_HARNESS,6279,financial_media,MoneyDJ,2026-02-26,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=bcf3d1e5-a7d3-4c9f-bc7f-644ead9d3cbd,胡連台灣市場電動巴士線束投產且車載高頻產品進入新案,high
 VEHICLE_WIRE_HARNESS,3023,financial_media,MoneyDJ,2026-02-25,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f9435e2a-ccaa-4c1d-995c-fed0788c5bd2,信邦車用線束與新能源連接模組訂單能見度提升,high
 VEHICLE_WIRE_HARNESS,3665,financial_media,MoneyDJ,2026-01-29,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0a450763-8ec0-4005-8858-796c5340ece1,貿聯KY高速線束與車用互連方案受Robotaxi及AI資料中心雙題材推動,medium_high
+POWER_SUPPLY,2308;2301,financial_media,MoneyDJ,2026-08-17,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=43b9ef80-24de-4893-b9b2-363bf6593a21,台達電與光寶科HVDC及800VDC產品時程明確並直接受惠AI資料中心電力架構升級,high
+POWER_SUPPLY,2308;2301;6282,financial_media,MoneyDJ,2026-01-21,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=92b9d32a-1b22-45c9-9513-4d48189b38de,台達電光寶科康舒均布局HVDC且法人持續追蹤400V與800V電源方案,high
+POWER_SUPPLY,2308;2301,broker_commentary,經濟日報,2026-06-15,https://money.udn.com/money/story/11162/9567142,法人看好AI資料中心功率密度提升帶動電源架構與Power Rack升級,high
+UPS_BBU,6781;3211;4931,financial_media,MoneyDJ,2026-07-31,https://www.moneydj.com/z/DJA/News/DJANewsDetail_CA3E3C95-EAB9-4A9E-B80F-41AC43855AB5.djhtm,法人明確點名AES-KY順達新盛力為ASIC AI伺服器BBU主要受惠供應商,high
+UPS_BBU,6781;6121;3211;4931,financial_media,經濟日報,2026-07-09,https://money.udn.com/money/story/11162/9617815,AES-KY新普順達新盛力為台灣AI伺服器BBU重要供應商且營運受惠,high
+UPS_BBU,6781,company_commentary,MoneyDJ,2026-06-01,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6d6a860b-e211-49ef-92aa-285f27d715e8&c=MB00,AES-KY公司資訊確認AI資料中心BBU為主要成長引擎並配合HVDC架構開發,high
