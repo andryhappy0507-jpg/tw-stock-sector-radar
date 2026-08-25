@@ -34,3 +34,6 @@ POWER_SUPPLY,2308;2301,broker_commentary,經濟日報,2026-06-15,https://money.u
 UPS_BBU,6781;3211;4931,financial_media,MoneyDJ,2026-07-31,https://www.moneydj.com/z/DJA/News/DJANewsDetail_CA3E3C95-EAB9-4A9E-B80F-41AC43855AB5.djhtm,法人明確點名AES-KY順達新盛力為ASIC AI伺服器BBU主要受惠供應商,high
 UPS_BBU,6781;6121;3211;4931,financial_media,經濟日報,2026-07-09,https://money.udn.com/money/story/11162/9617815,AES-KY新普順達新盛力為台灣AI伺服器BBU重要供應商且營運受惠,high
 UPS_BBU,6781,company_commentary,MoneyDJ,2026-06-01,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6d6a860b-e211-49ef-92aa-285f27d715e8&c=MB00,AES-KY公司資訊確認AI資料中心BBU為主要成長引擎並配合HVDC架構開發,high
+HVDC_AI_POWER,2308;2301,financial_media,MoneyDJ,2026-08-17,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=43b9ef80-24de-4893-b9b2-363bf6593a21,台達電與光寶科HVDC及800VDC產品時程明確並直接受惠AI資料中心電力架構升級,high
+HVDC_AI_POWER,2308;2301;6282,financial_media,MoneyDJ,2026-01-21,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=92b9d32a-1b22-45c9-9513-4d48189b38de,台達電光寶科康舒均布局HVDC且法人持續追蹤400V與800V電源方案,high
+HVDC_AI_POWER,2308;2301,broker_commentary,經濟日報,2026-06-15,https://money.udn.com/money/story/11162/9567142,法人看好AI資料中心功率密度提升帶動HVDC與Power Rack升級,high
