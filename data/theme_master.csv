@@ -106,3 +106,4 @@ HIGH_SPEED_CONNECTOR,高頻高速連接器,CONNECTOR,active,PCIe高速線纜AEC 
 HIGH_POWER_CONNECTOR,高功率大電流連接器,CONNECTOR,active,AI伺服器高功率大電流與HVDC電源互連產品,2026-08-24
 AUTOMOTIVE_CONNECTOR,車用連接器,CONNECTOR,active,汽車與電動車用端子連接器高壓高頻連接元件及相關供應鏈,2026-08-24
 VEHICLE_WIRE_HARNESS,車用高階線束,CONNECTOR,active,汽車電動車與高階移動載具用線束電纜及互連系統,2026-08-24
+HVDC_AI_POWER,HVDC/800V AI電源,POWER,active,AI資料中心HVDC正負400V與800VDC高壓直流電源架構及Power Rack相關供應鏈,2026-08-25
