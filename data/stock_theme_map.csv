@@ -82,7 +82,7 @@ stock_id,theme_id,confidence,source_type,source_date,source_ref,evidence_summary
 6781,AI_SERVER_BBU,medium,financial_media,2026-08-25,https://money.udn.com/money/story/11162/9617815,AES-KY被經濟日報與MoneyDJ反覆確認為AI伺服器BBU主要供應商,2026-08-26,active,approved
 6121,AI_SERVER_BBU,medium,financial_media,2026-08-25,https://money.udn.com/money/story/11162/9617815,新普被經濟日報與MoneyDJ反覆確認為AI伺服器BBU主要供應商,2026-08-26,active,approved
 3211,AI_SERVER_BBU,medium,financial_media,2026-08-25,https://money.udn.com/money/story/11162/9617815,順達被經濟日報與MoneyDJ反覆確認為AI伺服器BBU主要供應商,2026-08-26,active,approved
-4931,AI_SERVER_BBU,medium,financial_media,2026-08-25,https://money.udn.com/money/story/11162/9617815,新盛力被經濟日報與MoneyDJ反覆確認為AI伺服器BBU主要供應商,2026-08-26,active,approved
+4931,AI_SERVER_BBU,medium,financial_media,2026-08-25,https://money.udn.com/money/story/11162/9617815,新盛力被經濟日報與MoneyDJ反覆確認為AI伺服器BBU供應商,2026-08-26,active,approved
 2308,AI_POWER_RACK,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=bccf00d2-6479-4a98-9573-d6c4eeceba6d,台達電被公司與財經媒體確認提供800VDC Power Rack與機櫃級電力整合方案,2026-08-26,active,approved
 2301,AI_POWER_RACK,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=bccf00d2-6479-4a98-9573-d6c4eeceba6d,光寶科被公司與財經媒體確認布局800VDC Power Rack與高功率電源整合,2026-08-26,active,approved
 6669,AI_POWER_RACK,medium,company_commentary,2026-05-26,https://money.udn.com/money/story/5612/9526994,緯穎展示800V HVDC Power Rack液冷Busbar與PDB端對端機櫃級電力整合方案,2026-08-26,active,approved
@@ -125,3 +125,15 @@ stock_id,theme_id,confidence,source_type,source_date,source_ref,evidence_summary
 1504,WIND_EQUIPMENT,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=AB20,櫃買中心風力發電產業鏈列入設備製造材料零組配件或電力系統,2026-08-26,active,approved
 2208,WIND_SERVICE,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=AB20,櫃買中心風力發電產業鏈列入風場規劃營造或風機維護,2026-08-26,active,approved
 6869,WIND_OPERATION,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=AB20,櫃買中心風力發電產業鏈列入風場開發或發電營運,2026-08-26,active,approved
+2359,ROBOTICS,high,company_official,2025-01-13,https://www.solomon.com.tw/news-events/%E6%89%80%E7%BE%85%E9%96%80%E3%80%81%E8%BC%9D%E9%81%94ces%E5%90%8C%E6%A1%86-%E7%A7%80%E5%85%88%E9%80%B2%E6%A9%9F%E5%99%A8%E4%BA%BA%E6%8A%80%E8%A1%93/,所羅門官方說明AI 3D視覺與機器人技術並整合NVIDIA Isaac機器人平台,2026-08-26,active,approved
+2359,ROBOT_VISION,high,annual_report,2025-11-01,https://www.solomon.com.tw/wp-content/uploads/2025/11/2024-STC-Corporate-Sustainability-Report_EN.pdf,所羅門官方報告說明AI vision涵蓋3D robot vision並整合多品牌機器人與AMR,2026-08-26,active,approved
+2359,AUTOMATION,high,company_official,2026-08-20,https://www.solomon.com.tw/products/,所羅門官網業務明列機械手臂應用與自動化控制系統,2026-08-26,active,approved
+2395,INDUSTRIAL_PC,high,company_official,2026-08-20,https://www.advantech.com/zh-tw,研華官方核心解決方案包含工業與邊緣伺服器及工業設備平台,2026-08-26,active,approved
+2395,AUTOMATION,high,company_official,2026-08-20,https://www.advantech.com/zh-tw/industrial-automation/industry4.0/,研華官方工業4.0方案明列設備自動化運動控制機器視覺機械手臂與AGV整合,2026-08-26,active,approved
+2395,EDGE_AI,high,company_official,2026-08-20,https://www.advantech.com/zh-tw/solutions/iot-edge-intelligence-solutions-and-services,研華官方Edge Intelligence方案明列Edge AI與工廠自動化等AIoT應用,2026-08-26,active,approved
+2395,ROBOTICS,high,company_official,2026-03-17,https://www.advantech.com/emt/resources/news/advantech-and-fort-robotics-collaborate-to-advance-safe-physical-ai-on-mic-735,研華官方發布機器人與AMR實際部署平台及robotics edge AI產品,2026-08-26,active,approved
+2308,DATA_CENTER,high,company_official,2026-08-25,https://www.deltaww.com/zh-TW/landing/Delta-for-AI,台達電官方提供資料中心電力液冷DCIM與AI整合基礎設施,2026-08-26,active,approved
+2308,COOLING,high,company_official,2026-08-25,https://www.deltaww.com/zh-TW/landing/Delta-for-AI,台達電AI方案涵蓋從資料中心設施機櫃伺服器到晶片的氣冷與液冷散熱,2026-08-26,active,approved
+2308,LIQUID_COOLING,high,company_official,2026-08-25,https://www.deltaww.com/zh-TW/landing/Delta-for-AI,台達電官方明列80kW液對氣冷卻系統及完整液冷方案,2026-08-26,active,approved
+2308,AUTOMATION,high,company_official,2026-08-25,https://www.deltaww.com/en-US/products/Industrial-Automation,台達電工業自動化產品線涵蓋motion control PLC machine vision robot智慧設備與軟體,2026-08-26,active,approved
+2308,ROBOTICS,high,company_official,2026-08-25,https://www.deltaww.com/en-US/solutions/robotics,台達電具SCARA articulated modular collaborative robot與控制解決方案,2026-08-26,active,approved
