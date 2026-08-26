@@ -69,3 +69,23 @@ stock_id,theme_id,confidence,source_type,source_date,source_ref,evidence_summary
 2454,PMIC,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入電源管理IC,2026-08-26,active,approved
 3034,PMIC,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入電源管理IC,2026-08-26,active,approved
 3257,PMIC,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入電源管理IC,2026-08-26,active,approved
+2308,POWER_SUPPLY,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=43b9ef80-24de-4893-b9b2-363bf6593a21,台達電被反覆確認為AI資料中心HVDC與高效率電源核心供應商,2026-08-26,active,approved
+2301,POWER_SUPPLY,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=43b9ef80-24de-4893-b9b2-363bf6593a21,光寶科被反覆確認布局AI資料中心HVDC與高功率電源供應,2026-08-26,active,approved
+6282,POWER_SUPPLY,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=43b9ef80-24de-4893-b9b2-363bf6593a21,康舒被反覆確認參與AI伺服器與資料中心高功率電源供應鏈,2026-08-26,active,approved
+6781,UPS_BBU,medium,financial_media,2026-08-25,https://www.moneydj.com/z/DJA/News/DJANewsDetail_CA3E3C95-EAB9-4A9E-B80F-41AC43855AB5.djhtm,AES-KY被法人與財經媒體反覆確認為AI伺服器BBU主要供應商,2026-08-26,active,approved
+3211,UPS_BBU,medium,financial_media,2026-08-25,https://www.moneydj.com/z/DJA/News/DJANewsDetail_CA3E3C95-EAB9-4A9E-B80F-41AC43855AB5.djhtm,順達被法人與財經媒體反覆確認為AI伺服器BBU主要供應商,2026-08-26,active,approved
+4931,UPS_BBU,medium,financial_media,2026-08-25,https://www.moneydj.com/z/DJA/News/DJANewsDetail_CA3E3C95-EAB9-4A9E-B80F-41AC43855AB5.djhtm,新盛力被法人與財經媒體反覆確認為AI伺服器BBU供應商,2026-08-26,active,approved
+6121,UPS_BBU,medium,financial_media,2026-08-25,https://www.moneydj.com/z/DJA/News/DJANewsDetail_CA3E3C95-EAB9-4A9E-B80F-41AC43855AB5.djhtm,新普被法人與財經媒體反覆確認為AI伺服器BBU主要供應商,2026-08-26,active,approved
+2308,HVDC_AI_POWER,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=43b9ef80-24de-4893-b9b2-363bf6593a21,台達電被反覆確認布局AI資料中心正負400V與800VDC HVDC架構,2026-08-26,active,approved
+2301,HVDC_AI_POWER,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=43b9ef80-24de-4893-b9b2-363bf6593a21,光寶科被反覆確認布局AI資料中心HVDC與800VDC高壓直流電源架構,2026-08-26,active,approved
+6282,HVDC_AI_POWER,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=43b9ef80-24de-4893-b9b2-363bf6593a21,康舒被反覆確認參與AI資料中心HVDC高功率電源供應鏈,2026-08-26,active,approved
+6781,AI_SERVER_BBU,medium,financial_media,2026-08-25,https://money.udn.com/money/story/11162/9617815,AES-KY被經濟日報與MoneyDJ反覆確認為AI伺服器BBU主要供應商,2026-08-26,active,approved
+6121,AI_SERVER_BBU,medium,financial_media,2026-08-25,https://money.udn.com/money/story/11162/9617815,新普被經濟日報與MoneyDJ反覆確認為AI伺服器BBU主要供應商,2026-08-26,active,approved
+3211,AI_SERVER_BBU,medium,financial_media,2026-08-25,https://money.udn.com/money/story/11162/9617815,順達被經濟日報與MoneyDJ反覆確認為AI伺服器BBU主要供應商,2026-08-26,active,approved
+4931,AI_SERVER_BBU,medium,financial_media,2026-08-25,https://money.udn.com/money/story/11162/9617815,新盛力被經濟日報與MoneyDJ反覆確認為AI伺服器BBU主要供應商,2026-08-26,active,approved
+2308,AI_POWER_RACK,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=bccf00d2-6479-4a98-9573-d6c4eeceba6d,台達電被公司與財經媒體確認提供800VDC Power Rack與機櫃級電力整合方案,2026-08-26,active,approved
+2301,AI_POWER_RACK,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=bccf00d2-6479-4a98-9573-d6c4eeceba6d,光寶科被公司與財經媒體確認布局800VDC Power Rack與高功率電源整合,2026-08-26,active,approved
+6669,AI_POWER_RACK,medium,company_commentary,2026-05-26,https://money.udn.com/money/story/5612/9526994,緯穎展示800V HVDC Power Rack液冷Busbar與PDB端對端機櫃級電力整合方案,2026-08-26,active,approved
+3665,AI_POWER_RACK,medium,company_commentary,2026-03-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e4914553-d296-46ab-9b5c-18e54cb4b8d5,貿聯KY展示支援Vera Rubin與800VDC的Power Whip液冷Rack Busbar Shelf Busbar等電源互連方案,2026-08-26,active,approved
+2308,AI_RACK_POWER_DISTRIBUTION,medium,company_official,2026-06-02,https://finance.yahoo.com/sectors/technology/articles/delta-debuts-prefabricated-ai-modular-122400540.html,COMPUTEX 2026展示12kW PDB與符合NVIDIA MGX標準的液冷Busbar並支援超過5000A高電流容量,2026-08-26,active,approved
+6669,AI_RACK_POWER_DISTRIBUTION,medium,industry_expert,2026-06-24,https://www.thirdbridge.com/en-us/about-us/media/perspectives/computex-2026,緯穎與台達及TE共同展示機櫃級800VDC方案涵蓋Power Rack液冷Busbar與800V轉50V PDB,2026-08-26,active,approved
