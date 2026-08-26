@@ -14,3 +14,5 @@ stock_id,company,theme_id,theme_name,role,decision,source_type,publisher,publish
 6570,維田,ROBOT_VISION,機器人視覺,related,NEED_SECOND_SOURCE,financial_media,經濟日報,2026-01-15,https://money.udn.com/money/story/11162/9265994,經濟日報明確指出維田負責AI機器人視覺應用並列入台灣AI機器人供應鏈,medium_high,pending
 4566,時碩工業,ROBOT_COMPONENTS,機器人零組件,related,NEED_SECOND_SOURCE,financial_media,經濟日報,2026-01-15,https://money.udn.com/money/story/11162/9265994,經濟日報將時碩列入AI機器人合金外殼供應鏈,medium_high,pending
 1536,和大,ROBOT_COMPONENTS,機器人零組件,emerging,NEED_SECOND_SOURCE,financial_media,經濟日報,2026-01-15,https://money.udn.com/money/story/11162/9265994,經濟日報指出和大布局人形機器人關節行星齒輪減速機並已送樣測試且規劃機器人事業部,medium_high,pending
+2464,盟立,ROBOTICS,機器人,core,PROMOTE_EXISTING_THEME,company_official,Mirle Automation,2026-01-19,https://www.mirle.com.tw/news-detail/661/,公司成立具身智能事業群並明確揭露輪型與四足機器人平台、自主運動控制、AI感知與2026小量量產規劃，機器人已形成可辨識事業線,high,reviewed
+2464,盟立,ROBOT_COMPONENTS,機器人零組件,related,PROMOTE_EXISTING_THEME,company_official,Mirle Automation,2026-01-19,https://www.mirle.com.tw/news-detail/661/,公司官方揭露集團自製精密諧波減速機與機器人關節模組，具從關鍵零組件到整機平台的完整技術鏈,high,reviewed
