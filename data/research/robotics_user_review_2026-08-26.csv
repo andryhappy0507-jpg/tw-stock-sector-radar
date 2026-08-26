@@ -14,3 +14,5 @@ stock_id,company,theme_id,theme_name,proposed_role,research_status,user_review_s
 6570,維田,ROBOT_VISION,機器人視覺,related,second_source_confirmed,awaiting_user_review,,
 4566,時碩工業,ROBOT_COMPONENTS,機器人零組件,related,second_source_confirmed,awaiting_user_review,,
 1536,和大,ROBOT_COMPONENTS,機器人零組件,emerging,second_source_confirmed,awaiting_user_review,,
+2464,盟立,ROBOTICS,機器人,core,evidence_ready,awaiting_user_review,,
+2464,盟立,ROBOT_COMPONENTS,機器人零組件,related,evidence_ready,awaiting_user_review,,
