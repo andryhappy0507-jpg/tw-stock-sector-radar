@@ -89,3 +89,24 @@ stock_id,theme_id,confidence,source_type,source_date,source_ref,evidence_summary
 3665,AI_POWER_RACK,medium,company_commentary,2026-03-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e4914553-d296-46ab-9b5c-18e54cb4b8d5,貿聯KY展示支援Vera Rubin與800VDC的Power Whip液冷Rack Busbar Shelf Busbar等電源互連方案,2026-08-26,active,approved
 2308,AI_RACK_POWER_DISTRIBUTION,medium,company_official,2026-06-02,https://finance.yahoo.com/sectors/technology/articles/delta-debuts-prefabricated-ai-modular-122400540.html,COMPUTEX 2026展示12kW PDB與符合NVIDIA MGX標準的液冷Busbar並支援超過5000A高電流容量,2026-08-26,active,approved
 6669,AI_RACK_POWER_DISTRIBUTION,medium,industry_expert,2026-06-24,https://www.thirdbridge.com/en-us/about-us/media/perspectives/computex-2026,緯穎與台達及TE共同展示機櫃級800VDC方案涵蓋Power Rack液冷Busbar與800V轉50V PDB,2026-08-26,active,approved
+2409,PANEL,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入面板製造,2026-08-26,active,approved
+3481,PANEL,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入面板製造,2026-08-26,active,approved
+6116,PANEL,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入面板製造,2026-08-26,active,approved
+2393,DISPLAY_MODULE,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入顯示器模組,2026-08-26,active,approved
+2485,DISPLAY_MODULE,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入顯示器模組,2026-08-26,active,approved
+3024,DISPLAY_MODULE,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入顯示器模組,2026-08-26,active,approved
+6120,BACKLIGHT_MODULE,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入背光模組,2026-08-26,active,approved
+6176,BACKLIGHT_MODULE,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入背光模組,2026-08-26,active,approved
+6278,BACKLIGHT_MODULE,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入背光模組,2026-08-26,active,approved
+2340,LED,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=A200,櫃買中心LED照明產業鏈列入LED光源磊晶封裝模組供應鏈,2026-08-26,active,approved
+2491,LED,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=A200,櫃買中心LED照明產業鏈列入LED光源磊晶封裝模組供應鏈,2026-08-26,active,approved
+3714,LED,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=A200,櫃買中心LED照明產業鏈列入LED光源磊晶封裝模組供應鏈,2026-08-26,active,approved
+1504,MECHANICAL_TRANSMISSION,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=P000,櫃買中心電機機械產業鏈列入傳動元件,2026-08-26,active,approved
+1526,MECHANICAL_TRANSMISSION,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=P000,櫃買中心電機機械產業鏈列入傳動元件,2026-08-26,active,approved
+1536,MECHANICAL_TRANSMISSION,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=P000,櫃買中心電機機械產業鏈列入傳動元件,2026-08-26,active,approved
+1504,INDUSTRIAL_CONTROL_COMPONENTS,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=P000,櫃買中心電機機械產業鏈列入電控元件,2026-08-26,active,approved
+1533,INDUSTRIAL_CONTROL_COMPONENTS,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=P000,櫃買中心電機機械產業鏈列入電控元件,2026-08-26,active,approved
+1597,INDUSTRIAL_CONTROL_COMPONENTS,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=P000,櫃買中心電機機械產業鏈列入電控元件,2026-08-26,active,approved
+2308,LOW_ORBIT_SATELLITE,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=4100,櫃買中心太空衛星科技產業鏈列入低軌衛星相關供應鏈,2026-08-26,active,approved
+2314,LOW_ORBIT_SATELLITE,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=4100,櫃買中心太空衛星科技產業鏈列入低軌衛星相關供應鏈,2026-08-26,active,approved
+2352,LOW_ORBIT_SATELLITE,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=4100,櫃買中心太空衛星科技產業鏈列入低軌衛星相關供應鏈,2026-08-26,active,approved
