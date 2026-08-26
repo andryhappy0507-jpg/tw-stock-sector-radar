@@ -110,3 +110,18 @@ stock_id,theme_id,confidence,source_type,source_date,source_ref,evidence_summary
 2308,LOW_ORBIT_SATELLITE,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=4100,櫃買中心太空衛星科技產業鏈列入低軌衛星相關供應鏈,2026-08-26,active,approved
 2314,LOW_ORBIT_SATELLITE,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=4100,櫃買中心太空衛星科技產業鏈列入低軌衛星相關供應鏈,2026-08-26,active,approved
 2352,LOW_ORBIT_SATELLITE,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=4100,櫃買中心太空衛星科技產業鏈列入低軌衛星相關供應鏈,2026-08-26,active,approved
+2801,FINANCE,medium,official_industry_classification,2026-08-23,official_openapi,官方產業分類代碼17金融保險,2026-08-26,active,approved
+2812,FINANCE,medium,official_industry_classification,2026-08-23,official_openapi,官方產業分類代碼17金融保險,2026-08-26,active,approved
+2816,FINANCE,medium,official_industry_classification,2026-08-23,official_openapi,官方產業分類代碼17金融保險,2026-08-26,active,approved
+2701,TOURISM,medium,official_industry_classification,2026-08-23,official_openapi,官方產業分類代碼16觀光餐旅,2026-08-26,active,approved
+2702,TOURISM,medium,official_industry_classification,2026-08-23,official_openapi,官方產業分類代碼16觀光餐旅,2026-08-26,active,approved
+2707,TOURISM,medium,official_industry_classification,2026-08-23,official_openapi,官方產業分類代碼16觀光餐旅,2026-08-26,active,approved
+4904,CLOUD_COMPUTING,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=5400,櫃買中心雲端運算產業鏈列入IaaS PaaS SaaS或雲端應用服務,2026-08-26,active,approved
+6112,CLOUD_COMPUTING,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=5400,櫃買中心雲端運算產業鏈列入IaaS PaaS SaaS或雲端應用服務,2026-08-26,active,approved
+6561,CLOUD_COMPUTING,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=5400,櫃買中心雲端運算產業鏈列入IaaS PaaS SaaS或雲端應用服務,2026-08-26,active,approved
+1519,SMART_GRID,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=AD10,櫃買中心智慧電網產業鏈列入輸配電智慧電表或應用服務,2026-08-26,active,approved
+1603,SMART_GRID,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=AD10,櫃買中心智慧電網產業鏈列入輸配電智慧電表或應用服務,2026-08-26,active,approved
+1605,SMART_GRID,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=AD10,櫃買中心智慧電網產業鏈列入輸配電智慧電表或應用服務,2026-08-26,active,approved
+1504,WIND_EQUIPMENT,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=AB20,櫃買中心風力發電產業鏈列入設備製造材料零組配件或電力系統,2026-08-26,active,approved
+2208,WIND_SERVICE,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=AB20,櫃買中心風力發電產業鏈列入風場規劃營造或風機維護,2026-08-26,active,approved
+6869,WIND_OPERATION,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=AB20,櫃買中心風力發電產業鏈列入風場開發或發電營運,2026-08-26,active,approved
