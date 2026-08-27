@@ -1,0 +1,11 @@
+stock_id,company,proposed_theme,proposed_role,discovery_source_type,publisher,published_date,source_url,evidence_summary,discovery_status,next_action
+1504,東元,ROBOTICS,related,financial_media,CNA,2026-08-06,https://www.cna.com.tw/news/afe/202608060119.aspx,東元關節模組已實際應用四足機器狗並合作開發人形機器人且提供國產機器手臂無框電機,suspected_missing,verify_company_official
+7942,東佑達,ROBOTICS,related,financial_media,MoneyDJ,2026-08-17,https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,2026自動化展列為自動化解決方案廠並展示機器人相關產品與解決方案,suspected_missing,verify_company_official
+4590,富田,ROBOT_COMPONENTS,related,financial_media,經濟日報,2026-08-13,https://money.udn.com/money/story/5612/9687935,人形機器人供應鏈報導列入馬達及動力系統與關節模組相關業者並於機器人展展示,suspected_missing,verify_company_official
+5443,均豪,ROBOTICS,related,financial_media,經濟日報,2026-08-16,https://money.udn.com/money/story/5612/9693836,2026台灣機器人與智慧自動化展列為展示最新機器人與智慧製造成果的台廠之一,suspected_missing,find_specific_robotics_product
+4571,鈞興-KY,ROBOT_COMPONENTS,emerging,financial_media,MoneyDJ,2026-05-22,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b4138c38-ed70-4492-92b9-6785b2a75f00,公司布局人形機器人關節模組與靈巧手微型齒輪且有送樣美系人形機器人廠機會,suspected_missing,verify_company_official
+2233,宇隆,ROBOT_COMPONENTS,emerging,financial_media,CNA,2025-07-20,https://www.cna.com.tw/news/afe/202507200071.aspx,宇隆開發諧波減速機微型行星減速機旋轉致動器等人形機器人零組件並規劃一體式電驅動系統,suspected_missing,refresh_2026_evidence
+4583,台灣精銳,ROBOT_COMPONENTS,emerging,financial_media,CNA,2025-08-17,https://www.cna.com.tw/news/afe/202508170029.aspx,台灣精銳布局人形機器人微型行星減速機客製化量產能力,suspected_missing,refresh_2026_evidence
+2392,正崴,ROBOTICS,related,financial_media,CNA,2025-07-20,https://www.cna.com.tw/news/afe/202507200048.aspx,正崴集團旗下星科國際布局AI機器人平台方案首波聚焦安防巡檢,suspected_missing,verify_group_relationship_and_current_status
+6166,凌華,ROBOTICS,related,financial_media,CNA,2025-07-20,https://www.cna.com.tw/news/afe/202507200048.aspx,AI機器人產業大聯盟供應鏈報導列凌華為智慧製造AI機器人關鍵零組件與系統應用業者,suspected_missing,find_specific_robotics_product
+2317,鴻海,ROBOTICS,related,financial_media,CNA,2025-07-20,https://www.cna.com.tw/news/afe/202507200071.aspx,鴻海與輝達合作開發機器人關鍵技術並推出機器人製造平台且規劃工廠部署人形機器人,suspected_missing,refresh_2026_company_evidence
