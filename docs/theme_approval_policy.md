@@ -14,6 +14,8 @@ Theme 是本專案的主要交易分類軸；官方產業分類保留作為市�
 6. 細 Theme 不以證交所／櫃買中心大類分類作為主要來源。法說逐字稿、法說簡報、公司產品資料、主流財經新聞、券商研究、Alpha Memo AI、富果等研究平台皆可用於細 Theme 發現與驗證。
 7. 法說會不是必要條件。若法說未明確提及，但多個獨立且可信的新聞／研究來源長期反覆確認，並具體指出產品、技術、客戶、出貨、認證或供應鏈關係，仍可人工 approved。
 8. 反之，法說若僅提到評估、關注、可能合作或未來布局，且缺乏其他實質證據，不因出現在法說中就自動視為正式 Theme。
+9. Theme mapping 的「正確性」與 Theme 股池的「完整性」分開管理；CI 通過不得等同宣稱 coverage 完整。
+10. 任何市場重要 Theme 在完成 Coverage Audit 前不得標示為 `coverage_ready` 或對外稱為完整股池。
 
 ## Evidence hierarchy
 
@@ -41,6 +43,8 @@ Theme 是本專案的主要交易分類軸；官方產業分類保留作為市�
 - `core`：公司明確核心產品／服務／技術，或已形成可辨識事業線。
 - `related`：有明確產品、供應鏈、應用或客戶關係，但不是核心營收主體。
 - `emerging`：公司已公開投入、驗證、量產初期或新事業轉型，關聯成立但仍在早期。
+
+角色只描述 Theme 對公司的重要程度，不等於是否納入 Theme breadth。只要關聯經證據確認，core / related / emerging 都可以納入資金擴散觀察，但應分層統計。
 
 ## Approval rules
 
@@ -83,6 +87,51 @@ Theme 是本專案的主要交易分類軸；官方產業分類保留作為市�
 - 能對資金同步分析產生額外資訊，而不是只增加標籤數量。
 - 先進 research/candidate staging，再進 theme_master。
 
+## Theme discovery and coverage workflow
+
+市場重要 Theme 必須依序經過以下五層，不能只從既有名單找證據：
+
+1. **Market discovery**：先定義 Theme 關鍵字、同義詞、子題與鄰接供應鏈，從全市場尋找可能候選。
+2. **Candidate generation**：整合公司官網／產品頁、法說、年報、監管資料、產業鏈、主流財經媒體、研究平台等多來源候選。
+3. **Evidence verification**：逐檔驗證實質產品／技術／客戶／出貨／供應鏈關係，標示 core / related / emerging 與證據強度。
+4. **Coverage audit**：合併 formal + staging + new discovery，反向檢查是否仍有市場重要漏股，並記錄 suspected_missing / need_evidence 等未解項目。
+5. **Human gate + formal mapping + CI**：重要 Theme 由人工確認後才可寫入正式 mapping；CI 負責資料與程式一致性，不代替投資語意審核。
+
+標準流程為：
+
+`Discovery → Candidate → Evidence → Coverage Audit → User Review → Formal Mapping → CI`
+
+不得再把「已知名單 → 找證據 → CI」視為完整 Theme 建置流程。
+
+## Coverage status
+
+重要 Theme 在 `data/theme_coverage_rules.csv` 記錄 coverage 狀態：
+
+- `discovery`：仍在廣泛找候選，不能宣稱股池完整。
+- `auditing`：已有初步股池，正在查漏與補證據。
+- `coverage_ready`：已完成一輪完整漏股檢查，且沒有 unresolved `suspected_missing` 候選。
+
+`coverage_ready` 只代表「發現完整度達到目前標準」，不代表所有候選都已人工核准，也不代表未來不會因公司新布局而新增成分股。
+
+每個重要 Theme 都應輸出 Coverage Summary，至少包含：
+
+- formal approved 數量
+- coverage pool 總數
+- staging 數量
+- awaiting user review 數量
+- need evidence 數量
+- suspected missing 數量
+- discovery keyword 數量
+
+## Company ↔ Theme bidirectional audit
+
+Theme discovery 必須雙向進行：
+
+- Theme → Company：從題材與供應鏈尋找所有可能公司。
+- Company → Theme：研究公司時，同步檢查其主要業務、新事業與多個 Theme 關聯。
+
+公司不應被單一 Theme 定義；Theme 只是公司主體資料上的多對多關聯。未來公司主頁應作為主要實體，Theme 頁面反向引用公司及其關聯角色。
+
 ## Theme reverse-pool workflow
 
 每一個新或既有 Theme 都必須反向建立成分股池：
@@ -90,8 +139,9 @@ Theme 是本專案的主要交易分類軸；官方產業分類保留作為市�
 1. 先定義 Theme。
 2. 從法說、公司資料、新聞、券商研究、Alpha Memo AI、富果等來源搜尋可能成分股。
 3. 逐檔驗證並標示 core / related / emerging。
-4. 通過規則後把 Theme 寫回每檔股票 mapping。
-5. 研究過程若發現新的細 Theme，再建立候選 Theme 並重複以上流程。
+4. 執行 Coverage Audit，確認是否仍有重要漏股。
+5. 通過人工規則後把 Theme 寫回每檔股票 mapping。
+6. 研究過程若發現新的細 Theme，再建立候選 Theme 並重複以上流程。
 
 ## Priority audit order
 
@@ -108,5 +158,7 @@ Theme 是本專案的主要交易分類軸；官方產業分類保留作為市�
 
 - 先在 `data/research/` 產生 audit/staging 檔。
 - 記錄 source_type、publisher、published_date、source_url、evidence_summary、confidence、role、decision。
+- 市場重要 Theme 必須有 coverage audit 檔並登錄於 `data/theme_coverage_rules.csv`。
+- `coverage_status=coverage_ready` 時不得仍存在 unresolved suspected_missing。
 - 通過人工規則檢查後，才更新 `theme_master.csv` / `stock_theme_map.csv` / `theme_group_map.csv`。
-- 每批更新後必須跑完整 CI，確認 validator、weekly metrics、Theme summary、Group summary 全部成功。
+- 每批更新後必須跑完整 CI，確認 validator、coverage summary、weekly metrics、Theme summary、Group summary 全部成功。
