@@ -16,3 +16,13 @@ stock_id,company,coverage_layer,current_state,primary_robotics_role,coverage_not
 4566,時碩工業,staging,awaiting_user_review,related,人形機器人精密金屬與零組件布局且第二來源已補,user_review
 1536,和大,staging,awaiting_user_review,emerging,人形機器人減速機送樣與新事業布局且第二來源已補,user_review
 2464,盟立,staging,awaiting_user_review,core,具身智能事業群涵蓋機器人整機平台關節模組與減速機並規劃量產,user_review
+1504,東元,discovery,suspected_missing,related,關節模組已應用四足機器狗且合作開發人形機器人,need_evidence
+7942,東佑達,discovery,suspected_missing,related,自動化解決方案與機器人展展示相關產品,need_evidence
+4590,富田,discovery,suspected_missing,related,人形機器人馬達與動力系統供應鏈候選,need_evidence
+5443,均豪,discovery,suspected_missing,related,機器人與智慧自動化展供應鏈候選但需更具體產品證據,need_evidence
+4571,鈞興-KY,discovery,suspected_missing,emerging,布局人形機器人關節模組與靈巧手微型齒輪,need_evidence
+2233,宇隆,discovery,suspected_missing,emerging,布局人形機器人諧波減速機微型行星減速機與致動器,need_evidence
+4583,台灣精銳,discovery,suspected_missing,emerging,布局人形機器人微型行星減速機,need_evidence
+2392,正崴,discovery,suspected_missing,related,旗下公司布局AI機器人平台與巡檢方案需確認集團mapping邊界,need_evidence
+6166,凌華,discovery,suspected_missing,related,智慧製造AI機器人供應鏈候選需補具體產品證據,need_evidence
+2317,鴻海,discovery,suspected_missing,related,與輝達合作機器人製造平台及人形機器人工廠部署需更新2026證據,need_evidence
