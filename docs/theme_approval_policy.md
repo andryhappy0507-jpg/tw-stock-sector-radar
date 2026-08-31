@@ -162,3 +162,7 @@ Theme discovery 必須雙向進行：
 - `coverage_status=coverage_ready` 時不得仍存在 unresolved suspected_missing。
 - 通過人工規則檢查後，才更新 `theme_master.csv` / `stock_theme_map.csv` / `theme_group_map.csv`。
 - 每批更新後必須跑完整 CI，確認 validator、coverage summary、weekly metrics、Theme summary、Group summary 全部成功。
+
+## Related policy
+
+涉及子公司、關係企業或集團事業的 Theme 歸屬，另依 [Parent / Subsidiary Theme Mapping Policy](parent_subsidiary_theme_mapping_policy.md) 判斷；不得只因「集團旗下」而讓上市母公司自動繼承 mapping。
