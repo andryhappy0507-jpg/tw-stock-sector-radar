@@ -1,5 +1,5 @@
 stock_id,company,theme_id,theme_name,proposed_role,research_status,user_review_status,user_decision,user_note
-4590,富田,ROBOT_COMPONENTS,機器人零組件,related,evidence_ready,awaiting_user_review,,
-5443,均豪,ROBOTICS,機器人,related,evidence_ready,awaiting_user_review,,
-4571,鈞興-KY,ROBOT_COMPONENTS,機器人零組件,emerging,second_source_confirmed,awaiting_user_review,,
-2392,正崴,ROBOTICS,機器人,related,evidence_ready,awaiting_user_review,,
+4590,富田,ROBOT_COMPONENTS,機器人零組件,related,evidence_ready,reviewed,approved,2026-09-01 user confirmed PASS
+5443,均豪,ROBOTICS,機器人,related,evidence_ready,reviewed,approved,2026-09-01 user confirmed PASS
+4571,鈞興-KY,ROBOT_COMPONENTS,機器人零組件,emerging,second_source_confirmed,reviewed,approved,2026-09-01 user confirmed PASS
+2392,正崴,ROBOTICS,機器人,related,evidence_ready,reviewed,approved,2026-09-01 user confirmed PASS

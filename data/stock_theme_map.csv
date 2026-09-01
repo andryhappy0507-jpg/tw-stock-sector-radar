@@ -137,3 +137,7 @@ stock_id,theme_id,confidence,source_type,source_date,source_ref,evidence_summary
 2308,LIQUID_COOLING,high,company_official,2026-08-25,https://www.deltaww.com/zh-TW/landing/Delta-for-AI,台達電官方明列80kW液對氣冷卻系統及完整液冷方案,2026-08-26,active,approved
 2308,AUTOMATION,high,company_official,2026-08-25,https://www.deltaww.com/en-US/products/Industrial-Automation,台達電工業自動化產品線涵蓋motion control PLC machine vision robot智慧設備與軟體,2026-08-26,active,approved
 2308,ROBOTICS,high,company_official,2026-08-25,https://www.deltaww.com/en-US/solutions/robotics,台達電具SCARA articulated modular collaborative robot與控制解決方案,2026-08-26,active,approved
+4590,ROBOT_COMPONENTS,high,company_website,2026-08-31,https://www.fukuta-motor.com.tw/tw/support.html,富田官方直接列出機器人與機器狗關節馬達並說明機器人用高扭矩密度小型馬達,2026-09-01,active,approved
+5443,ROBOTICS,high,company_website,2026-08-31,https://www.gpmcorp.com.tw/products_detail.php?plevel1Id=1&productId=G,均豪官方明列Mobile Robot與機器人彈性加工系統且已導入晶圓及封裝客戶,2026-09-01,active,approved
+4571,ROBOT_COMPONENTS,high,company_website,2019-08-10,https://www.khgears.com/edit_file/file/20190810/20190810144054_57205.pdf,鈞興正式公開說明書支持機器人諧波減速機與小批量訂單且2026法說研究確認機器人齒輪已出貨,2026-09-01,active,approved
+2392,ROBOTICS,high,company_website,2025-06-04,https://www.foxlink.com/web/%E7%89%A9%E7%90%86-ai-%E5%A0%B4%E6%99%AF%E5%9C%A8%E5%8F%B0%E5%AF%A6%E7%8F%BE%EF%BC%81sync-robotic-%E7%99%BC%E5%B8%83-ai-%E6%A9%9F%E5%99%A8%E4%BA%BA%E5%B9%B3%E5%8F%B0%E6%96%B9%E6%A1%88-%E9%A6%96/,正崴官網明列集團旗下星科AI機器人事業並提供集團資源與製造場域符合母子公司歸屬政策,2026-09-01,active,approved
