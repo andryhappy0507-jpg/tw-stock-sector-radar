@@ -21,13 +21,15 @@ from scripts import fetch_market_data as market
 class FakeResponse:
     def __init__(self, status_code=200, payload=None):
         self.status_code = status_code
-        self._payload = payload or {}
+        self._payload = {} if payload is None else payload
 
     def raise_for_status(self):
         if self.status_code >= 400:
             raise RuntimeError(f"HTTP {self.status_code}")
 
     def json(self):
+        if isinstance(self._payload, Exception):
+            raise self._payload
         return self._payload
 
 
@@ -78,6 +80,23 @@ class TpexSessionTests(unittest.TestCase):
         self.assertEqual(len(frame), 1)
         self.assertEqual(frame.iloc[0]["market"], "TPEx")
         self.assertEqual(frame.iloc[0]["stock_id"], "1234")
+
+    @patch.object(market.time, "sleep", return_value=None)
+    def test_empty_json_response_refreshes_cookie_and_retries_query(self, _sleep):
+        session = FakeSession([
+            FakeResponse(payload=ValueError("empty response")),
+            FakeResponse(),
+            FakeResponse(payload=tpex_payload()),
+        ])
+
+        frame = market.fetch_tpex_for_day(session, date(2026, 7, 20))
+
+        self.assertEqual([call[0] for call in session.calls], [
+            market.TPEX_HIST,
+            market.TPEX_PAGE,
+            market.TPEX_HIST,
+        ])
+        self.assertEqual(len(frame), 1)
 
 
 if __name__ == "__main__":

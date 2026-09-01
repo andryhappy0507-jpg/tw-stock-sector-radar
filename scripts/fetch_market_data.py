@@ -26,6 +26,9 @@ MAX_LOOKBACK_CALENDAR_DAYS = 110
 MIN_TWSE_ROWS = 900
 MIN_TPEX_ROWS = 700
 RETRIES = 3
+TPEX_RESPONSE_RETRIES = 3
+TPEX_REQUEST_INTERVAL_SECONDS = 2.0
+TPEX_SESSION_REFRESH_EVERY = 15
 
 
 def number(v):
@@ -116,15 +119,29 @@ def prepare_tpex_session(session):
 
 def fetch_tpex_for_day(session, trade_date):
     params = {"date": trade_date.strftime("%Y/%m/%d"), "id": "", "response": "json"}
-    r = session.get(TPEX_HIST, params=params, headers=TPEX_HEADERS, timeout=40)
-    if r.status_code in TPEX_EDGE_RETRY_STATUSES:
-        # TPEx may expire or challenge the session used by hosted CI runners.
-        # Refresh the first-party cookie once before the outer daily retry loop.
-        prepare_tpex_session(session)
-        time.sleep(0.75)
-        r = session.get(TPEX_HIST, params=params, headers=TPEX_HEADERS, timeout=40)
-    r.raise_for_status()
-    payload = r.json()
+    last_error = None
+    payload = None
+    for attempt in range(1, TPEX_RESPONSE_RETRIES + 1):
+        try:
+            r = session.get(TPEX_HIST, params=params, headers=TPEX_HEADERS, timeout=40)
+            if r.status_code in TPEX_EDGE_RETRY_STATUSES:
+                raise RuntimeError(f"TPEx edge status {r.status_code}")
+            r.raise_for_status()
+            payload = r.json()
+            if not isinstance(payload, dict):
+                raise RuntimeError("TPEx response is not a JSON object")
+            break
+        except Exception as exc:
+            last_error = exc
+            if attempt >= TPEX_RESPONSE_RETRIES:
+                raise
+            # The edge can return HTTP 200 with an empty/non-JSON body after a
+            # burst of historical queries. Re-establish the first-party cookie
+            # and back off before retrying the same trading date.
+            prepare_tpex_session(session)
+            time.sleep(1.5 * attempt)
+    if payload is None:
+        raise RuntimeError(f"TPEx response unavailable: {last_error}")
     fields, data = table_from_payload(payload, ["代號", "成交", "收盤"])
     if not fields:
         return pd.DataFrame()
@@ -179,7 +196,9 @@ def backfill(session):
                 collected.append(day_df)
                 trading_dates += 1
                 print(f"進度：{trading_dates}/{BACKFILL_TRADING_DAYS}")
-            time.sleep(0.35)
+                if trading_dates % TPEX_SESSION_REFRESH_EVERY == 0:
+                    prepare_tpex_session(session)
+            time.sleep(TPEX_REQUEST_INTERVAL_SECONDS)
         cursor -= timedelta(days=1)
         checked += 1
 
