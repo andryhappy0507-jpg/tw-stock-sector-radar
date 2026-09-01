@@ -1,2 +1,2 @@
 ﻿theme_id,priority,coverage_status,formal_approved_count,coverage_pool_count,staging_count,awaiting_user_review_count,need_evidence_count,suspected_missing_count,discovery_keyword_count,related_theme_count,coverage_audit_path
-ROBOTICS,high,auditing,8,27,19,19,0,0,21,3,data\research\robotics_coverage_audit_2026-08-26.csv
+ROBOTICS,high,auditing,27,27,0,0,0,0,21,3,data\research\robotics_coverage_audit_2026-08-26.csv

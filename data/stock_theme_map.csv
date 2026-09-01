@@ -141,3 +141,26 @@ stock_id,theme_id,confidence,source_type,source_date,source_ref,evidence_summary
 5443,ROBOTICS,high,company_website,2026-08-31,https://www.gpmcorp.com.tw/products_detail.php?plevel1Id=1&productId=G,均豪官方明列Mobile Robot與機器人彈性加工系統且已導入晶圓及封裝客戶,2026-09-01,active,approved
 4571,ROBOT_COMPONENTS,high,company_website,2019-08-10,https://www.khgears.com/edit_file/file/20190810/20190810144054_57205.pdf,鈞興正式公開說明書支持機器人諧波減速機與小批量訂單且2026法說研究確認機器人齒輪已出貨,2026-09-01,active,approved
 2392,ROBOTICS,high,company_website,2025-06-04,https://www.foxlink.com/web/%E7%89%A9%E7%90%86-ai-%E5%A0%B4%E6%99%AF%E5%9C%A8%E5%8F%B0%E5%AF%A6%E7%8F%BE%EF%BC%81sync-robotic-%E7%99%BC%E5%B8%83-ai-%E6%A9%9F%E5%99%A8%E4%BA%BA%E5%B9%B3%E5%8F%B0%E6%96%B9%E6%A1%88-%E9%A6%96/,正崴官網明列集團旗下星科AI機器人事業並提供集團資源與製造場域符合母子公司歸屬政策,2026-09-01,active,approved
+2049,ROBOTICS,high,company_website,2026-08-19,https://www.hiwin.tw/news_content.aspx?newsID=25594,上銀官方揭露人形機器人關鍵控制與驅動元件布局並展示核心元件驅動人形機器人,2026-09-01,active,approved
+2049,ROBOT_COMPONENTS,high,company_website,2026-06-02,https://www.hiwin.tw/news_content.aspx?newsID=25581,上銀官方明列精密傳動致動模組人形機器人核心模組智慧夾爪及雙臂物流機器人,2026-09-01,active,approved
+1597,ROBOT_COMPONENTS,high,company_website,2026-08-19,https://chieftek.com/zh-hant/products/linear-guide-series/,直得官網明列線性滑軌可用於機器人且產品涵蓋伺服馬達驅動器多軸模組與微型六軸機械手臂,2026-09-01,active,approved
+1597,ROBOTICS,high,company_website,2026-08-19,https://chieftek.com/zh-hant/products/linear-guide-series/,直得官網具微型六軸機械手臂及多項機器人運動控制相關產品,2026-09-01,active,approved
+4540,ROBOT_COMPONENTS,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,全球傳動布局人形機器人線性執行器與靈巧手微型滾珠螺桿,2026-09-01,active,approved
+4540,ROBOTICS,medium,financial_media,2026-01-15,https://money.udn.com/money/story/11162/9265994,全球傳動列入台灣AI機器人手臂與傳動供應鏈,2026-09-01,active,approved
+6215,ROBOTICS,medium,financial_media,2025-07-23,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f8ef0767-9959-4067-9166-cb8abf276e80,和椿具人形機器人實績並整合AMR無人堆高機與智慧工廠流程,2026-09-01,active,approved
+7750,ROBOTICS,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,新代為控制器大廠並展示機器人相關產品與智慧自動化方案,2026-09-01,active,approved
+8374,ROBOTICS,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,羅昇為自動化解決方案廠並列入機器人相關參展供應商,2026-09-01,active,approved
+4555,ROBOT_COMPONENTS,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,氣立為機器人與自動化應用之氣動元件供應商,2026-09-01,active,approved
+4576,ROBOT_COMPONENTS,medium,financial_media,2026-01-15,https://money.udn.com/money/story/11162/9265994,大銀微系統列為AI機器人驅動系統供應商並展示人形機器人關鍵元件,2026-09-01,active,approved
+4585,ROBOTICS,high,company_website,,https://www2.tm-robot.com/zh-hant/company-profile/,達明官方定位為協作機器人品牌與生產商並提供內建視覺協作型機器人及智慧工廠方案,2026-09-01,active,approved
+6570,ROBOT_VISION,high,company_website,,https://www.aplex.com/index.php/content/news_detail/112,維田官方公開結合機械手臂與AI運算平台的AOI視覺檢測手臂方案及AI Machine Vision產品線,2026-09-01,active,approved
+4566,ROBOT_COMPONENTS,medium,news_agency,2026-07-20,https://www.cna.com.tw/news/afe/202607200165.aspx,時碩工業布局人形機器人精密金屬關鍵零配件及機器人關節零件與減速器,2026-09-01,active,approved
+1536,ROBOT_COMPONENTS,high,investor_conference,,https://www.hota.com.tw/stockholder.html,和大法說資料明列人形機器人用諧波與行星減速器並標示脖子肩膀腰與髖關節應用,2026-09-01,active,approved
+2464,ROBOTICS,high,company_website,2026-01-19,https://www.mirle.com.tw/news-detail/661/,盟立成立具身智能事業群涵蓋輪型與四足機器人平台自主運動控制AI感知及量產規劃,2026-09-01,active,approved
+2464,ROBOT_COMPONENTS,high,company_website,2026-01-19,https://www.mirle.com.tw/news-detail/661/,盟立官方揭露自製精密諧波減速機與機器人關節模組,2026-09-01,active,approved
+1504,ROBOTICS,high,company_website,2026-07-15,https://www.teco.com.tw/zh-tw/press/news/dong-yuan-xie-zhi-hui-dong-li-jie-jue-fang-an-qian-jin-ri-ben-TJM-Series-quan-ji-lie-ji-qi-ren-guan-jie-mo-zu-shou-du-wan-zheng-liang-xiang,東元官方展示TJM Series機器人關節模組並明確應用於機械手臂四足及人形機器人,2026-09-01,active,approved
+7942,ROBOTICS,high,company_website,2026-08-31,https://www.toyorobot.com/,東佑達官方TOYO ROBOT產品涵蓋單軸多軸線性機器人電動夾爪及桌上型機器人,2026-09-01,active,approved
+2233,ROBOT_COMPONENTS,medium,financial_media,2026-07-02,https://www.cna.com.tw/news/afe/202607020195.aspx,宇隆持續朝減速機與人形機器人新事業轉型並具諧波與微型行星減速機及致動器,2026-09-01,active,approved
+4583,ROBOT_COMPONENTS,medium,official_regulator,2026-08-18,https://www.ctsp.gov.tw/chinese/03-Intro/05-search_view.aspx?fr=1028&no=1033&sn=C0072&v=1,官方園區資料明列台灣精銳產品為超精密行星齒輪減速機機電整合伺服驅動系統及工業用機器人,2026-09-01,active,approved
+6166,ROBOTICS,high,company_website,2026-08-31,https://www.adlinktech.com/tw/robotics,凌華官方Industrial Robotics方案涵蓋AMR四足與人形機器人Edge AI運算並展示Moby人形機器人,2026-09-01,active,approved
+2317,ROBOTICS,high,company_website,2026-03-17,https://www.foxconn.com.tw/en-us/press-center/events/foxconn-events/1975,鴻海官方展示自研工業人形機器人並與NVIDIA合作且已進入製造場域驗證與部署,2026-09-01,active,approved
