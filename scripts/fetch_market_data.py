@@ -22,13 +22,14 @@ TPEX_EDGE_RETRY_STATUSES = {403, 429, 520, 521, 522, 523, 524}
 TWSE_HIST = "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX"
 TPEX_HIST = "https://www.tpex.org.tw/www/zh-tw/afterTrading/dailyQuotes"
 BACKFILL_TRADING_DAYS = 60
-MAX_LOOKBACK_CALENDAR_DAYS = 110
+MAX_LOOKBACK_CALENDAR_DAYS = 180
 MIN_TWSE_ROWS = 900
 MIN_TPEX_ROWS = 700
 RETRIES = 3
 TPEX_RESPONSE_RETRIES = 3
 TPEX_REQUEST_INTERVAL_SECONDS = 2.0
-TPEX_SESSION_REFRESH_EVERY = 15
+TPEX_FAILURE_COOLDOWN_THRESHOLD = 3
+TPEX_FAILURE_COOLDOWN_SECONDS = 30
 
 
 def number(v):
@@ -187,6 +188,7 @@ def backfill(session):
     print(f"market_data.csv 不存在：開始建立最近 {BACKFILL_TRADING_DAYS} 個完整交易日基準資料")
     collected = []
     trading_dates = 0
+    consecutive_failures = 0
     cursor = date.today()
     checked = 0
     while trading_dates < BACKFILL_TRADING_DAYS and checked < MAX_LOOKBACK_CALENDAR_DAYS:
@@ -195,9 +197,21 @@ def backfill(session):
             if not day_df.empty:
                 collected.append(day_df)
                 trading_dates += 1
+                consecutive_failures = 0
                 print(f"進度：{trading_dates}/{BACKFILL_TRADING_DAYS}")
-                if trading_dates % TPEX_SESSION_REFRESH_EVERY == 0:
-                    prepare_tpex_session(session)
+            else:
+                consecutive_failures += 1
+                if consecutive_failures >= TPEX_FAILURE_COOLDOWN_THRESHOLD:
+                    print(
+                        f"連續 {consecutive_failures} 個日期失敗；"
+                        f"冷卻 {TPEX_FAILURE_COOLDOWN_SECONDS} 秒後繼續"
+                    )
+                    time.sleep(TPEX_FAILURE_COOLDOWN_SECONDS)
+                    try:
+                        prepare_tpex_session(session)
+                    except Exception as exc:
+                        print(f"TPEx session refresh warning: {exc}")
+                    consecutive_failures = 0
             time.sleep(TPEX_REQUEST_INTERVAL_SECONDS)
         cursor -= timedelta(days=1)
         checked += 1
