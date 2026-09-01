@@ -10,6 +10,14 @@ import pandas as pd
 DATA = Path("data")
 DATA.mkdir(exist_ok=True)
 HEADERS = {"User-Agent": "Mozilla/5.0 tw-stock-sector-radar/1.0"}
+TPEX_PAGE = "https://www.tpex.org.tw/zh-tw/mainboard/trading/info/stock-pricing.html"
+TPEX_HEADERS = {
+    **HEADERS,
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
+    "Referer": TPEX_PAGE,
+}
+TPEX_EDGE_RETRY_STATUSES = {403, 429, 520, 521, 522, 523, 524}
 
 TWSE_HIST = "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX"
 TPEX_HIST = "https://www.tpex.org.tw/www/zh-tw/afterTrading/dailyQuotes"
@@ -100,9 +108,21 @@ def fetch_twse_for_day(session, trade_date):
     return parse_rows(fields, data, trade_date, "TWSE")
 
 
+def prepare_tpex_session(session):
+    """Establish the TPEx session cookie expected by its Cloudflare edge."""
+    r = session.get(TPEX_PAGE, headers=HEADERS, timeout=40)
+    r.raise_for_status()
+
+
 def fetch_tpex_for_day(session, trade_date):
     params = {"date": trade_date.strftime("%Y/%m/%d"), "id": "", "response": "json"}
-    r = session.get(TPEX_HIST, params=params, headers=HEADERS, timeout=40)
+    r = session.get(TPEX_HIST, params=params, headers=TPEX_HEADERS, timeout=40)
+    if r.status_code in TPEX_EDGE_RETRY_STATUSES:
+        # TPEx may expire or challenge the session used by hosted CI runners.
+        # Refresh the first-party cookie once before the outer daily retry loop.
+        prepare_tpex_session(session)
+        time.sleep(0.75)
+        r = session.get(TPEX_HIST, params=params, headers=TPEX_HEADERS, timeout=40)
     r.raise_for_status()
     payload = r.json()
     fields, data = table_from_payload(payload, ["代號", "成交", "收盤"])
@@ -171,6 +191,12 @@ def backfill(session):
 def main():
     out = DATA / "market_data.csv"
     session = requests.Session()
+    try:
+        prepare_tpex_session(session)
+    except Exception as exc:
+        # The dated endpoint still gets its normal retries. This warning keeps a
+        # transient landing-page failure from aborting before the first query.
+        print(f"TPEx session warm-up warning: {exc}")
 
     if out.exists():
         old = pd.read_csv(out, dtype={"stock_id": str})
