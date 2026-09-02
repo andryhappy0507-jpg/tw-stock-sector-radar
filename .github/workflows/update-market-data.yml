@@ -43,6 +43,8 @@ jobs:
         run: python scripts/build_weekly_radar.py
       - name: Build theme and related-group summaries
         run: python scripts/build_theme_signal_summary.py
+      - name: Build robotics subtheme weekly report
+        run: python scripts/build_robotics_subtheme_weekly_report.py --output-file data/robotics_subtheme_weekly_report.md
       - name: Upload analysis test outputs
         if: github.event_name == 'pull_request'
         uses: actions/upload-artifact@v4
@@ -69,6 +71,7 @@ jobs:
             data/theme_group_map.csv
             data/theme_signal_summary.csv
             data/theme_group_signal_summary.csv
+            data/robotics_subtheme_weekly_report.md
             data/theme_coverage_rules.csv
             data/theme_coverage_summary.csv
           retention-days: 1
@@ -78,7 +81,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- data/market_data.csv data/stock_master.csv data/stock_classification_master.csv data/base_theme_master.csv data/stock_base_theme_map.csv data/theme_master.csv data/stock_theme_map.csv data/theme_candidate_sources.csv data/theme_depth_candidate_sources.csv data/theme_evidence_sources.csv data/stock_theme_candidate_map.csv data/official_market_theme_rules.csv data/stock_theme_auto_map.csv data/theme_group_master.csv data/theme_group_map.csv data/theme_signal_summary.csv data/theme_group_signal_summary.csv data/theme_coverage_rules.csv data/theme_coverage_summary.csv data/weekly_signal.csv data/previous_week_signal.csv data/weekly_screen.csv data/weekly_summary.csv
+          git add -- data/market_data.csv data/stock_master.csv data/stock_classification_master.csv data/base_theme_master.csv data/stock_base_theme_map.csv data/theme_master.csv data/stock_theme_map.csv data/theme_candidate_sources.csv data/theme_depth_candidate_sources.csv data/theme_evidence_sources.csv data/stock_theme_candidate_map.csv data/official_market_theme_rules.csv data/stock_theme_auto_map.csv data/theme_group_master.csv data/theme_group_map.csv data/theme_signal_summary.csv data/theme_group_signal_summary.csv data/robotics_subtheme_weekly_report.md data/theme_coverage_rules.csv data/theme_coverage_summary.csv data/weekly_signal.csv data/previous_week_signal.csv data/weekly_screen.csv data/weekly_summary.csv
           if git diff --cached --quiet; then
             echo "No data changes"
           else
