@@ -1,6 +1,6 @@
 stock_id,company,proposed_theme,proposed_role,discovery_source_type,publisher,published_date,source_url,evidence_summary,discovery_status,next_action
 1504,東元,ROBOTICS,related,company_official,TECO,2026-07-15,https://www.teco.com.tw/zh-tw/press/news/dong-yuan-xie-zhi-hui-dong-li-jie-jue-fang-an-qian-jin-ri-ben-TJM-Series-quan-ji-lie-ji-qi-ren-guan-jie-mo-zu-shou-du-wan-zheng-liang-xiang,東元官方已完整展示TJM Series機器人關節模組並明確應用於機械手臂四足及人形機器人,user_approved,formalized
-7942,東佑達,ROBOTICS,core,company_official,TOYO ROBOT,2026-08-31,https://www.toyorobot.com/,公司官方長期以TOYO ROBOT定位且產品涵蓋單軸多軸線性機器人電動夾爪桌上型機器人等完整自動化機器人產品,user_approved,formalized
+7942,東佑達,ROBOTICS,core,company_official,TOYO ROBOT,2026-08-31,https://www.toyorobot.com/,公司官方長期以TOYO ROBOT定位且產品涵蓋單軸多軸線性機器人電動夾爪桌上型機器人等完整自動化機器人產品,user_approved,monitor_market_eligibility
 4590,富田,ROBOT_COMPONENTS,related,company_official,FUKUTA,2026-08-31,https://www.fukuta-motor.com.tw/tw/support.html,公司官方下載頁直接列出機器人與機器狗關節馬達且永續產品頁說明高扭矩密度小型馬達適用機器人等輕量化移動設備,user_approved,formalized
 5443,均豪,ROBOTICS,related,company_official,GPM,2026-08-31,https://www.gpmcorp.com.tw/products_detail.php?plevel1Id=1&productId=G,公司官方智慧物流頁明列Mobile Robot與機器人彈性加工系統並揭露智慧物流系統已導入國際封裝及晶圓大廠,user_approved,formalized
 4571,鈞興-KY,ROBOT_COMPONENTS,emerging,company_prospectus,KHGEARS,2019-08-10,https://www.khgears.com/edit_file/file/20190810/20190810144054_57205.pdf,公司正式公開說明書揭露工業機器人諧波減速機研發與多家知名機器人品牌打樣及小批量訂單並由2026法說研究資料交叉確認機器人齒輪已出貨,user_approved,formalized

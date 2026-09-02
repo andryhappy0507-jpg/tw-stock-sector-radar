@@ -1,6 +1,6 @@
 stock_id,company,theme_id,theme_name,proposed_role,research_status,user_review_status,user_decision,user_note
 1504,東元,ROBOTICS,機器人,related,evidence_ready,reviewed,approved,2026-09-01 user approved Batch 2
-7942,東佑達,ROBOTICS,機器人,core,evidence_ready,reviewed,approved,2026-09-01 user approved Batch 2
+7942,東佑達,ROBOTICS,機器人,core,evidence_ready,reviewed,approved,2026-09-01 user approved Batch 2; emerging-board stock outside current listed/OTC universe
 2233,宇隆,ROBOT_COMPONENTS,機器人零組件,emerging,second_source_confirmed,reviewed,approved,2026-09-01 user approved Batch 2
 4583,台灣精銳,ROBOT_COMPONENTS,機器人零組件,related,evidence_ready,reviewed,approved,2026-09-01 user approved Batch 2
 6166,凌華,ROBOTICS,機器人,related,evidence_ready,reviewed,approved,2026-09-01 user approved Batch 2

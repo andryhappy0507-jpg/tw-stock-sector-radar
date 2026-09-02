@@ -159,7 +159,6 @@ stock_id,theme_id,confidence,source_type,source_date,source_ref,evidence_summary
 2464,ROBOTICS,high,company_website,2026-01-19,https://www.mirle.com.tw/news-detail/661/,盟立成立具身智能事業群涵蓋輪型與四足機器人平台自主運動控制AI感知及量產規劃,2026-09-01,active,approved
 2464,ROBOT_COMPONENTS,high,company_website,2026-01-19,https://www.mirle.com.tw/news-detail/661/,盟立官方揭露自製精密諧波減速機與機器人關節模組,2026-09-01,active,approved
 1504,ROBOTICS,high,company_website,2026-07-15,https://www.teco.com.tw/zh-tw/press/news/dong-yuan-xie-zhi-hui-dong-li-jie-jue-fang-an-qian-jin-ri-ben-TJM-Series-quan-ji-lie-ji-qi-ren-guan-jie-mo-zu-shou-du-wan-zheng-liang-xiang,東元官方展示TJM Series機器人關節模組並明確應用於機械手臂四足及人形機器人,2026-09-01,active,approved
-7942,ROBOTICS,high,company_website,2026-08-31,https://www.toyorobot.com/,東佑達官方TOYO ROBOT產品涵蓋單軸多軸線性機器人電動夾爪及桌上型機器人,2026-09-01,active,approved
 2233,ROBOT_COMPONENTS,medium,financial_media,2026-07-02,https://www.cna.com.tw/news/afe/202607020195.aspx,宇隆持續朝減速機與人形機器人新事業轉型並具諧波與微型行星減速機及致動器,2026-09-01,active,approved
 4583,ROBOT_COMPONENTS,medium,official_regulator,2026-08-18,https://www.ctsp.gov.tw/chinese/03-Intro/05-search_view.aspx?fr=1028&no=1033&sn=C0072&v=1,官方園區資料明列台灣精銳產品為超精密行星齒輪減速機機電整合伺服驅動系統及工業用機器人,2026-09-01,active,approved
 6166,ROBOTICS,high,company_website,2026-08-31,https://www.adlinktech.com/tw/robotics,凌華官方Industrial Robotics方案涵蓋AMR四足與人形機器人Edge AI運算並展示Moby人形機器人,2026-09-01,active,approved
