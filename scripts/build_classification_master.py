@@ -14,6 +14,9 @@ TWSE_URL = "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
 TPEX_URL = "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O"
 HEADERS = {"User-Agent": "Mozilla/5.0 tw-stock-sector-radar/1.0"}
 MIN_EXPECTED_ROWS = {"TWSE": 1000, "TPEx": 800}
+API_ATTEMPTS = 6
+API_RETRY_BASE_SECONDS = 10
+API_RETRY_MAX_SECONDS = 60
 
 
 def clean_text(value) -> str:
@@ -67,17 +70,28 @@ def normalize_company_rows(payload, market: str) -> pd.DataFrame:
     return pd.DataFrame(out)
 
 
-def fetch_json(session: requests.Session, url: str, attempts: int = 4):
+def fetch_json(session: requests.Session, url: str, attempts: int = API_ATTEMPTS):
     last_exc = None
     for attempt in range(1, attempts + 1):
         try:
             r = session.get(url, headers=HEADERS, timeout=45)
             r.raise_for_status()
-            return r.json()
+            payload = r.json()
+            if not isinstance(payload, (list, dict)):
+                raise RuntimeError("官方 API 回應不是 JSON object/array")
+            return payload
         except Exception as exc:
             last_exc = exc
             if attempt < attempts:
-                time.sleep(attempt * 2)
+                delay = min(
+                    API_RETRY_MAX_SECONDS,
+                    API_RETRY_BASE_SECONDS * (2 ** (attempt - 1)),
+                )
+                print(
+                    f"官方 API 第 {attempt}/{attempts} 次失敗：{exc}；"
+                    f"冷卻 {delay} 秒後重試"
+                )
+                time.sleep(delay)
     raise RuntimeError(f"官方 API 連續 {attempts} 次失敗: {last_exc}")
 
 
