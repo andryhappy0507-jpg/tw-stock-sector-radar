@@ -1,4 +1,4 @@
-stock_id,theme_id,confidence,source_type,source_date,source_ref,evidence_summary,last_verified,status,approval_status
+﻿stock_id,theme_id,confidence,source_type,source_date,source_ref,evidence_summary,last_verified,status,approval_status
 2382,AI_SERVER,high,company_website,,https://www.quantatw.com/Quanta/english/esg/ESG2024/ch02.html,廣達官方永續資料指出AI資料中心基礎建設擴張帶動伺服器業務大幅成長,2026-08-23,active,auto_approved
 6669,AI_SERVER,high,annual_report,,https://www.wiwynn.com/hubfs/Investors/Shareholders_Services/2026_Annual_Report_EN.pdf,緯穎年報明確指出AI相關產品營收占比超過50%並深耕資料中心與雲端伺服器,2026-08-23,active,auto_approved
 3017,COOLING,high,company_website,,https://www.avc.co/zh-tw/About-AVC/CompanyProfile,奇鋐官方公司介紹明確定位為整體散熱解決方案專業供應商,2026-08-23,active,auto_approved
@@ -163,3 +163,55 @@ stock_id,theme_id,confidence,source_type,source_date,source_ref,evidence_summary
 4583,ROBOT_COMPONENTS,medium,official_regulator,2026-08-18,https://www.ctsp.gov.tw/chinese/03-Intro/05-search_view.aspx?fr=1028&no=1033&sn=C0072&v=1,官方園區資料明列台灣精銳產品為超精密行星齒輪減速機機電整合伺服驅動系統及工業用機器人,2026-09-01,active,approved
 6166,ROBOTICS,high,company_website,2026-08-31,https://www.adlinktech.com/tw/robotics,凌華官方Industrial Robotics方案涵蓋AMR四足與人形機器人Edge AI運算並展示Moby人形機器人,2026-09-01,active,approved
 2317,ROBOTICS,high,company_website,2026-03-17,https://www.foxconn.com.tw/en-us/press-center/events/foxconn-events/1975,鴻海官方展示自研工業人形機器人並與NVIDIA合作且已進入製造場域驗證與部署,2026-09-01,active,approved
+8234,ROBOT_CONTROL_SYSTEM,high,company_website,,https://www.aiotmart.nexcom.com/faq.php?lang=tw&tb=1,官方資料直接列出工業機器人控制器產品與應用,2026-09-02,active,approved
+8234,ROBOT_EDGE_AI,high,company_website,,https://www.aiotmart.nexcom.com/faq.php?lang=tw&tb=1,官方資料明列AI邊緣運算電腦並用於機器人場域,2026-09-02,active,approved
+8234,ROBOT_AMR,high,company_website,,https://www.aiotmart.nexcom.com/faq.php?lang=tw&tb=1,官方資料明列自主移動機器人應用,2026-09-02,active,approved
+2359,ROBOT_SYSTEM_INTEGRATION,high,company_website,2026-08-20,https://www.solomon.com.tw/products/,官方產品頁涵蓋機械手臂應用自動化控制與AI視覺整合,2026-09-02,active,approved
+2359,ROBOT_AMR,high,annual_report,2025-11-01,https://www.solomon.com.tw/wp-content/uploads/2025/11/2024-STC-Corporate-Sustainability-Report_EN.pdf,官方報告說明AI視覺整合多品牌機器人與AMR,2026-09-02,active,approved
+2395,ROBOT_EDGE_AI,high,company_website,2026-03-17,https://www.advantech.com/emt/resources/news/advantech-and-fort-robotics-collaborate-to-advance-safe-physical-ai-on-mic-735,官方發布robotics edge AI產品及安全Physical AI運算平台,2026-09-02,active,approved
+2395,ROBOT_AMR,high,company_website,2026-03-17,https://www.advantech.com/emt/resources/news/advantech-and-fort-robotics-collaborate-to-advance-safe-physical-ai-on-mic-735,官方資料支持機器人與AMR實際部署平台,2026-09-02,active,approved
+2395,ROBOT_SYSTEM_INTEGRATION,high,company_website,2026-08-20,https://www.advantech.com/zh-tw/industrial-automation/industry4.0/,官方工業4.0方案涵蓋運動控制機器視覺機械手臂與AGV整合,2026-09-02,active,approved
+2308,ROBOT_BODY_PLATFORM,high,company_website,2026-08-25,https://www.deltaww.com/en-US/solutions/robotics,官方具SCARA關節型模組化與協作機器人產品,2026-09-02,active,approved
+2308,ROBOT_CONTROL_SYSTEM,high,company_website,2026-08-25,https://www.deltaww.com/en-US/solutions/robotics,官方機器人方案包含控制器與完整控制解決方案,2026-09-02,active,approved
+2308,ROBOT_SYSTEM_INTEGRATION,high,company_website,2026-08-25,https://www.deltaww.com/en-US/solutions/robotics,官方提供機器人本體控制與自動化整合方案,2026-09-02,active,approved
+2049,ROBOT_ACTUATION,high,company_website,2026-06-02,https://www.hiwin.tw/news_content.aspx?newsID=25581,官方明列精密致動模組與人形機器人核心模組,2026-09-02,active,approved
+2049,ROBOT_TRANSMISSION,high,company_website,2026-06-02,https://www.hiwin.tw/news_content.aspx?newsID=25581,官方資料支持機器人用精密傳動產品與模組,2026-09-02,active,approved
+2049,ROBOT_CONTROL_SYSTEM,high,company_website,2026-08-19,https://www.hiwin.tw/news_content.aspx?newsID=25594,官方揭露人形機器人關鍵控制與驅動元件,2026-09-02,active,approved
+2049,ROBOT_END_EFFECTOR,high,company_website,2026-06-02,https://www.hiwin.tw/news_content.aspx?newsID=25581,官方明列智慧夾爪與雙臂物流機器人應用,2026-09-02,active,approved
+1597,ROBOT_TRANSMISSION,high,company_website,2026-08-19,https://chieftek.com/zh-hant/products/linear-guide-series/,官方線性滑軌產品明列機器人應用,2026-09-02,active,approved
+1597,ROBOT_ACTUATION,high,company_website,2026-08-19,https://chieftek.com/zh-hant/products/linear-guide-series/,官方產品線包含伺服馬達驅動器與多軸模組,2026-09-02,active,approved
+1597,ROBOT_CONTROL_SYSTEM,high,company_website,2026-08-19,https://chieftek.com/zh-hant/products/linear-guide-series/,官方產品線具機器人運動控制相關驅動與多軸模組,2026-09-02,active,approved
+1597,ROBOT_BODY_PLATFORM,high,company_website,2026-08-19,https://chieftek.com/zh-hant/products/linear-guide-series/,官方產品線包含微型六軸機械手臂,2026-09-02,active,approved
+4540,ROBOT_TRANSMISSION,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,具體報導公司布局人形機器人用微型滾珠螺桿,2026-09-02,active,approved
+4540,ROBOT_ACTUATION,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,具體報導公司布局人形機器人上肢與下肢線性執行器,2026-09-02,active,approved
+4540,ROBOT_END_EFFECTOR,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,具體報導公司布局靈巧手用微型滾珠螺桿,2026-09-02,active,approved
+6215,ROBOT_SYSTEM_INTEGRATION,medium,financial_media,2025-07-23,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f8ef0767-9959-4067-9166-cb8abf276e80,報導支持人形機器人AMR與智慧工廠流程整合商定位,2026-09-02,active,approved
+6215,ROBOT_AMR,medium,financial_media,2025-07-23,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f8ef0767-9959-4067-9166-cb8abf276e80,報導具體列出AMR無人堆高機應用,2026-09-02,active,approved
+6215,ROBOT_BODY_PLATFORM,medium,financial_media,2025-07-23,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f8ef0767-9959-4067-9166-cb8abf276e80,報導指出公司展出多款人形機器人實績,2026-09-02,active,approved
+7750,ROBOT_CONTROL_SYSTEM,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,報導定位為控制器大廠並展示機器人產品與方案,2026-09-02,active,approved
+8374,ROBOT_SYSTEM_INTEGRATION,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,報導定位為自動化解決方案廠及機器人應用供應商,2026-09-02,active,approved
+4576,ROBOT_ACTUATION,medium,financial_media,2026-01-15,https://money.udn.com/money/story/11162/9265994,報導定位為AI機器人驅動系統供應商並展示人形機器人關鍵元件,2026-09-02,active,approved
+4585,ROBOT_BODY_PLATFORM,high,company_website,,https://www2.tm-robot.com/zh-hant/company-profile/,官方定位為協作機器人品牌與生產商,2026-09-02,active,approved
+4585,ROBOT_SYSTEM_INTEGRATION,high,company_website,,https://www2.tm-robot.com/zh-hant/company-profile/,官方提供內建視覺協作型機器人與智慧工廠解決方案,2026-09-02,active,approved
+1536,ROBOT_TRANSMISSION,high,investor_conference,,https://www.hota.com.tw/stockholder.html,法說資料明列人形機器人用諧波減速器與行星減速器及關節應用,2026-09-02,active,approved
+2464,ROBOT_BODY_PLATFORM,high,company_website,2026-01-19,https://www.mirle.com.tw/news-detail/661/,官方具身智能事業群明列輪型與四足機器人平台及量產規劃,2026-09-02,active,approved
+2464,ROBOT_CONTROL_SYSTEM,high,company_website,2026-01-19,https://www.mirle.com.tw/news-detail/661/,官方明列自主運動控制與AI感知能力,2026-09-02,active,approved
+2464,ROBOT_ACTUATION,high,company_website,2026-01-19,https://www.mirle.com.tw/news-detail/661/,官方揭露自製機器人關節模組,2026-09-02,active,approved
+2464,ROBOT_TRANSMISSION,high,company_website,2026-01-19,https://www.mirle.com.tw/news-detail/661/,官方揭露自製精密諧波減速機,2026-09-02,active,approved
+2464,ROBOT_AMR,high,company_website,2026-01-19,https://www.mirle.com.tw/news-detail/661/,官方輪型機器人平台結合自主運動控制能力,2026-09-02,active,approved
+1504,ROBOT_ACTUATION,high,company_website,2026-07-15,https://www.teco.com.tw/zh-tw/press/news/dong-yuan-xie-zhi-hui-dong-li-jie-jue-fang-an-qian-jin-ri-ben-TJM-Series-quan-ji-lie-ji-qi-ren-guan-jie-mo-zu-shou-du-wan-zheng-liang-xiang,官方TJM Series機器人關節模組明確應用機械手臂四足及人形機器人,2026-09-02,active,approved
+4590,ROBOT_ACTUATION,high,company_website,2026-08-31,https://www.fukuta-motor.com.tw/tw/support.html,官方直接列出機器人與機器狗關節馬達及高扭矩密度小型馬達,2026-09-02,active,approved
+5443,ROBOT_SYSTEM_INTEGRATION,high,company_website,2026-08-31,https://www.gpmcorp.com.tw/products_detail.php?plevel1Id=1&productId=G,官方智慧物流方案明列機器人彈性加工系統並具客戶導入,2026-09-02,active,approved
+5443,ROBOT_AMR,high,company_website,2026-08-31,https://www.gpmcorp.com.tw/products_detail.php?plevel1Id=1&productId=G,官方智慧物流頁明列Mobile Robot,2026-09-02,active,approved
+4571,ROBOT_TRANSMISSION,high,company_website,2019-08-10,https://www.khgears.com/edit_file/file/20190810/20190810144054_57205.pdf,正式公開說明書支持工業機器人諧波減速機與小批量訂單且後續資料確認出貨,2026-09-02,active,approved
+2233,ROBOT_TRANSMISSION,medium,financial_media,2026-07-02,https://www.cna.com.tw/news/afe/202607020195.aspx,法說報導確認諧波與微型行星減速機及人形機器人新事業,2026-09-02,active,approved
+2233,ROBOT_ACTUATION,medium,financial_media,2026-07-02,https://www.cna.com.tw/news/afe/202607020195.aspx,法說報導確認致動器產品及人形機器人布局,2026-09-02,active,approved
+4583,ROBOT_TRANSMISSION,medium,official_regulator,2026-08-18,https://www.ctsp.gov.tw/chinese/03-Intro/05-search_view.aspx?fr=1028&no=1033&sn=C0072&v=1,官方園區資料明列超精密行星齒輪減速機產品,2026-09-02,active,approved
+4583,ROBOT_ACTUATION,medium,official_regulator,2026-08-18,https://www.ctsp.gov.tw/chinese/03-Intro/05-search_view.aspx?fr=1028&no=1033&sn=C0072&v=1,官方園區資料明列機電整合伺服驅動系統及工業用機器人,2026-09-02,active,approved
+2392,ROBOT_BODY_PLATFORM,high,company_website,2025-06-04,https://www.foxlink.com/web/%E7%89%A9%E7%90%86-ai-%E5%A0%B4%E6%99%AF%E5%9C%A8%E5%8F%B0%E5%AF%A6%E7%8F%BE%EF%BC%81sync-robotic-%E7%99%BC%E5%B8%83-ai-%E6%A9%9F%E5%99%A8%E4%BA%BA%E5%B9%B3%E5%8F%B0%E6%96%B9%E6%A1%88-%E9%A6%96/,母公司官方明列集團旗下AI機器人平台事業且符合母子公司歸屬政策,2026-09-02,active,approved
+2392,ROBOT_SYSTEM_INTEGRATION,high,company_website,2025-06-04,https://www.foxlink.com/web/%E7%89%A9%E7%90%86-ai-%E5%A0%B4%E6%99%AF%E5%9C%A8%E5%8F%B0%E5%AF%A6%E7%8F%BE%EF%BC%81sync-robotic-%E7%99%BC%E5%B8%83-ai-%E6%A9%9F%E5%99%A8%E4%BA%BA%E5%B9%B3%E5%8F%B0%E6%96%B9%E6%A1%88-%E9%A6%96/,官方資料支持集團算力精密製造資源與子公司場域驗證整合,2026-09-02,active,approved
+6166,ROBOT_EDGE_AI,high,company_website,2026-08-31,https://www.adlinktech.com/tw/robotics,官方Industrial Robotics方案明列機器人Edge AI運算,2026-09-02,active,approved
+6166,ROBOT_AMR,high,company_website,2026-08-31,https://www.adlinktech.com/tw/robotics,官方機器人方案明列AMR應用,2026-09-02,active,approved
+6166,ROBOT_BODY_PLATFORM,high,company_website,2026-08-31,https://www.adlinktech.com/tw/robotics,官方展示Moby人形機器人及四足機器人方案,2026-09-02,active,approved
+2317,ROBOT_BODY_PLATFORM,high,company_website,2026-03-17,https://www.foxconn.com.tw/en-us/press-center/events/foxconn-events/1975,官方展示自研工業人形機器人並與NVIDIA合作,2026-09-02,active,approved
+2317,ROBOT_SYSTEM_INTEGRATION,high,company_website,2026-03-17,https://www.foxconn.com.tw/en-us/press-center/events/foxconn-events/1975,官方資料確認機器人已進入製造場域驗證與部署,2026-09-02,active,approved
