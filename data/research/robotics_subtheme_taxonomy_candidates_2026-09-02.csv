@@ -1,0 +1,12 @@
+segment_id,segment_name,parent_theme_id,definition,exclusion_rule,candidate_companies,candidate_count,related_existing_theme_ids,candidate_status,next_action
+ROBOT_BODY_PLATFORM,機器人本體／平台,ROBOTICS,具自有或集團可歸屬之工業協作人形四足或線性機器人整機與平台,只有零組件或一般自動化設備不列入,台達電;直得;和椿;達明;盟立;東佑達;正崴;凌華;鴻海,9,AUTOMATION,new_theme_candidate,evidence_review
+ROBOT_CONTROL_SYSTEM,機器人控制系統,ROBOTICS,機器人專用控制器運動控制安全控制與關節控制平台,一般PLC或未明示機器人應用之工業電控不列入,新漢;台達電;上銀;直得;新代;大銀微系統;盟立;東元,8,INDUSTRIAL_CONTROL_COMPONENTS;AUTOMATION,new_theme_candidate,evidence_review
+ROBOT_EDGE_AI,機器人邊緣AI,ROBOTICS,提供機器人AMR或Physical AI所需邊緣運算AI推論與機器人運算平台,一般工業電腦或泛用Edge AI但無機器人應用證據不列入,新漢;研華;凌華,3,EDGE_AI;INDUSTRIAL_PC,new_theme_candidate,evidence_review
+ROBOT_AMR,AMR／自主移動機器人,ROBOTICS,AMR AGV無人搬運或自主移動機器人本體運算平台與整合方案,固定式機械手臂或一般物流設備不列入,新漢;所羅門;研華;和椿;盟立;均豪;凌華,7,AUTOMATION;EDGE_AI,new_theme_candidate,evidence_review
+ROBOT_SYSTEM_INTEGRATION,機器人系統整合,ROBOTICS,把機器人視覺AMR控制軟體與製造流程整合為可部署方案,單純代理銷售或只有單一零組件不列入,所羅門;研華;台達電;和椿;羅昇;盟立;均豪;正崴;鴻海,9,AUTOMATION;SYSTEM_INTEGRATION,new_theme_candidate,evidence_review
+ROBOT_TRANSMISSION,機器人傳動／減速機,ROBOT_COMPONENTS,機器人用線性傳動滾珠螺桿導軌諧波減速機行星減速機與齒輪,只有一般機械傳動且未見機器人應用證據不列入,上銀;直得;全球傳動;和大;盟立;東佑達;鈞興-KY;宇隆;台灣精銳,9,MECHANICAL_TRANSMISSION,new_theme_candidate,evidence_review
+ROBOT_ACTUATION,機器人致動／關節模組,ROBOT_COMPONENTS,機器人用伺服馬達致動器驅動系統關節馬達與關節模組,一般馬達驅動或傳動元件但未形成致動功能不列入,台達電;上銀;直得;全球傳動;大銀微系統;盟立;東元;東佑達;富田;宇隆;台灣精銳,11,INDUSTRIAL_CONTROL_COMPONENTS;MECHANICAL_TRANSMISSION,new_theme_candidate,evidence_review
+ROBOT_END_EFFECTOR,機器人末端執行器,ROBOT_COMPONENTS,電動夾爪智慧夾爪靈巧手與其他機器人末端工具,只有手臂關節或一般氣動元件不列入,上銀;全球傳動;東佑達,3,ROBOT_COMPONENTS,new_theme_candidate,evidence_review
+ROBOT_VISION,機器人視覺,ROBOTICS,機器人用2D或3D視覺感測辨識定位與AI視覺方案,一般AOI但未結合機器人應用不列入,所羅門;達明;維田,3,EDGE_AI,reuse_existing_theme,review_stock_depth
+ROBOT_PNEUMATICS,機器人氣動元件,ROBOT_COMPONENTS,機器人與自動化設備使用之氣動控制與執行元件,一般氣動元件且無機器人應用證據不列入,氣立,1,ROBOT_COMPONENTS,hold_as_segment_not_theme,find_second_company
+ROBOT_STRUCTURE_PARTS,機器人結構／精密金屬件,ROBOT_COMPONENTS,機器人外殼骨架關節結構與精密金屬件,只有泛用金屬加工或尚無機器人實質產品不列入,時碩工業,1,ROBOT_COMPONENTS,hold_as_segment_not_theme,find_second_company
