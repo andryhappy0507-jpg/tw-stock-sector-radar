@@ -99,19 +99,27 @@ AI_TAXONOMY = [
     },
     {
         "layer": "機構系統",
-        "theme": "AI_SERVER_RACK_CHASSIS",
-        "name": "AI伺服器機櫃／機殼",
+        "theme": "AI_SERVER_CHASSIS",
+        "name": "AI伺服器機殼",
         "action": "新增候選",
-        "scope": "AI伺服器機櫃、機殼與整櫃機構系統",
-        "exclude": "Power Rack電源系統或一般金屬加工",
+        "scope": "AI伺服器專用機殼、機箱與其機構設計",
+        "exclude": "整櫃運算平台、Power Rack電源系統或一般金屬加工",
+    },
+    {
+        "layer": "機構系統",
+        "theme": "AI_RACK_SYSTEM",
+        "name": "AI整櫃系統",
+        "action": "新增候選",
+        "scope": "具AI運算節點、網路與整櫃整合能力的rack-scale平台",
+        "exclude": "單一機殼、一般伺服器或只提供機櫃供配電者",
     },
     {
         "layer": "儲存系統",
         "theme": "AI_STORAGE_SYSTEM",
         "name": "AI儲存系統",
         "action": "新增候選",
-        "scope": "AI資料中心儲存伺服器、高速儲存與資料管線硬體",
-        "exclude": "一般消費性SSD或未連結AI資料中心者",
+        "scope": "獨立儲存伺服器或平台，並明確連結AI、GPU Direct Storage或AI檢索工作負載",
+        "exclude": "一般消費性SSD、一般儲存伺服器或僅為AI伺服器內建NVMe功能者",
     },
 ]
 
@@ -221,6 +229,7 @@ def main() -> None:
     ai_rows = []
     stock_sets: dict[str, set[str]] = {}
     anomalous_stock_ids: set[str] = set()
+    excluded_anomalous_stock_ids: set[str] = set()
     if not weekly.empty:
         raw_return_col = (
             "weekly_return_raw_pct"
@@ -232,6 +241,12 @@ def main() -> None:
         if "corporate_action_suspect" in weekly.columns:
             anomaly_mask |= weekly["corporate_action_suspect"].astype(str).str.lower().eq("true")
         anomalous_stock_ids = set(weekly.loc[anomaly_mask, "stock_id"])
+        if "signal_eligible" in weekly.columns:
+            eligible = weekly["signal_eligible"].astype(str).str.lower().eq("true")
+            excluded_anomalous_stock_ids = set(
+                weekly.loc[anomaly_mask & ~eligible, "stock_id"]
+            )
+    unresolved_anomalous_stock_ids = anomalous_stock_ids - excluded_anomalous_stock_ids
     for theme_id in ai_theme_ids:
         stock_set = set(mapping.loc[mapping["theme_id"].eq(theme_id), "stock_id"])
         stock_sets[theme_id] = stock_set
@@ -250,7 +265,7 @@ def main() -> None:
                 "curated": curated_count.get(theme_id, 0),
                 "avg_return": avg_return,
                 "up_ratio": up_ratio,
-                "return_warning": bool(stock_set & anomalous_stock_ids),
+                "return_warning": bool(stock_set & unresolved_anomalous_stock_ids),
             }
         )
 
@@ -271,20 +286,23 @@ def main() -> None:
     if args.head_sha:
         run_label += f"（{args.head_sha[:7]}）"
 
-    if as_of == "2026-09-02" and "6669" in anomalous_stock_ids:
-        price_warning_lines = [
-            "- 6669 緯穎在 2026-09-02 為除權日；原始未還原價格造成週報酬顯示 −61.5%。",
-            "- 因此 AI_SERVER、AI_POWER_RACK、AI_RACK_POWER_DISTRIBUTION 的當週平均報酬被嚴重扭曲，在完成公司行動調整前不可用來判斷產業轉弱。",
-            "- 官方核對：https://www.twse.com.tw/exchangeReport/TWT48U?date=20260818&response=html",
-        ]
-    elif anomalous_stock_ids:
-        price_warning_lines = [
-            "- 偵測到週報酬絕對值達 50% 的股票："
-            + "、".join(sorted(anomalous_stock_ids))
+    price_warning_lines = []
+    if excluded_anomalous_stock_ids:
+        price_warning_lines.append(
+            "- 已隔離疑似公司行動或價格不連續股票："
+            + "、".join(sorted(excluded_anomalous_stock_ids))
+            + "；正式 Theme 平均報酬與上漲比不納入這些觀測值。"
+        )
+    if unresolved_anomalous_stock_ids:
+        price_warning_lines.append(
+            "- 尚未隔離的極端週報酬股票："
+            + "、".join(sorted(unresolved_anomalous_stock_ids))
             + "。相關 Theme 已標示不可判讀，須先核對除權、分割或其他公司行動。"
+        )
+    if not price_warning_lines:
+        price_warning_lines = [
+            "- 本期未偵測到需隔離或尚待核對的極端價格變動。"
         ]
-    else:
-        price_warning_lines = ["- 本期未偵測到週報酬絕對值達 50% 的價格異常。"]
 
     lines = [
         f"# Theme 產業架構盤點與 AI 基礎建設細分候選（{as_of}）",
@@ -369,7 +387,7 @@ def main() -> None:
             "",
             "1. 先修正或隔離除權／分割等公司行動造成的週報酬異常。",
             "2. 對現有 AI 基礎建設 Theme 做邊界去重，不先新增股票。",
-            "3. 為 `AI_COLD_PLATE_CDU`、`AI_HIGH_SPEED_CABLE`、`AI_SERVER_RACK_CHASSIS`、`AI_STORAGE_SYSTEM` 建立證據候選池。",
+            "3. 為 `AI_COLD_PLATE_CDU`、`AI_HIGH_SPEED_CABLE`、`AI_SERVER_CHASSIS`、`AI_RACK_SYSTEM`、`AI_STORAGE_SYSTEM` 建立證據候選池。",
             "4. CPO／光通訊沿用既有 Theme，新增 AI_INFRA 的 related 關係，避免重複 taxonomy。",
             "5. 完成公司證據矩陣後再交由使用者人工核准；價格 PASS 不作為概念股資格證據。",
             "",

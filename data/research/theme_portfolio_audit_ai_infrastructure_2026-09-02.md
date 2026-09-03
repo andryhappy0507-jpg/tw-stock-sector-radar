@@ -1,7 +1,7 @@
-# Theme 產業架構盤點與 AI 基礎建設細分候選（2026-09-02）
+# Theme 產業架構盤點與 AI 基礎建設細分候選（2026-09-03）
 
-- 資料來源：GitHub Actions #173（cf34e84）
-- 市場資料基準日：2026-09-02
+- 資料來源：GitHub Actions #175（ec77259）
+- 市場資料基準日：2026-09-03
 - Active Theme：119；Active Theme Group：25
 - 核准映射：661 筆、534 檔股票；人工證據 216 筆、官方自動分類 445 筆
 
@@ -46,19 +46,19 @@
 | Theme | 父Theme | 股票數 | 人工核准 | 平均週報酬 | 上漲比 |
 |---|---|---:|---:|---:|---:|
 | AI（AI） | — | 0 | 0 | — | — |
-| AI伺服器（AI_SERVER） | AI | 2 | 2 | ⚠ 原始 -30.1% | ⚠ 不可判讀 |
-| 資料中心（DATA_CENTER） | AI | 1 | 1 | -1.1% | 0.0% |
-| 散熱（COOLING） | AI_SERVER | 2 | 2 | 1.9% | 50.0% |
-| 液冷（LIQUID_COOLING） | COOLING | 2 | 2 | 16.2% | 50.0% |
+| AI伺服器（AI_SERVER） | AI | 2 | 2 | 0.4% | 100.0% |
+| 資料中心（DATA_CENTER） | AI | 1 | 1 | -0.6% | 0.0% |
+| 散熱（COOLING） | AI_SERVER | 2 | 2 | -0.9% | 0.0% |
+| 液冷（LIQUID_COOLING） | COOLING | 2 | 2 | 13.4% | 50.0% |
 | 電源（POWER） | AI_SERVER | 0 | 0 | — | — |
-| 電源供應器（POWER_SUPPLY） | POWER | 3 | 3 | -0.1% | 33.3% |
-| UPS/BBU備援電力（UPS_BBU） | POWER | 4 | 4 | 3.5% | 75.0% |
-| HVDC/800V AI電源（HVDC_AI_POWER） | POWER | 3 | 3 | -0.1% | 33.3% |
-| AI伺服器BBU（AI_SERVER_BBU） | UPS_BBU | 4 | 4 | 3.5% | 75.0% |
-| AI電源機櫃/Power Rack（AI_POWER_RACK） | POWER | 4 | 4 | ⚠ 原始 -13.0% | ⚠ 不可判讀 |
-| AI機櫃配電/Busbar/PDB（AI_RACK_POWER_DISTRIBUTION） | AI_POWER_RACK | 2 | 2 | ⚠ 原始 -31.3% | ⚠ 不可判讀 |
-| AI伺服器連接器（AI_SERVER_CONNECTOR） | CONNECTOR | 3 | 3 | 4.9% | 100.0% |
-| 高功率大電流連接器（HIGH_POWER_CONNECTOR） | CONNECTOR | 2 | 2 | 4.9% | 100.0% |
+| 電源供應器（POWER_SUPPLY） | POWER | 3 | 3 | -1.8% | 0.0% |
+| UPS/BBU備援電力（UPS_BBU） | POWER | 4 | 4 | -6.5% | 0.0% |
+| HVDC/800V AI電源（HVDC_AI_POWER） | POWER | 3 | 3 | -1.8% | 0.0% |
+| AI伺服器BBU（AI_SERVER_BBU） | UPS_BBU | 4 | 4 | -6.5% | 0.0% |
+| AI電源機櫃/Power Rack（AI_POWER_RACK） | POWER | 4 | 4 | 0.3% | 33.3% |
+| AI機櫃配電/Busbar/PDB（AI_RACK_POWER_DISTRIBUTION） | AI_POWER_RACK | 2 | 2 | -0.6% | 0.0% |
+| AI伺服器連接器（AI_SERVER_CONNECTOR） | CONNECTOR | 3 | 3 | 1.5% | 66.7% |
+| 高功率大電流連接器（HIGH_POWER_CONNECTOR） | CONNECTOR | 2 | 2 | 0.8% | 50.0% |
 
 ### 需要澄清的重疊
 
@@ -67,9 +67,7 @@
 
 ### 價格資料警示
 
-- 6669 緯穎在 2026-09-02 為除權日；原始未還原價格造成週報酬顯示 −61.5%。
-- 因此 AI_SERVER、AI_POWER_RACK、AI_RACK_POWER_DISTRIBUTION 的當週平均報酬被嚴重扭曲，在完成公司行動調整前不可用來判斷產業轉弱。
-- 官方核對：https://www.twse.com.tw/exchangeReport/TWT48U?date=20260818&response=html
+- 已隔離疑似公司行動或價格不連續股票：4747、6669；正式 Theme 平均報酬與上漲比不納入這些觀測值。
 
 ## AI 基礎建設細分候選架構
 
@@ -86,13 +84,14 @@
 | 高速互連 | `AI_SERVER_CONNECTOR / HIGH_POWER_CONNECTOR` | AI伺服器連接器／大電流連接器 | 澄清功能邊界 | 分開高速訊號互連與高功率大電流連接，不以同一證據重複核准 | 一般消費性連接器 |
 | 高速互連 | `AI_HIGH_SPEED_CABLE` | AI高速線纜／AEC | 新增候選 | AI叢集高速銅纜、AEC或機櫃間高速線纜 | 一般電源線或低速消費性線材 |
 | 光網路 | `CPO / OPTICAL_COMMUNICATION` | CPO／光通訊 | 跨族群沿用 | 沿用既有高速光通訊族群，作為AI基礎建設related關係 | 複製建立內容相同的新Theme |
-| 機構系統 | `AI_SERVER_RACK_CHASSIS` | AI伺服器機櫃／機殼 | 新增候選 | AI伺服器機櫃、機殼與整櫃機構系統 | Power Rack電源系統或一般金屬加工 |
-| 儲存系統 | `AI_STORAGE_SYSTEM` | AI儲存系統 | 新增候選 | AI資料中心儲存伺服器、高速儲存與資料管線硬體 | 一般消費性SSD或未連結AI資料中心者 |
+| 機構系統 | `AI_SERVER_CHASSIS` | AI伺服器機殼 | 新增候選 | AI伺服器專用機殼、機箱與其機構設計 | 整櫃運算平台、Power Rack電源系統或一般金屬加工 |
+| 機構系統 | `AI_RACK_SYSTEM` | AI整櫃系統 | 新增候選 | 具AI運算節點、網路與整櫃整合能力的rack-scale平台 | 單一機殼、一般伺服器或只提供機櫃供配電者 |
+| 儲存系統 | `AI_STORAGE_SYSTEM` | AI儲存系統 | 新增候選 | 獨立儲存伺服器或平台，並明確連結AI、GPU Direct Storage或AI檢索工作負載 | 一般消費性SSD、一般儲存伺服器或僅為AI伺服器內建NVMe功能者 |
 
 ## 建議執行順序
 
 1. 先修正或隔離除權／分割等公司行動造成的週報酬異常。
 2. 對現有 AI 基礎建設 Theme 做邊界去重，不先新增股票。
-3. 為 `AI_COLD_PLATE_CDU`、`AI_HIGH_SPEED_CABLE`、`AI_SERVER_RACK_CHASSIS`、`AI_STORAGE_SYSTEM` 建立證據候選池。
+3. 為 `AI_COLD_PLATE_CDU`、`AI_HIGH_SPEED_CABLE`、`AI_SERVER_CHASSIS`、`AI_RACK_SYSTEM`、`AI_STORAGE_SYSTEM` 建立證據候選池。
 4. CPO／光通訊沿用既有 Theme，新增 AI_INFRA 的 related 關係，避免重複 taxonomy。
 5. 完成公司證據矩陣後再交由使用者人工核准；價格 PASS 不作為概念股資格證據。
