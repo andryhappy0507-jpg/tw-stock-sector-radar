@@ -222,8 +222,16 @@ def main() -> None:
     stock_sets: dict[str, set[str]] = {}
     anomalous_stock_ids: set[str] = set()
     if not weekly.empty:
-        weekly_return = pd.to_numeric(weekly["weekly_return_pct"], errors="coerce")
-        anomalous_stock_ids = set(weekly.loc[weekly_return.abs().ge(50), "stock_id"])
+        raw_return_col = (
+            "weekly_return_raw_pct"
+            if "weekly_return_raw_pct" in weekly.columns
+            else "weekly_return_pct"
+        )
+        weekly_return = pd.to_numeric(weekly[raw_return_col], errors="coerce")
+        anomaly_mask = weekly_return.lt(-45) | weekly_return.gt(65)
+        if "corporate_action_suspect" in weekly.columns:
+            anomaly_mask |= weekly["corporate_action_suspect"].astype(str).str.lower().eq("true")
+        anomalous_stock_ids = set(weekly.loc[anomaly_mask, "stock_id"])
     for theme_id in ai_theme_ids:
         stock_set = set(mapping.loc[mapping["theme_id"].eq(theme_id), "stock_id"])
         stock_sets[theme_id] = stock_set

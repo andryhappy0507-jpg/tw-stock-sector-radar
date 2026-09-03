@@ -28,12 +28,13 @@ def aggregate(df: pd.DataFrame, key: str, name_col: str) -> pd.DataFrame:
     for value, g in df.groupby(key, dropna=False):
         name = g[name_col].dropna().astype(str).iloc[0] if name_col in g and len(g[name_col].dropna()) else ""
         valid_ret = pd.to_numeric(g["weekly_return_pct"], errors="coerce")
+        eligible_ret = valid_ret.loc[valid_ret.notna()]
         rows.append({
             key: value,
             name_col: name,
             "mapped_stock_count": int(g["stock_id"].nunique()),
-            "avg_weekly_return_pct": float(valid_ret.mean()) if valid_ret.notna().any() else None,
-            "up_ratio": float((valid_ret > 0).mean()) if valid_ret.notna().any() else None,
+            "avg_weekly_return_pct": float(eligible_ret.mean()) if not eligible_ret.empty else None,
+            "up_ratio": float((eligible_ret > 0).mean()) if not eligible_ret.empty else None,
             "price_strong_count": int(g["price_strong"].fillna(False).astype(bool).sum()),
             "volume_strong_count": int(g["volume_strong"].fillna(False).astype(bool).sum()),
             "A_count": int((g["abc_group"] == "A").sum()),
