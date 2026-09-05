@@ -118,3 +118,5 @@ ROBOT_SYSTEM_INTEGRATION,機器人系統整合,ROBOTICS,active,機器人視覺AM
 ROBOT_TRANSMISSION,機器人傳動／減速機,ROBOT_COMPONENTS,active,機器人用線性傳動滾珠螺桿導軌諧波減速機行星減速機與齒輪,2026-09-02
 ROBOT_ACTUATION,機器人致動／關節模組,ROBOT_COMPONENTS,active,機器人用伺服馬達致動器驅動系統關節馬達與關節模組,2026-09-02
 ROBOT_END_EFFECTOR,機器人末端執行器,ROBOT_COMPONENTS,active,電動夾爪智慧夾爪靈巧手與其他機器人末端工具,2026-09-02
+AI_COLD_PLATE_CDU,AI冷板／CDU,LIQUID_COOLING,active,AI資料中心冷板CDU Manifold與關鍵液冷模組,2026-09-05
+AI_RACK_SYSTEM,AI整櫃系統,AI_SERVER,active,具AI運算節點網路與整櫃系統整合能力的rack-scale平台,2026-09-05

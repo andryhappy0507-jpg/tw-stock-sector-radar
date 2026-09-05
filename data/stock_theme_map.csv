@@ -15,9 +15,9 @@
 3533,AI_SERVER_CONNECTOR,medium,financial_media,2026-06-15,https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=58e4b390-115f-49d2-8683-b0c315bbfd46,嘉澤受惠AI伺服器與資料中心需求並擴充GPU Socket與高速線纜互連技術,2026-08-25,active,approved
 3526,AI_SERVER_CONNECTOR,medium,financial_media,2026-04-13,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ccd24825-0aeb-4f06-967e-f06a40575380,AI基礎建設與伺服器交換器需求帶動凡甲等連接元件廠且法人反覆點名,2026-08-25,active,approved
 3665,AI_SERVER_CONNECTOR,medium,financial_media,2026-04-13,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ccd24825-0aeb-4f06-967e-f06a40575380,AI基礎建設與伺服器交換器需求帶動貿聯KY等連接元件廠且法人反覆點名,2026-08-25,active,approved
-3526,HIGH_SPEED_CONNECTOR,medium,broker_commentary,2026-07-24,https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=e021558e-46ea-428d-b12d-e399fe9a0ee4,法人指出凡甲PCIe Gen6與MCIO高速連接器下半年放量,2026-08-25,active,approved
-3533,HIGH_SPEED_CONNECTOR,medium,financial_media,2026-06-15,https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=58e4b390-115f-49d2-8683-b0c315bbfd46,嘉澤投入高速線纜與NPO CPO Socket互連技術開發,2026-08-25,active,approved
-3665,HIGH_SPEED_CONNECTOR,medium,financial_media,2026-07-23,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2ae18541-b33e-44ae-844f-66e5df306757,貿聯KY高速互聯AEC與ALC產品獲客戶採用並擴產,2026-08-25,active,approved
+3526,HIGH_SPEED_CONNECTOR,high,annual_report,2026-04-24,https://www.alltopconnector.com/data/information/files/1779087124881442433.pdf,凡甲2025年報明列升級伺服器高速連接線並將AI資料中心列為高頻高功率高可靠度產品需求動能,2026-09-05,active,approved
+3533,HIGH_SPEED_CONNECTOR,high,company_website,2026-06-02,https://www.lotes.cc/zh-tw/news.php?act=view&id=34,嘉澤官方明列NVIDIA MGX合作及AI Factory高速互連並具MCIO PCIe Gen4與Gen5線纜產品,2026-09-05,active,approved
+3665,HIGH_SPEED_CONNECTOR,high,company_website,,https://telecom-networking.bizlinktech.com/applications/bizlink-data-center-solutions/,貿聯官方資料中心方案明列800G以上ACC與AEC及最高1.6T DAC高速互連產品,2026-09-05,active,approved
 3526,HIGH_POWER_CONNECTOR,medium,financial_media,2026-08-19,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=910b2e81-5e69-4508-97a9-aa53ae7f2c8c,凡甲400VDC高功率產品下半年有機會出貨且800VDC持續開發,2026-08-25,active,approved
 3665,HIGH_POWER_CONNECTOR,medium,financial_media,2026-07-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=128822cd-7b4d-46b1-a6fb-e313eb4b72c1,貿聯KY高功率電源互聯產品與High Power產線持續擴張,2026-08-25,active,approved
 6279,AUTOMOTIVE_CONNECTOR,medium,financial_media,2026-07-07,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6755fc7d-d6b2-42ec-927e-0e019edc06fc,胡連被明確定位為車用連接器廠且車市回升帶動營運,2026-08-25,active,approved
@@ -215,3 +215,8 @@
 6166,ROBOT_BODY_PLATFORM,high,company_website,2026-08-31,https://www.adlinktech.com/tw/robotics,官方展示Moby人形機器人及四足機器人方案,2026-09-02,active,approved
 2317,ROBOT_BODY_PLATFORM,high,company_website,2026-03-17,https://www.foxconn.com.tw/en-us/press-center/events/foxconn-events/1975,官方展示自研工業人形機器人並與NVIDIA合作,2026-09-02,active,approved
 2317,ROBOT_SYSTEM_INTEGRATION,high,company_website,2026-03-17,https://www.foxconn.com.tw/en-us/press-center/events/foxconn-events/1975,官方資料確認機器人已進入製造場域驗證與部署,2026-09-02,active,approved
+2308,AI_COLD_PLATE_CDU,high,company_website,,https://www.deltaww.com/en-US/landing/Computex-2026,台達官方明列Vera Rubin冷板3MW CDU與2.4MW HVDC CDU等AI資料中心液冷產品,2026-09-05,active,approved
+3324,AI_COLD_PLATE_CDU,high,company_website,,https://www.auras.com.tw/CMSFS/InformationCenters/English/ecfc7b18-d55e-4ca3-a673-b449f83d051c.pdf,雙鴻官方液冷資料明列Cold Plate多型CDU與Manifold及AI和HPC應用,2026-09-05,active,approved
+2317,AI_RACK_SYSTEM,high,company_website,2026-06-04,https://www.foxconn.com/zh-tw/press-center/press-releases/latest-news/2053,鴻海官方明列AI伺服器垂直整合機櫃級系統整合與AI資料中心方案,2026-09-05,active,approved
+2382,AI_RACK_SYSTEM,high,company_website,,https://www.qct.io/product/index/Server/rackmount-server/GPGPU-Xeon-Phi?page=1,QCT官方明列多款AI與HPC Rackmount伺服器及整櫃運算平台,2026-09-05,active,approved
+6669,AI_RACK_SYSTEM,high,company_website,,https://www.wiwynn.com/events/computex,緯穎官方明列Vera Rubin NVL72與AMD Helios rack-scale AI平台,2026-09-05,active,approved
