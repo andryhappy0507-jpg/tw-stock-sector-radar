@@ -82,7 +82,7 @@
 | 備援電力 | `UPS_BBU / AI_SERVER_BBU` | UPS／AI伺服器BBU | 澄清父子邊界 | UPS_BBU為一般備援電力；AI_SERVER_BBU須有AI伺服器機櫃應用證據 | 僅有一般電池模組或消費電子電池 |
 | 機櫃供配電 | `AI_POWER_RACK / AI_RACK_POWER_DISTRIBUTION` | Power Rack／Busbar／PDB | 保留並澄清 | Power Rack為系統級機櫃；配電Theme限Busbar、PDB等機櫃內配電 | 一般機構件或無配電功能的機櫃 |
 | 高速互連 | `AI_SERVER_CONNECTOR / HIGH_POWER_CONNECTOR` | AI伺服器連接器／大電流連接器 | 澄清功能邊界 | 分開高速訊號互連與高功率大電流連接，不以同一證據重複核准 | 一般消費性連接器 |
-| 高速互連 | `AI_HIGH_SPEED_CABLE` | AI高速線纜／AEC | 新增候選 | AI叢集高速銅纜、AEC或機櫃間高速線纜 | 一般電源線或低速消費性線材 |
+| 高速互連 | `HIGH_SPEED_CONNECTOR` | 高頻高速連接器／線纜 | 沿用並補強證據 | PCIe／MCIO高速互連、AI叢集高速銅纜、AEC或機櫃間高速線纜 | 一般電源線或低速消費性線材 |
 | 光網路 | `CPO / OPTICAL_COMMUNICATION` | CPO／光通訊 | 跨族群沿用 | 沿用既有高速光通訊族群，作為AI基礎建設related關係 | 複製建立內容相同的新Theme |
 | 機構系統 | `AI_SERVER_CHASSIS` | AI伺服器機殼 | 新增候選 | AI伺服器專用機殼、機箱與其機構設計 | 整櫃運算平台、Power Rack電源系統或一般金屬加工 |
 | 機構系統 | `AI_RACK_SYSTEM` | AI整櫃系統 | 新增候選 | 具AI運算節點、網路與整櫃整合能力的rack-scale平台 | 單一機殼、一般伺服器或只提供機櫃供配電者 |
@@ -92,6 +92,6 @@
 
 1. 先修正或隔離除權／分割等公司行動造成的週報酬異常。
 2. 對現有 AI 基礎建設 Theme 做邊界去重，不先新增股票。
-3. 為 `AI_COLD_PLATE_CDU`、`AI_HIGH_SPEED_CABLE`、`AI_SERVER_CHASSIS`、`AI_RACK_SYSTEM`、`AI_STORAGE_SYSTEM` 建立證據候選池。
+3. 為 `AI_COLD_PLATE_CDU`、`AI_SERVER_CHASSIS`、`AI_RACK_SYSTEM`、`AI_STORAGE_SYSTEM` 建立證據候選池；高速線纜沿用 `HIGH_SPEED_CONNECTOR` 並升級證據。
 4. CPO／光通訊沿用既有 Theme，新增 AI_INFRA 的 related 關係，避免重複 taxonomy。
 5. 完成公司證據矩陣後再交由使用者人工核准；價格 PASS 不作為概念股資格證據。

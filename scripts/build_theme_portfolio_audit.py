@@ -83,10 +83,10 @@ AI_TAXONOMY = [
     },
     {
         "layer": "高速互連",
-        "theme": "AI_HIGH_SPEED_CABLE",
-        "name": "AI高速線纜／AEC",
-        "action": "新增候選",
-        "scope": "AI叢集高速銅纜、AEC或機櫃間高速線纜",
+        "theme": "HIGH_SPEED_CONNECTOR",
+        "name": "高頻高速連接器／線纜",
+        "action": "沿用並補強證據",
+        "scope": "PCIe／MCIO高速互連、AI叢集高速銅纜、AEC或機櫃間高速線纜",
         "exclude": "一般電源線或低速消費性線材",
     },
     {
@@ -387,7 +387,7 @@ def main() -> None:
             "",
             "1. 先修正或隔離除權／分割等公司行動造成的週報酬異常。",
             "2. 對現有 AI 基礎建設 Theme 做邊界去重，不先新增股票。",
-            "3. 為 `AI_COLD_PLATE_CDU`、`AI_HIGH_SPEED_CABLE`、`AI_SERVER_CHASSIS`、`AI_RACK_SYSTEM`、`AI_STORAGE_SYSTEM` 建立證據候選池。",
+            "3. 為 `AI_COLD_PLATE_CDU`、`AI_SERVER_CHASSIS`、`AI_RACK_SYSTEM`、`AI_STORAGE_SYSTEM` 建立證據候選池；高速線纜沿用 `HIGH_SPEED_CONNECTOR` 並升級證據。",
             "4. CPO／光通訊沿用既有 Theme，新增 AI_INFRA 的 related 關係，避免重複 taxonomy。",
             "5. 完成公司證據矩陣後再交由使用者人工核准；價格 PASS 不作為概念股資格證據。",
             "",
