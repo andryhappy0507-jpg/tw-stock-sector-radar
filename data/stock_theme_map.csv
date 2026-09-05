@@ -226,3 +226,8 @@
 6669,AI_STORAGE_SYSTEM,high,company_website,2026-03-16,https://www.wiwynn.com/news/wiwynn-showcases-nvidia-vera-rubin-nvl72-ai-factory-infrastructure-at-nvidia-gtc-2026,緯穎官方Storage-Next架構以96顆NVMe提供GPU啟動儲存並服務GNN LLM推論與RAG,2026-09-05,active,approved
 3693,AI_STORAGE_SYSTEM,high,company_website,2025-08-19,https://www.aicipc.com/resources-detail/182/,營邦F2026為DPU-ready AI Storage平台具MLPerf Storage驗證並支援AI訓練與LLM checkpointing,2026-09-05,active,approved
 2495,AI_STORAGE_SYSTEM,high,company_website,,https://www.infortrend.com/tw/event/2026/computex2026,普安EonStor GS 5000U明列為AI基礎架構訓練與推論打造的企業級NVMe儲存平台,2026-09-05,active,approved
+6558,BATTERY_CELL,high,company_website,,https://www.synst.com.tw/zh-tw/,興能高官方明列研發設計與生產可充式鋰離子鋰高分子及先進混成電池並具量產出貨紀錄,2026-09-05,active,approved
+8038,BATTERY_CELL,high,company_website,,https://www.caec.com.tw/_i/assets/file/shareholder/ba94d5af979c71985b4b6604e36054e8.pdf,長園科官方資料明列從鋰鐵材料電池芯到電池模組與管理系統的研發製造鏈,2026-09-05,active,approved
+1513,SMART_METER,high,company_website,,https://www.chem.com.tw/tc/products_info.aspx?Class1=1&Class2=1159,中興電官方明列自主開發AMI智慧電表並供應台電作民用與工業使用,2026-09-05,active,approved
+2371,SMART_METER,high,company_website,,https://www.tatung.com/products/index/489,大同官方明列單相三相及CT型智慧電表AMI系統與能源管理系統產品,2026-09-05,active,approved
+4588,SMART_METER,high,company_website,,https://www.archmeter.com/zh-tw/download-c17925/%E5%85%AC%E5%8F%B8%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF.html,玖鼎電力官方明列電子式電表智慧電表晶片及電力監控產品並具低壓AMI角色,2026-09-05,active,approved
