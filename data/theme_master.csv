@@ -120,3 +120,5 @@ ROBOT_ACTUATION,機器人致動／關節模組,ROBOT_COMPONENTS,active,機器人
 ROBOT_END_EFFECTOR,機器人末端執行器,ROBOT_COMPONENTS,active,電動夾爪智慧夾爪靈巧手與其他機器人末端工具,2026-09-02
 AI_COLD_PLATE_CDU,AI冷板／CDU,LIQUID_COOLING,active,AI資料中心冷板CDU Manifold與關鍵液冷模組,2026-09-05
 AI_RACK_SYSTEM,AI整櫃系統,AI_SERVER,active,具AI運算節點網路與整櫃系統整合能力的rack-scale平台,2026-09-05
+AI_SERVER_CHASSIS,AI伺服器機殼,AI_SERVER,active,明確為AI與GPU伺服器設計或量產的機殼機箱與機構設計,2026-09-05
+AI_STORAGE_SYSTEM,AI儲存系統,DATA_CENTER,active,明確服務AI訓練推論RAG或GPU資料管線的獨立儲存伺服器與平台,2026-09-05

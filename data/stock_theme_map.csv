@@ -220,3 +220,9 @@
 2317,AI_RACK_SYSTEM,high,company_website,2026-06-04,https://www.foxconn.com/zh-tw/press-center/press-releases/latest-news/2053,鴻海官方明列AI伺服器垂直整合機櫃級系統整合與AI資料中心方案,2026-09-05,active,approved
 2382,AI_RACK_SYSTEM,high,company_website,,https://www.qct.io/product/index/Server/rackmount-server/GPGPU-Xeon-Phi?page=1,QCT官方明列多款AI與HPC Rackmount伺服器及整櫃運算平台,2026-09-05,active,approved
 6669,AI_RACK_SYSTEM,high,company_website,,https://www.wiwynn.com/events/computex,緯穎官方明列Vera Rubin NVL72與AMD Helios rack-scale AI平台,2026-09-05,active,approved
+8210,AI_SERVER_CHASSIS,high,company_website,,https://www.chenbro.com/en-US/product/MGX,勤誠官方MGX產品頁明列2U AI Server Chassis及AI伺服器機構方案,2026-09-05,active,approved
+3032,AI_SERVER_CHASSIS,high,investor_conference,2024-12-11,https://www.hec-group.com.tw/fileadmin/downloads/inventory/EarningsCall/1131211_3032_eng.pdf,偉訓官方法說明列與AI伺服器廠合作開發風冷與水冷server chassis且已量產進入核准供應鏈,2026-09-05,active,approved
+6117,AI_SERVER_CHASSIS,high,company_website,,https://ipc.in-win.com/rackmount-chassis-iw-rg658-pro,迎廣官方明列6.5U GPU Rackmount Chassis專為AI深度學習LLM與HPC工作負載設計,2026-09-05,active,approved
+6669,AI_STORAGE_SYSTEM,high,company_website,2026-03-16,https://www.wiwynn.com/news/wiwynn-showcases-nvidia-vera-rubin-nvl72-ai-factory-infrastructure-at-nvidia-gtc-2026,緯穎官方Storage-Next架構以96顆NVMe提供GPU啟動儲存並服務GNN LLM推論與RAG,2026-09-05,active,approved
+3693,AI_STORAGE_SYSTEM,high,company_website,2025-08-19,https://www.aicipc.com/resources-detail/182/,營邦F2026為DPU-ready AI Storage平台具MLPerf Storage驗證並支援AI訓練與LLM checkpointing,2026-09-05,active,approved
+2495,AI_STORAGE_SYSTEM,high,company_website,,https://www.infortrend.com/tw/event/2026/computex2026,普安EonStor GS 5000U明列為AI基礎架構訓練與推論打造的企業級NVMe儲存平台,2026-09-05,active,approved
