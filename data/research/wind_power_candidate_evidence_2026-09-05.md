@@ -45,14 +45,15 @@
 |---|---|---|---|
 | 1513 中興電 | [櫃買產業鏈公司頁](https://ic.tpex.org.tw/company_chain.php?stk_code=1513)列為風場規劃與營造；另一份[櫃買公開申請文件](https://www.tpex.org.tw/storage/emerging_register/2023/10/1696301559_12152_CH_7702.pdf)描述其承作風力發電變電所及系統開發，但尚缺中興電公司一手風電專案或合約資料 | medium | `company_source_required` |
 | 3712 永崴投控 | [公司官方公告](https://www.fit-holding.com/%E5%AF%8C%E5%B4%B4%E8%83%BD%E6%BA%90%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%BE%97%E6%A8%99%E5%8F%B0%E9%9B%BB%E3%80%8C%E9%9B%A2%E5%B2%B8%E9%A2%A8%E9%9B%BB%E4%BA%8C%E6%9C%9F%E8%A8%88/)明列旗下富崴能源得標 300MW 離岸風場建置案；[公司沿革](https://www.fit-holding.com/history/)確認集團持有森崴能源控制性股權 | high | `evidence_ready`，透過受控制子公司 |
-| 6806 森崴能源 | [公司官方資料](https://www.shinfox.com.tw/offshore_wind_power.html)明列富崴能源承攬台電離岸風電二期 EPC 與五年運維；[公司介紹](https://www.shinfox.com.tw/aboutus.html)亦列離岸／陸域風電建置維運及海事工程 | high | `evidence_ready` |
+| 6806 森崴能源 | [公司官方資料](https://www.shinfox.com.tw/offshore_wind_power.html)明列富崴能源承攬台電離岸風電二期 EPC 與五年運維；但[證交所終止上市名單](https://www.twse.com.tw/company/suspendListingCsvAndHtml?lang=zh&type=html)確認 6806 已於 2026-06-23 終止上市 | high | `formal_universe_excluded` |
 | 7786 東方風能 | [公司官方資料](https://www.dfo.com.tw/?route=article%2Fcompany)明列離岸風場探勘、建置及長期運維完整週期服務；[實績頁](https://www.dfo.com.tw/news/Track-record/)另列 12 年及 15 年運維合約 | high | `evidence_ready` |
 | 8926 台汽電 | [公司官方再生能源頁](https://esg.cogen.com.tw/tw/environment-renewable)明列風力 EPC、離岸風電陸域輸變電工程及 116 座風機運維實績；[2025 個體財報](https://www.cogen.com.tw/files/9B3AD642557F3FDDb58d601d9Ca1246aD16d5bDf.pdf)亦揭露大型離岸風電工程收入 | high | `evidence_ready` |
 
 ### 工程維運建議核准範圍
 
-- 可送人工核准：3712、6806、7786、8926，共 4 筆。
+- 可送人工核准：3712、7786、8926，共 3 筆。
 - 暫緩：1513；主管機關分類與公開申請文件支持其角色，但仍需公司一手風電實績才能達到本批正式化門檻。
+- 不納入正式池：6806；產業角色證據充分，但已終止上市，不符合現行上市／上櫃普通股母體。其業務曝險仍由上市母公司 3712 永崴投控反映。
 - 既有正式成員 2208 不重複異動。
 
 ## `WIND_OPERATION` 查證結果
@@ -61,23 +62,25 @@
 |---|---|---|---|
 | 1102 亞泥 | [公司官方新聞](https://www.acc.com.tw/news-center/latest-news/670-111)明列持續增加風電投資，並與 RWE 推動竹風風力發電計畫 | high | `evidence_ready`，角色為投資／開發中案場 |
 | 3712 永崴投控 | [公司官方投資資料](https://www.fit-holding.com/invest/)將森崴能源列為再生能源開發事業；[公司沿革](https://www.fit-holding.com/history/)確認集團持有森崴能源控制性股權，集團並透過子公司投入風電開發與工程 | high | `evidence_ready`，透過受控制子公司 |
-| 6806 森崴能源 | [公司官方資料](https://www.shinfox.com.tw/aboutus.html)明列陸域與離岸風電業務；[公司治理資料](https://www.shinfox.com.tw/report_governance_committee.html)記錄風電開發權與投資事項 | high | `evidence_ready` |
+| 6806 森崴能源 | [公司官方資料](https://www.shinfox.com.tw/aboutus.html)明列陸域與離岸風電業務；但[證交所終止上市名單](https://www.twse.com.tw/company/suspendListingCsvAndHtml?lang=zh&type=html)確認 6806 已於 2026-06-23 終止上市 | high | `formal_universe_excluded` |
 | 6873 泓德能源 | [公司介紹](https://www.hdrenewables.com/about/)與[解決方案](https://www.hdrenewables.com/solutions/)目前可證明電站開發、光電、儲能、售電及智慧電網能力；最新官方案場與發電資料未顯示實際風場開發、持有或營運 | high | `role_mismatch` |
 | 8926 台汽電 | [公司官方再生能源頁](https://esg.cogen.com.tw/tw/environment-renewable)明列風電投資開發 98MW、2024 年風力發電量 1.1 億度，並列苗栗風場與星寶陸域風場 | high | `evidence_ready` |
 
 ### 開發營運建議核准範圍
 
-- 可送人工核准：1102、3712、6806、8926，共 4 筆。
+- 可送人工核准：1102、3712、8926，共 3 筆。
 - 不納入：6873；目前實際業務證據集中在光電、儲能與智慧電網，不能由泛綠能描述推定風電營運。
+- 不納入正式池：6806；風電角色成立，但已終止上市，不符合正式股票母體。
 - 既有正式成員 6869 不重複異動。
 
 ## 本批統計與建議
 
 - 查證 17 筆尚未正式化候選，涉及 13 檔公司；3712、6806、8926各跨兩個風電角色。
-- `evidence_ready`：13 筆，分別為 `WIND_EQUIPMENT` 5 筆、`WIND_SERVICE` 4 筆、`WIND_OPERATION` 4 筆。
+- `evidence_ready`：11 筆，分別為 `WIND_EQUIPMENT` 5 筆、`WIND_SERVICE` 3 筆、`WIND_OPERATION` 3 筆。
 - `company_source_required`／`product_evidence_required`：3 筆（1503、1514、1513）。
 - `role_mismatch`：1 筆（6873）。
-- 建議送人工核准的 13 筆映射，共涵蓋 10 檔公司。
+- `formal_universe_excluded`：2 筆（6806 的工程維運與開發營運角色）。
+- 建議送人工核准的 11 筆映射，共涵蓋 9 檔現行上市／上櫃公司。
 - 不建立新 Theme；三個風電子 Theme 均已存在。跨 Theme 只代表公司具多個產業角色，不代表重複計算為不同公司。
 
 ## 人工核准後的精確異動量
@@ -85,7 +88,7 @@
 若使用者核准本文件建議範圍：
 
 - `WIND_EQUIPMENT` 新增 5 筆，由 1 筆增為 6 筆。
-- `WIND_SERVICE` 新增 4 筆，由 1 筆增為 5 筆。
-- `WIND_OPERATION` 新增 4 筆，由 1 筆增為 5 筆。
-- 合計新增 13 筆 `stock_theme_map.csv` 正式映射，涵蓋 10 檔公司。
-- 1503、1514、1513、6873 維持非正式候選狀態。
+- `WIND_SERVICE` 新增 3 筆，由 1 筆增為 4 筆。
+- `WIND_OPERATION` 新增 3 筆，由 1 筆增為 4 筆。
+- 合計新增 11 筆 `stock_theme_map.csv` 正式映射，涵蓋 9 檔公司。
+- 1503、1514、1513、6873 維持非正式候選狀態；6806 保留產業證據但排除於現行股票母體。
