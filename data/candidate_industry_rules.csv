@@ -1,0 +1,16 @@
+theme_id,industry_code,evidence_summary,source_ref
+OPTOELECTRONICS,26,官方產業分類代碼26光電業,official_openapi
+ELECTRONIC_COMPONENTS,28,官方產業分類代碼28電子零組件業,official_openapi
+COMPUTER_PERIPHERALS,25,官方產業分類代碼25電腦及週邊設備業,official_openapi
+AUTOMOTIVE,12,官方產業分類代碼12汽車工業,official_openapi
+FINANCE,17,官方產業分類代碼17金融保險,official_openapi
+TOURISM,16,官方產業分類代碼16觀光餐旅,official_openapi
+CHEMICAL,21,官方產業分類代碼21化學工業,official_openapi
+RETAIL,18,官方產業分類代碼18貿易百貨,official_openapi
+ELECTRONIC_DISTRIBUTION,29,官方產業分類代碼29電子通路業,official_openapi
+HOME_LIVING,38,官方產業分類代碼38居家生活,official_openapi
+CULTURAL_CREATIVE,32,官方產業分類代碼32文化創意業,official_openapi
+SPORTS_LEISURE,37,官方產業分類代碼37運動休閒,official_openapi
+DIGITAL_CLOUD,36,官方產業分類代碼36數位雲端,official_openapi
+INFORMATION_SERVICES,30,官方產業分類代碼30資訊服務業,official_openapi
+OIL_GAS,23,官方產業分類代碼23油電燃氣業,official_openapi

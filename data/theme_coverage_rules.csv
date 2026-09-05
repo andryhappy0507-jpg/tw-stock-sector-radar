@@ -1,0 +1,2 @@
+theme_id,priority,coverage_status,require_manual_review,coverage_audit_path,discovery_keywords,related_theme_ids
+ROBOTICS,high,auditing,yes,data/research/robotics_coverage_audit_2026-08-26.csv,機器人;人形機器人;協作機器人;cobot;AMR;AGV;具身智能;embodied AI;機器狗;robot arm;robotics;關節模組;減速機;致動器;actuator;滾珠螺桿;伺服;motion control;機器視覺;robot vision;靈巧手,ROBOT_COMPONENTS;ROBOT_VISION;AUTOMATION

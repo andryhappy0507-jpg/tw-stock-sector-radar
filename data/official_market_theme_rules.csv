@@ -1,0 +1,5 @@
+industry_code,theme_id,confidence,reason
+15,SHIPPING,high,官方產業代碼15為航運業可直接對應航運Theme
+22,BIOTECH,high,官方產業代碼22為生技醫療可直接對應生技Theme
+24,SEMICONDUCTOR,high,官方產業代碼24為半導體業可直接對應半導體Theme
+35,GREEN_ENERGY,high,官方產業代碼35為綠能環保可直接對應綠能Theme

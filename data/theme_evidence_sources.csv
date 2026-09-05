@@ -1,0 +1,48 @@
+theme_id,stock_ids,source_type,publisher,published_date,source_url,evidence_summary,confidence
+PCB_PROCESS_EQUIPMENT,3485;2493,financial_media,經濟日報,2026-07-22,https://money.udn.com/money/story/5612/9643041,PCB載板擴產帶動高階濕製程設備需求並點名敘豐與揚博,high
+PCB_PROCESS_EQUIPMENT,6438;2467;6664;3485;3563;3455;3030;6658;6727,financial_media,經濟日報,2026-06-29,https://money.udn.com/money/story/11162/9595599,AI高階PCB與載板資本支出帶動設備需求並點名多家設備商,high
+PCB_PROCESS_EQUIPMENT,2467,financial_media,MoneyDJ,2026-08-18,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5bd96489-0ba3-4b95-97ab-c98678491a07,法人看好高階PCB與先進封裝設備雙引擎且PCB設備訂單成長,high
+PCB_COPPER_FOIL,8358,financial_media,MoneyDJ,2026-08-05,https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=e0940ea6-938d-47f2-b93c-0466e360589c,金居高階銅箔鎖定AI伺服器與高功耗平台並進入客戶驗證,high
+PCB_COPPER_FOIL,8358,company_disclosure,公開資訊觀測站,2026-05-08,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fd533747-c852-4d42-935f-1f7c3e1c03cc,金居董事會增加銅箔三廠資本支出以因應AI伺服器高階銅箔需求,high
+PCB_GLASS_FIBER,1815,financial_media,MoneyDJ,2026-07-06,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=508d105a-47c3-44ee-95c7-afb7c5b3deff,富喬新廠聚焦高階玻纖布並鎖定AI伺服器低軌衛星與IC載板,high
+IC_SUBSTRATE,3037;3189;8046,financial_media,經濟日報,2026-01-21,https://money.udn.com/money/story/5612/9279061,法人持續看好載板三雄受惠AI與高階載板需求,high
+PCB,4958;3037;2313;2368;3189;3044,financial_media,經濟日報,2026-05-03,https://money.udn.com/money/story/5612/9478208,法人點名PCB與載板指標廠受惠AI低軌衛星與高階PCB需求,medium_high
+AI_SERVER_CONNECTOR,3533,financial_media,MoneyDJ,2026-06-15,https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=58e4b390-115f-49d2-8683-b0c315bbfd46,嘉澤受惠AI伺服器與資料中心需求並擴充GPU Socket與高速線纜互連技術,high
+AI_SERVER_CONNECTOR,3533,broker_commentary,經濟日報,2026-06-05,https://money.udn.com/money/story/5607/9547983,投顧法人上修嘉澤伺服器營收與出貨展望並看好新平台規格升級,high
+AI_SERVER_CONNECTOR,3533;3689;7861;3665;3526;6197,financial_media,MoneyDJ,2026-04-13,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ccd24825-0aeb-4f06-967e-f06a40575380,AI基礎建設與伺服器交換器需求帶動多家連接元件廠且法人反覆點名,high
+AI_SERVER_CONNECTOR,3533;6715;7861;3605;3665,broker_commentary,MoneyDJ,2026-04-02,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c586a0c5-4eb8-4273-b6c7-c59547f2fdc8,法人點名台系連接元件廠受惠AI伺服器世代升級與電力升級趨勢,high
+HIGH_SPEED_CONNECTOR,3526,company_commentary,MoneyDJ,2026-07-02,https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=6e58e1da-3208-489f-9188-f1a9d197cb2d,凡甲法說明確指出高頻高速AI伺服器連接器與連接線需求強勁,high
+HIGH_SPEED_CONNECTOR,3526,broker_commentary,MoneyDJ,2026-07-24,https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=e021558e-46ea-428d-b12d-e399fe9a0ee4,法人指出凡甲PCIe Gen6與MCIO高速連接器下半年放量,high
+HIGH_SPEED_CONNECTOR,3533,company_commentary,MoneyDJ,2026-06-15,https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=58e4b390-115f-49d2-8683-b0c315bbfd46,嘉澤投入高速線纜與NPO CPO Socket互連技術開發,high
+HIGH_SPEED_CONNECTOR,3665,financial_media,MoneyDJ,2026-07-23,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2ae18541-b33e-44ae-844f-66e5df306757,貿聯KY高速互聯AEC與ALC產品獲客戶採用並擴產,high
+HIGH_POWER_CONNECTOR,3526,company_commentary,經濟日報,2026-07-01,https://money.udn.com/money/amp/story/5612/9600615,凡甲法說指出AI伺服器高功率大電流連接器需求強烈,high
+HIGH_POWER_CONNECTOR,3526,financial_media,MoneyDJ,2026-08-19,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=910b2e81-5e69-4508-97a9-aa53ae7f2c8c,凡甲400VDC高功率產品下半年有機會出貨且800VDC持續開發,high
+HIGH_POWER_CONNECTOR,3665,financial_media,MoneyDJ,2026-07-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=128822cd-7b4d-46b1-a6fb-e313eb4b72c1,貿聯KY高功率電源互聯產品與High Power產線持續擴張,high
+AUTOMOTIVE_CONNECTOR,6279,financial_media,MoneyDJ,2026-07-07,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6755fc7d-d6b2-42ec-927e-0e019edc06fc,胡連被明確定位為車用連接器廠且中國車市回升帶動營運,high
+AUTOMOTIVE_CONNECTOR,6279,financial_media,經濟日報,2026-06-06,https://money.udn.com/money/story/5612/9548680,胡連持續研發電動車專用連接器與線束解決方案,high
+AUTOMOTIVE_CONNECTOR,6279,broker_commentary,MoneyDJ,2026-02-26,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=bcf3d1e5-a7d3-4c9f-bc7f-644ead9d3cbd,法人看好胡連高壓高頻連接元件滲透與車載應用,high
+AUTOMOTIVE_CONNECTOR,3023,financial_media,MoneyDJ,2026-02-25,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f9435e2a-ccaa-4c1d-995c-fed0788c5bd2,信邦電動車新能源訂單增加且車用連接器與連接模組比重提升,high
+AUTOMOTIVE_CONNECTOR,3665,financial_media,MoneyDJ,2026-01-29,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0a450763-8ec0-4005-8858-796c5340ece1,貿聯KY高速線束與車用連接方案受Robotaxi及車隊擴充題材關注,medium_high
+AUTOMOTIVE_CONNECTOR,3003,financial_media,MoneyDJ,2026-08-07,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=dd4d9205-d10e-4e11-b5bd-d92cc0906179,健和興大電流連接器應用涵蓋車用充電與高功率場景且營運回升,medium_high
+VEHICLE_WIRE_HARNESS,6279,financial_media,MoneyDJ,2026-08-07,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4204b8c8-b213-4f7d-b21b-94592c3c0a6f,胡連取得義大利線束與電纜系統廠股權並切入法拉利供應鏈,high
+VEHICLE_WIRE_HARNESS,6279,financial_media,MoneyDJ,2026-02-26,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=bcf3d1e5-a7d3-4c9f-bc7f-644ead9d3cbd,胡連台灣市場電動巴士線束投產且車載高頻產品進入新案,high
+VEHICLE_WIRE_HARNESS,3023,financial_media,MoneyDJ,2026-02-25,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f9435e2a-ccaa-4c1d-995c-fed0788c5bd2,信邦車用線束與新能源連接模組訂單能見度提升,high
+VEHICLE_WIRE_HARNESS,3665,financial_media,MoneyDJ,2026-01-29,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0a450763-8ec0-4005-8858-796c5340ece1,貿聯KY高速線束與車用互連方案受Robotaxi及AI資料中心雙題材推動,medium_high
+POWER_SUPPLY,2308;2301,financial_media,MoneyDJ,2026-08-17,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=43b9ef80-24de-4893-b9b2-363bf6593a21,台達電與光寶科HVDC及800VDC產品時程明確並直接受惠AI資料中心電力架構升級,high
+POWER_SUPPLY,2308;2301;6282,financial_media,MoneyDJ,2026-01-21,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=92b9d32a-1b22-45c9-9513-4d48189b38de,台達電光寶科康舒均布局HVDC且法人持續追蹤400V與800V電源方案,high
+POWER_SUPPLY,2308;2301,broker_commentary,經濟日報,2026-06-15,https://money.udn.com/money/story/11162/9567142,法人看好AI資料中心功率密度提升帶動電源架構與Power Rack升級,high
+UPS_BBU,6781;3211;4931,financial_media,MoneyDJ,2026-07-31,https://www.moneydj.com/z/DJA/News/DJANewsDetail_CA3E3C95-EAB9-4A9E-B80F-41AC43855AB5.djhtm,法人明確點名AES-KY順達新盛力為ASIC AI伺服器BBU主要受惠供應商,high
+UPS_BBU,6781;6121;3211;4931,financial_media,經濟日報,2026-07-09,https://money.udn.com/money/story/11162/9617815,AES-KY新普順達新盛力為台灣AI伺服器BBU重要供應商且營運受惠,high
+UPS_BBU,6781,company_commentary,MoneyDJ,2026-06-01,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6d6a860b-e211-49ef-92aa-285f27d715e8&c=MB00,AES-KY公司資訊確認AI資料中心BBU為主要成長引擎並配合HVDC架構開發,high
+HVDC_AI_POWER,2308;2301,financial_media,MoneyDJ,2026-08-17,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=43b9ef80-24de-4893-b9b2-363bf6593a21,台達電與光寶科HVDC及800VDC產品時程明確並直接受惠AI資料中心電力架構升級,high
+HVDC_AI_POWER,2308;2301;6282,financial_media,MoneyDJ,2026-01-21,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=92b9d32a-1b22-45c9-9513-4d48189b38de,台達電光寶科康舒均布局HVDC且法人持續追蹤400V與800V電源方案,high
+HVDC_AI_POWER,2308;2301,broker_commentary,經濟日報,2026-06-15,https://money.udn.com/money/story/11162/9567142,法人看好AI資料中心功率密度提升帶動HVDC與Power Rack升級,high
+AI_SERVER_BBU,6781;6121;3211;4931,financial_media,經濟日報,2026-07-09,https://money.udn.com/money/story/11162/9617815,AES-KY新普順達新盛力為台灣AI伺服器BBU重要供應商且近年營運受BBU帶動,high
+AI_SERVER_BBU,6781;3211;4931,financial_media,MoneyDJ,2026-07-31,https://www.moneydj.com/z/DJA/News/DJANewsDetail_CA3E3C95-EAB9-4A9E-B80F-41AC43855AB5.djhtm,AWS ASIC AI平台升級推升BBU需求並點名AES-KY順達新盛力為主要供應商,high
+AI_SERVER_BBU,6781;3211;4931,broker_commentary,MoneyDJ,2026-01-22,https://feibbank.moneydj.com/w/wp/wp05A.djhtm?a=%7BFF5D08B1-9DE8-402A-8136-9A2FB7529DFB%7D&c=NA,法人看好2026年ASIC伺服器顯著成長帶動BBU三雄受惠,high
+AI_POWER_RACK,2308,financial_media,MoneyDJ,2026-08-13,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=be3f70fe-400c-4268-a3d5-56fd73e8a35f,台達電供應內容由電源零組件延伸至Power Rack BBU液冷與整體AI資料中心電力系統,high
+AI_POWER_RACK,2301,company_commentary,MoneyDJ,2026-06-03,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=bccf00d2-6479-4a98-9573-d6c4eeceba6d,光寶科展出800VDC液冷Power Rack與110kW機架式電源並強調集中式Busbar架構,high
+AI_POWER_RACK,6669,company_commentary,經濟日報,2026-05-26,https://money.udn.com/money/story/5612/9526994,緯穎展示800V HVDC Power Rack液冷Busbar與PDB端對端機櫃級電力整合方案,high
+AI_POWER_RACK,3665,company_commentary,MoneyDJ,2026-03-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e4914553-d296-46ab-9b5c-18e54cb4b8d5,貿聯KY展示支援Vera Rubin與800VDC的Power Whip液冷Rack Busbar Shelf Busbar等電源互連方案,high
+AI_RACK_POWER_DISTRIBUTION,2308,company_official,Delta Electronics,2026-06-02,https://finance.yahoo.com/sectors/technology/articles/delta-debuts-prefabricated-ai-modular-122400540.html,COMPUTEX 2026展示12kW Power Distribution Board與符合NVIDIA MGX標準的液冷Busbar且支援超過5000A高電流容量,high
+AI_RACK_POWER_DISTRIBUTION,6669,industry_expert,Third Bridge,2026-06-24,https://www.thirdbridge.com/en-us/about-us/media/perspectives/computex-2026,緯穎與台達及TE Connectivity共同展示機櫃級800VDC方案涵蓋Power Rack液冷Busbar與800V轉50V PDB,medium_high

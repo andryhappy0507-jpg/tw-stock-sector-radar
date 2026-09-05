@@ -1,0 +1,10 @@
+stock_id,company,theme_id,theme_name,source_type,publisher,published_date,source_url,evidence_summary,confidence,verification_status
+4540,全球傳動,ROBOT_TRANSMISSION,機器人傳動／減速機,company_official,TBI MOTION,,https://www.tbimotion.com.tw/,官方產品頁確認滾珠螺桿線性滑軌及單軸機器人等核心傳動產品並可與人形機器人應用報導交叉驗證,high,second_source_confirmed
+4540,全球傳動,ROBOT_ACTUATION,機器人致動／關節模組,company_official,TBI MOTION,,https://www.tbimotion.com.tw/,官方單軸機器人以線軌與螺桿形成高剛性高精度運動模組並與線性執行器布局報導一致,high,second_source_confirmed
+4540,全球傳動,ROBOT_END_EFFECTOR,機器人末端執行器,company_official,TBI MOTION,,https://www.tbimotion.com.tw/,官方確認微型化可用之滾珠螺桿與傳動產品基礎並與靈巧手微型螺桿布局報導交叉驗證,high,second_source_confirmed
+6215,和椿,ROBOT_SYSTEM_INTEGRATION,機器人系統整合,company_official,Aurotek,,https://aurotek.com/products/aurotek-ammr/,官方AMMR方案整合自主移動平台協作機械手臂導航上下料檢測與智慧工廠流程,high,second_source_confirmed
+6215,和椿,ROBOT_AMR,AMR／自主移動機器人,company_official,Aurotek,,https://aurotek.com/solutions/smart-logistics/,官方智慧物流方案明列AMR無人堆高機與自主導航搬運機器人,high,second_source_confirmed
+6215,和椿,ROBOT_BODY_PLATFORM,機器人本體／平台,company_official,Aurotek,,https://aurotek.com/products/category/robots/humanoid-robots/,官方人形機器人產品線明列商用工業與教研人形機器人,high,second_source_confirmed
+7750,新代,ROBOT_CONTROL_SYSTEM,機器人控制系統,company_official,Syntec,,https://www.syntecclub.com/catalog.aspx,官方型錄下載頁明列機械手臂控制器CNC機器人一體化控制及All-In-One Robot Control方案,high,second_source_confirmed
+8374,羅昇,ROBOT_SYSTEM_INTEGRATION,機器人系統整合,company_official,Ace Pillar,2026-08-19,https://www.acepillar.com/news/detail/Automation-Taipei-2026,官方展示AI視覺倉儲協作整合系統與人形機器人伺服馬達減速機邊緣AI視覺安全控制整合方案,high,second_source_confirmed
+4576,大銀微系統,ROBOT_ACTUATION,機器人致動／關節模組,company_official,HIWIN MIKROSYSTEM,,https://www.hiwinmikro.tw/zh/product/overview,官方產品頁明列伺服馬達驅動器控制器線性致動器與單軸機器人完整運動模組產品,high,second_source_confirmed

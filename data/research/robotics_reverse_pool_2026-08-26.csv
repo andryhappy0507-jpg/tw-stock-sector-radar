@@ -1,0 +1,18 @@
+stock_id,company,theme_id,theme_name,role,decision,source_type,publisher,published_date,source_url,evidence_summary,confidence,audit_status
+2049,上銀,ROBOTICS,機器人,core,PROMOTE_EXISTING_THEME,company_official,HIWIN,2026-08-19,https://www.hiwin.tw/news_content.aspx?newsID=25594,公司官方頁揭露人形機器人關鍵控制與驅動元件布局並展示核心元件驅動人形機器人,high,reviewed
+2049,上銀,ROBOT_COMPONENTS,機器人零組件,core,PROMOTE_EXISTING_THEME,company_official,HIWIN,2026-06-02,https://www.hiwin.tw/news_content.aspx?newsID=25581,公司官方資料明列精密傳動致動模組人形機器人核心模組智慧夾爪及雙臂物流機器人,high,reviewed
+1597,直得,ROBOT_COMPONENTS,機器人零組件,core,PROMOTE_EXISTING_THEME,company_official,Chieftek Precision,2026-08-19,https://chieftek.com/zh-hant/products/linear-guide-series/,公司官網明列線性滑軌可用於機器人且產品線包含伺服馬達驅動器多軸模組與微型六軸機械手臂,high,reviewed
+1597,直得,ROBOTICS,機器人,related,PROMOTE_EXISTING_THEME,company_official,Chieftek Precision,2026-08-19,https://chieftek.com/zh-hant/products/linear-guide-series/,公司官網具微型六軸機械手臂及多項機器人運動控制相關產品,high,reviewed
+4540,全球傳動,ROBOT_COMPONENTS,機器人零組件,core,PROMOTE_EXISTING_THEME,financial_media,MoneyDJ,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,MoneyDJ具體指出公司布局人形機器人上肢下肢線性執行器與靈巧手微型滾珠螺桿且評估機器人產線投資,medium_high,reviewed
+4540,全球傳動,ROBOTICS,機器人,related,PROMOTE_EXISTING_THEME,financial_media,經濟日報,2026-01-15,https://money.udn.com/money/story/11162/9265994,經濟日報將公司列入台灣AI機器人手臂與傳動供應鏈並與其他關鍵零組件廠並列,medium_high,reviewed
+6215,和椿,ROBOTICS,機器人,core,PROMOTE_EXISTING_THEME,financial_media,MoneyDJ,2025-07-23,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f8ef0767-9959-4067-9166-cb8abf276e80,MoneyDJ指出和椿將展出多款人形機器人實績並結合AMR無人堆高機與智慧工廠流程，符合機器人解決方案整合商定位,medium_high,reviewed
+7750,新代,ROBOTICS,機器人,related,PROMOTE_EXISTING_THEME,financial_media,MoneyDJ,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,MoneyDJ將新代列為控制器大廠並於機器人與智慧自動化展展示機器人相關產品與解決方案,medium_high,reviewed
+8374,羅昇,ROBOTICS,機器人,related,PROMOTE_EXISTING_THEME,financial_media,MoneyDJ,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,MoneyDJ將羅昇列為自動化解決方案廠並直接列入機器人相關參展供應商,medium_high,reviewed
+4555,氣立,ROBOT_COMPONENTS,機器人零組件,related,PROMOTE_EXISTING_THEME,financial_media,MoneyDJ,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,MoneyDJ將氣立列為機器人與自動化展之氣動元件供應商並與機器人關鍵零組件廠並列,medium_high,reviewed
+4576,大銀微系統,ROBOT_COMPONENTS,機器人零組件,core,PROMOTE_EXISTING_THEME,financial_media,經濟日報,2026-01-15,https://money.udn.com/money/story/11162/9265994,經濟日報將大銀列為AI機器人驅動系統供應商且近期展會持續與上銀共同展示人形機器人產品,medium_high,reviewed
+4585,達明,ROBOTICS,機器人,core,NEED_SECOND_SOURCE,financial_media,經濟日報,2026-08-17,https://money.udn.com/money/story/5607/9696705,經濟日報將達明機器人列為機器人與智慧自動化展主要機器人廠商,medium_high,pending
+6570,維田,ROBOT_VISION,機器人視覺,related,NEED_SECOND_SOURCE,financial_media,經濟日報,2026-01-15,https://money.udn.com/money/story/11162/9265994,經濟日報明確指出維田負責AI機器人視覺應用並列入台灣AI機器人供應鏈,medium_high,pending
+4566,時碩工業,ROBOT_COMPONENTS,機器人零組件,related,NEED_SECOND_SOURCE,financial_media,經濟日報,2026-01-15,https://money.udn.com/money/story/11162/9265994,經濟日報將時碩列入AI機器人合金外殼供應鏈,medium_high,pending
+1536,和大,ROBOT_COMPONENTS,機器人零組件,emerging,NEED_SECOND_SOURCE,financial_media,經濟日報,2026-01-15,https://money.udn.com/money/story/11162/9265994,經濟日報指出和大布局人形機器人關節行星齒輪減速機並已送樣測試且規劃機器人事業部,medium_high,pending
+2464,盟立,ROBOTICS,機器人,core,PROMOTE_EXISTING_THEME,company_official,Mirle Automation,2026-01-19,https://www.mirle.com.tw/news-detail/661/,公司成立具身智能事業群並明確揭露輪型與四足機器人平台、自主運動控制、AI感知與2026小量量產規劃，機器人已形成可辨識事業線,high,reviewed
+2464,盟立,ROBOT_COMPONENTS,機器人零組件,related,PROMOTE_EXISTING_THEME,company_official,Mirle Automation,2026-01-19,https://www.mirle.com.tw/news-detail/661/,公司官方揭露集團自製精密諧波減速機與機器人關節模組，具從關鍵零組件到整機平台的完整技術鏈,high,reviewed

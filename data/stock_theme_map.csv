@@ -1,0 +1,272 @@
+﻿stock_id,theme_id,confidence,source_type,source_date,source_ref,evidence_summary,last_verified,status,approval_status
+2382,AI_SERVER,high,company_website,,https://www.quantatw.com/Quanta/english/esg/ESG2024/ch02.html,廣達官方永續資料指出AI資料中心基礎建設擴張帶動伺服器業務大幅成長,2026-08-23,active,auto_approved
+6669,AI_SERVER,high,annual_report,,https://www.wiwynn.com/hubfs/Investors/Shareholders_Services/2026_Annual_Report_EN.pdf,緯穎年報明確指出AI相關產品營收占比超過50%並深耕資料中心與雲端伺服器,2026-08-23,active,auto_approved
+3017,COOLING,high,company_website,,https://www.avc.co/zh-tw/About-AVC/CompanyProfile,奇鋐官方公司介紹明確定位為整體散熱解決方案專業供應商,2026-08-23,active,auto_approved
+3324,LIQUID_COOLING,high,annual_report,,https://www.auras.com.tw/CMSFS/Shareholders/FinancialAnnualChinese/ed4475a3-db60-455c-9ce9-93699a2fe601.pdf,雙鴻年報明確揭露直接式與浸沒式液冷及CDU等完整液冷方案,2026-08-23,active,auto_approved
+2383,CCL,high,annual_report,2023-05-08,https://www.emctw.com/upload/media/New_Investors/Financial_Information/Annual_Reports/CH/2022.pdf,台光電年報明確揭露銅箔基板CCL產能與營運,2026-08-23,active,auto_approved
+2330,COWOS,high,annual_report,,https://investor.tsmc.com/sites/ir/annual-report/2025/2025%20TSMC%20Annual%20Report_E.pdf,台積電年報明確揭露CoWoS先進封裝服務與量產進展,2026-08-23,active,auto_approved
+2330,CPO,high,annual_report,,https://investor.tsmc.com/sites/ir/annual-report/2025/2025%20TSMC%20Annual%20Report_E.pdf,台積電年報明確揭露CoWoS共同封裝光學CPO方案開發,2026-08-23,active,auto_approved
+2330,SILICON_PHOTONICS,high,annual_report,,https://investor.tsmc.com/sites/ir/annual-report/2025/2025%20TSMC%20Annual%20Report_E.pdf,台積電年報明確揭露COUPE矽光子與光學IO整合技術,2026-08-23,active,auto_approved
+8234,ROBOTICS,high,company_website,,https://www.aiotmart.nexcom.com/faq.php?lang=tw&tb=1,新漢官方資料明確列出工業機器人控制器與自主移動機器人等應用,2026-08-23,active,auto_approved
+8234,EDGE_AI,high,company_website,,https://www.aiotmart.nexcom.com/faq.php?lang=tw&tb=1,新漢官方資料明確列出AI邊緣運算電腦與邊緣運算解決方案,2026-08-23,active,auto_approved
+2634,AEROSPACE,high,annual_report,,https://www.aidc.com.tw/Content/File/107Q4Consolidated_tw.pdf,漢翔官方財報揭露飛機發動機航電及航太零組件設計製造維修為主要業務,2026-08-23,active,auto_approved
+2609,CONTAINER_SHIPPING,high,company_website,,https://esg.yangming.com/en/investors/,陽明官方投資人資料明確說明貨櫃航運市場與貨櫃船隊營運,2026-08-23,active,auto_approved
+1519,HEAVY_ELECTRICAL,high,annual_report,,https://www.fortune.com.tw/WEB_Manage/attached/file/shareholder/20250225/2021_2021_AnnualReport.pdf,華城官方年報揭露超高壓變壓器相關業務與子公司營運,2026-08-23,active,auto_approved
+3533,AI_SERVER_CONNECTOR,medium,financial_media,2026-06-15,https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=58e4b390-115f-49d2-8683-b0c315bbfd46,嘉澤受惠AI伺服器與資料中心需求並擴充GPU Socket與高速線纜互連技術,2026-08-25,active,approved
+3526,AI_SERVER_CONNECTOR,medium,financial_media,2026-04-13,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ccd24825-0aeb-4f06-967e-f06a40575380,AI基礎建設與伺服器交換器需求帶動凡甲等連接元件廠且法人反覆點名,2026-08-25,active,approved
+3665,AI_SERVER_CONNECTOR,medium,financial_media,2026-04-13,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ccd24825-0aeb-4f06-967e-f06a40575380,AI基礎建設與伺服器交換器需求帶動貿聯KY等連接元件廠且法人反覆點名,2026-08-25,active,approved
+3526,HIGH_SPEED_CONNECTOR,high,annual_report,2026-04-24,https://www.alltopconnector.com/data/information/files/1779087124881442433.pdf,凡甲2025年報明列升級伺服器高速連接線並將AI資料中心列為高頻高功率高可靠度產品需求動能,2026-09-05,active,approved
+3533,HIGH_SPEED_CONNECTOR,high,company_website,2026-06-02,https://www.lotes.cc/zh-tw/news.php?act=view&id=34,嘉澤官方明列NVIDIA MGX合作及AI Factory高速互連並具MCIO PCIe Gen4與Gen5線纜產品,2026-09-05,active,approved
+3665,HIGH_SPEED_CONNECTOR,high,company_website,,https://telecom-networking.bizlinktech.com/applications/bizlink-data-center-solutions/,貿聯官方資料中心方案明列800G以上ACC與AEC及最高1.6T DAC高速互連產品,2026-09-05,active,approved
+3526,HIGH_POWER_CONNECTOR,medium,financial_media,2026-08-19,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=910b2e81-5e69-4508-97a9-aa53ae7f2c8c,凡甲400VDC高功率產品下半年有機會出貨且800VDC持續開發,2026-08-25,active,approved
+3665,HIGH_POWER_CONNECTOR,medium,financial_media,2026-07-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=128822cd-7b4d-46b1-a6fb-e313eb4b72c1,貿聯KY高功率電源互聯產品與High Power產線持續擴張,2026-08-25,active,approved
+6279,AUTOMOTIVE_CONNECTOR,medium,financial_media,2026-07-07,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6755fc7d-d6b2-42ec-927e-0e019edc06fc,胡連被明確定位為車用連接器廠且車市回升帶動營運,2026-08-25,active,approved
+3023,AUTOMOTIVE_CONNECTOR,medium,financial_media,2026-02-25,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f9435e2a-ccaa-4c1d-995c-fed0788c5bd2,信邦電動車新能源訂單增加且車用連接器與連接模組比重提升,2026-08-25,active,approved
+3665,AUTOMOTIVE_CONNECTOR,medium,financial_media,2026-01-29,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0a450763-8ec0-4005-8858-796c5340ece1,貿聯KY高速線束與車用連接方案受Robotaxi及車隊擴充題材關注,2026-08-25,active,approved
+3003,AUTOMOTIVE_CONNECTOR,medium,financial_media,2026-08-07,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=dd4d9205-d10e-4e11-b5bd-d92cc0906179,健和興大電流連接器應用涵蓋車用充電與高功率場景且營運回升,2026-08-25,active,approved
+6279,VEHICLE_WIRE_HARNESS,medium,financial_media,2026-08-07,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4204b8c8-b213-4f7d-b21b-94592c3c0a6f,胡連取得義大利線束與電纜系統廠股權並切入高階車用供應鏈,2026-08-25,active,approved
+3023,VEHICLE_WIRE_HARNESS,medium,financial_media,2026-02-25,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f9435e2a-ccaa-4c1d-995c-fed0788c5bd2,信邦車用線束與新能源連接模組訂單能見度提升,2026-08-25,active,approved
+3665,VEHICLE_WIRE_HARNESS,medium,financial_media,2026-01-29,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0a450763-8ec0-4005-8858-796c5340ece1,貿聯KY高速線束與車用互連方案受Robotaxi及AI資料中心雙題材推動,2026-08-25,active,approved
+2313,HARD_PCB,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=L000,櫃買中心PCB產業鏈內文點名主要硬板供應商,2026-08-26,active,approved
+3037,HARD_PCB,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=L000,櫃買中心PCB產業鏈內文點名主要硬板供應商,2026-08-26,active,approved
+4958,FPCB,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=L000,櫃買中心PCB產業鏈內文點名主要軟板供應商,2026-08-26,active,approved
+6153,FPCB,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=L000,櫃買中心PCB產業鏈內文點名主要軟板供應商,2026-08-26,active,approved
+3037,IC_SUBSTRATE,medium,financial_media,2026-01-21,https://money.udn.com/money/story/5612/9279061,法人持續看好載板三雄受惠AI與高階載板需求,2026-08-26,active,approved
+3189,IC_SUBSTRATE,medium,financial_media,2026-01-21,https://money.udn.com/money/story/5612/9279061,法人持續看好載板三雄受惠AI與高階載板需求,2026-08-26,active,approved
+8046,IC_SUBSTRATE,medium,financial_media,2026-01-21,https://money.udn.com/money/story/5612/9279061,法人持續看好載板三雄受惠AI與高階載板需求,2026-08-26,active,approved
+3485,PCB_PROCESS_EQUIPMENT,medium,financial_media,2026-07-22,https://money.udn.com/money/story/5612/9643041,PCB載板擴產帶動高階濕製程設備需求並點名敘豐,2026-08-26,active,approved
+2493,PCB_PROCESS_EQUIPMENT,medium,financial_media,2026-07-22,https://money.udn.com/money/story/5612/9643041,PCB載板擴產帶動高階濕製程設備需求並點名揚博,2026-08-26,active,approved
+2467,PCB_PROCESS_EQUIPMENT,medium,financial_media,2026-08-18,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5bd96489-0ba3-4b95-97ab-c98678491a07,法人看好高階PCB與先進封裝設備雙引擎且PCB設備訂單成長,2026-08-26,active,approved
+1815,PCB_GLASS_FIBER,medium,financial_media,2026-07-06,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=508d105a-47c3-44ee-95c7-afb7c5b3deff,富喬新廠聚焦高階玻纖布並鎖定AI伺服器低軌衛星與IC載板,2026-08-26,active,approved
+8358,PCB_COPPER_FOIL,medium,financial_media,2026-08-05,https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=e0940ea6-938d-47f2-b93c-0466e360589c,金居高階銅箔鎖定AI伺服器與高功耗平台並進入客戶驗證,2026-08-26,active,approved
+3035,IC_DESIGN_SERVICE,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入IP設計與IC設計代工服務,2026-08-26,active,approved
+3443,IC_DESIGN_SERVICE,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入IP設計與IC設計代工服務,2026-08-26,active,approved
+3661,IC_DESIGN_SERVICE,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入IP設計與IC設計代工服務,2026-08-26,active,approved
+2330,WAFER_MANUFACTURING,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入IC晶圓製造,2026-08-26,active,approved
+2303,WAFER_MANUFACTURING,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入IC晶圓製造,2026-08-26,active,approved
+3105,WAFER_MANUFACTURING,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入IC晶圓製造,2026-08-26,active,approved
+3711,IC_PACKAGING_TEST,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入IC封裝測試,2026-08-26,active,approved
+6239,IC_PACKAGING_TEST,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入IC封裝測試,2026-08-26,active,approved
+2449,IC_PACKAGING_TEST,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入IC封裝測試,2026-08-26,active,approved
+2327,RESISTOR,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=J000,櫃買中心被動元件產業鏈列入電阻器,2026-08-26,active,approved
+2492,RESISTOR,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=J000,櫃買中心被動元件產業鏈列入電阻器,2026-08-26,active,approved
+6207,RESISTOR,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=J000,櫃買中心被動元件產業鏈列入電阻器,2026-08-26,active,approved
+2327,CAPACITOR,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=J000,櫃買中心被動元件產業鏈列入電容器,2026-08-26,active,approved
+2472,CAPACITOR,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=J000,櫃買中心被動元件產業鏈列入電容器,2026-08-26,active,approved
+6449,CAPACITOR,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=J000,櫃買中心被動元件產業鏈列入電容器,2026-08-26,active,approved
+2327,INDUCTOR,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=J000,櫃買中心被動元件產業鏈列入電感器,2026-08-26,active,approved
+5434,INDUCTOR,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=J000,櫃買中心被動元件產業鏈列入電感器,2026-08-26,active,approved
+6155,INDUCTOR,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=J000,櫃買中心被動元件產業鏈列入電感器,2026-08-26,active,approved
+2459,FILTER_OSCILLATOR,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=J000,櫃買中心被動元件產業鏈列入濾波器或振盪器,2026-08-26,active,approved
+2484,FILTER_OSCILLATOR,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=J000,櫃買中心被動元件產業鏈列入濾波器或振盪器,2026-08-26,active,approved
+3026,FILTER_OSCILLATOR,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=J000,櫃買中心被動元件產業鏈列入濾波器或振盪器,2026-08-26,active,approved
+2337,MEMORY_IC,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入記憶體IC,2026-08-26,active,approved
+2344,MEMORY_IC,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入記憶體IC,2026-08-26,active,approved
+2408,MEMORY_IC,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入記憶體IC,2026-08-26,active,approved
+2458,MCU_IC,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入微控制器IC,2026-08-26,active,approved
+3014,MCU_IC,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入微控制器IC,2026-08-26,active,approved
+3034,MCU_IC,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入微控制器IC,2026-08-26,active,approved
+2454,PMIC,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入電源管理IC,2026-08-26,active,approved
+3034,PMIC,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入電源管理IC,2026-08-26,active,approved
+3257,PMIC,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=D000,櫃買中心半導體產業鏈列入電源管理IC,2026-08-26,active,approved
+2308,POWER_SUPPLY,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=43b9ef80-24de-4893-b9b2-363bf6593a21,台達電被反覆確認為AI資料中心HVDC與高效率電源核心供應商,2026-08-26,active,approved
+2301,POWER_SUPPLY,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=43b9ef80-24de-4893-b9b2-363bf6593a21,光寶科被反覆確認布局AI資料中心HVDC與高功率電源供應,2026-08-26,active,approved
+6282,POWER_SUPPLY,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=43b9ef80-24de-4893-b9b2-363bf6593a21,康舒被反覆確認參與AI伺服器與資料中心高功率電源供應鏈,2026-08-26,active,approved
+6781,UPS_BBU,medium,financial_media,2026-08-25,https://www.moneydj.com/z/DJA/News/DJANewsDetail_CA3E3C95-EAB9-4A9E-B80F-41AC43855AB5.djhtm,AES-KY被法人與財經媒體反覆確認為AI伺服器BBU主要供應商,2026-08-26,active,approved
+3211,UPS_BBU,medium,financial_media,2026-08-25,https://www.moneydj.com/z/DJA/News/DJANewsDetail_CA3E3C95-EAB9-4A9E-B80F-41AC43855AB5.djhtm,順達被法人與財經媒體反覆確認為AI伺服器BBU主要供應商,2026-08-26,active,approved
+4931,UPS_BBU,medium,financial_media,2026-08-25,https://www.moneydj.com/z/DJA/News/DJANewsDetail_CA3E3C95-EAB9-4A9E-B80F-41AC43855AB5.djhtm,新盛力被法人與財經媒體反覆確認為AI伺服器BBU供應商,2026-08-26,active,approved
+6121,UPS_BBU,medium,financial_media,2026-08-25,https://www.moneydj.com/z/DJA/News/DJANewsDetail_CA3E3C95-EAB9-4A9E-B80F-41AC43855AB5.djhtm,新普被法人與財經媒體反覆確認為AI伺服器BBU主要供應商,2026-08-26,active,approved
+2308,HVDC_AI_POWER,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=43b9ef80-24de-4893-b9b2-363bf6593a21,台達電被反覆確認布局AI資料中心正負400V與800VDC HVDC架構,2026-08-26,active,approved
+2301,HVDC_AI_POWER,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=43b9ef80-24de-4893-b9b2-363bf6593a21,光寶科被反覆確認布局AI資料中心HVDC與800VDC高壓直流電源架構,2026-08-26,active,approved
+6282,HVDC_AI_POWER,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=43b9ef80-24de-4893-b9b2-363bf6593a21,康舒被反覆確認參與AI資料中心HVDC高功率電源供應鏈,2026-08-26,active,approved
+6781,AI_SERVER_BBU,medium,financial_media,2026-08-25,https://money.udn.com/money/story/11162/9617815,AES-KY被經濟日報與MoneyDJ反覆確認為AI伺服器BBU主要供應商,2026-08-26,active,approved
+6121,AI_SERVER_BBU,medium,financial_media,2026-08-25,https://money.udn.com/money/story/11162/9617815,新普被經濟日報與MoneyDJ反覆確認為AI伺服器BBU主要供應商,2026-08-26,active,approved
+3211,AI_SERVER_BBU,medium,financial_media,2026-08-25,https://money.udn.com/money/story/11162/9617815,順達被經濟日報與MoneyDJ反覆確認為AI伺服器BBU主要供應商,2026-08-26,active,approved
+4931,AI_SERVER_BBU,medium,financial_media,2026-08-25,https://money.udn.com/money/story/11162/9617815,新盛力被經濟日報與MoneyDJ反覆確認為AI伺服器BBU供應商,2026-08-26,active,approved
+2308,AI_POWER_RACK,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=bccf00d2-6479-4a98-9573-d6c4eeceba6d,台達電被公司與財經媒體確認提供800VDC Power Rack與機櫃級電力整合方案,2026-08-26,active,approved
+2301,AI_POWER_RACK,medium,financial_media,2026-08-25,https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=bccf00d2-6479-4a98-9573-d6c4eeceba6d,光寶科被公司與財經媒體確認布局800VDC Power Rack與高功率電源整合,2026-08-26,active,approved
+6669,AI_POWER_RACK,medium,company_commentary,2026-05-26,https://money.udn.com/money/story/5612/9526994,緯穎展示800V HVDC Power Rack液冷Busbar與PDB端對端機櫃級電力整合方案,2026-08-26,active,approved
+3665,AI_POWER_RACK,medium,company_commentary,2026-03-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e4914553-d296-46ab-9b5c-18e54cb4b8d5,貿聯KY展示支援Vera Rubin與800VDC的Power Whip液冷Rack Busbar Shelf Busbar等電源互連方案,2026-08-26,active,approved
+2308,AI_RACK_POWER_DISTRIBUTION,medium,company_official,2026-06-02,https://finance.yahoo.com/sectors/technology/articles/delta-debuts-prefabricated-ai-modular-122400540.html,COMPUTEX 2026展示12kW PDB與符合NVIDIA MGX標準的液冷Busbar並支援超過5000A高電流容量,2026-08-26,active,approved
+6669,AI_RACK_POWER_DISTRIBUTION,medium,industry_expert,2026-06-24,https://www.thirdbridge.com/en-us/about-us/media/perspectives/computex-2026,緯穎與台達及TE共同展示機櫃級800VDC方案涵蓋Power Rack液冷Busbar與800V轉50V PDB,2026-08-26,active,approved
+2409,PANEL,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入面板製造,2026-08-26,active,approved
+3481,PANEL,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入面板製造,2026-08-26,active,approved
+6116,PANEL,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入面板製造,2026-08-26,active,approved
+2393,DISPLAY_MODULE,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入顯示器模組,2026-08-26,active,approved
+2485,DISPLAY_MODULE,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入顯示器模組,2026-08-26,active,approved
+3024,DISPLAY_MODULE,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入顯示器模組,2026-08-26,active,approved
+6120,BACKLIGHT_MODULE,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入背光模組,2026-08-26,active,approved
+6176,BACKLIGHT_MODULE,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入背光模組,2026-08-26,active,approved
+6278,BACKLIGHT_MODULE,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=G000,櫃買中心平面顯示器產業鏈列入背光模組,2026-08-26,active,approved
+2340,LED,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=A200,櫃買中心LED照明產業鏈列入LED光源磊晶封裝模組供應鏈,2026-08-26,active,approved
+2491,LED,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=A200,櫃買中心LED照明產業鏈列入LED光源磊晶封裝模組供應鏈,2026-08-26,active,approved
+3714,LED,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=A200,櫃買中心LED照明產業鏈列入LED光源磊晶封裝模組供應鏈,2026-08-26,active,approved
+1504,MECHANICAL_TRANSMISSION,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=P000,櫃買中心電機機械產業鏈列入傳動元件,2026-08-26,active,approved
+1526,MECHANICAL_TRANSMISSION,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=P000,櫃買中心電機機械產業鏈列入傳動元件,2026-08-26,active,approved
+1536,MECHANICAL_TRANSMISSION,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=P000,櫃買中心電機機械產業鏈列入傳動元件,2026-08-26,active,approved
+1504,INDUSTRIAL_CONTROL_COMPONENTS,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=P000,櫃買中心電機機械產業鏈列入電控元件,2026-08-26,active,approved
+1533,INDUSTRIAL_CONTROL_COMPONENTS,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=P000,櫃買中心電機機械產業鏈列入電控元件,2026-08-26,active,approved
+1597,INDUSTRIAL_CONTROL_COMPONENTS,medium,official_regulator,2026-08-24,https://ic.tpex.org.tw/introduce.php?ic=P000,櫃買中心電機機械產業鏈列入電控元件,2026-08-26,active,approved
+2308,LOW_ORBIT_SATELLITE,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=4100,櫃買中心太空衛星科技產業鏈列入低軌衛星相關供應鏈,2026-08-26,active,approved
+2314,LOW_ORBIT_SATELLITE,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=4100,櫃買中心太空衛星科技產業鏈列入低軌衛星相關供應鏈,2026-08-26,active,approved
+2352,LOW_ORBIT_SATELLITE,medium,official_regulator,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=4100,櫃買中心太空衛星科技產業鏈列入低軌衛星相關供應鏈,2026-08-26,active,approved
+2801,FINANCE,medium,official_industry_classification,2026-08-23,official_openapi,官方產業分類代碼17金融保險,2026-08-26,active,approved
+2812,FINANCE,medium,official_industry_classification,2026-08-23,official_openapi,官方產業分類代碼17金融保險,2026-08-26,active,approved
+2816,FINANCE,medium,official_industry_classification,2026-08-23,official_openapi,官方產業分類代碼17金融保險,2026-08-26,active,approved
+2701,TOURISM,medium,official_industry_classification,2026-08-23,official_openapi,官方產業分類代碼16觀光餐旅,2026-08-26,active,approved
+2702,TOURISM,medium,official_industry_classification,2026-08-23,official_openapi,官方產業分類代碼16觀光餐旅,2026-08-26,active,approved
+2707,TOURISM,medium,official_industry_classification,2026-08-23,official_openapi,官方產業分類代碼16觀光餐旅,2026-08-26,active,approved
+4904,CLOUD_COMPUTING,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=5400,櫃買中心雲端運算產業鏈列入IaaS PaaS SaaS或雲端應用服務,2026-08-26,active,approved
+6112,CLOUD_COMPUTING,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=5400,櫃買中心雲端運算產業鏈列入IaaS PaaS SaaS或雲端應用服務,2026-08-26,active,approved
+6561,CLOUD_COMPUTING,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=5400,櫃買中心雲端運算產業鏈列入IaaS PaaS SaaS或雲端應用服務,2026-08-26,active,approved
+1519,SMART_GRID,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=AD10,櫃買中心智慧電網產業鏈列入輸配電智慧電表或應用服務,2026-08-26,active,approved
+1603,SMART_GRID,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=AD10,櫃買中心智慧電網產業鏈列入輸配電智慧電表或應用服務,2026-08-26,active,approved
+1605,SMART_GRID,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=AD10,櫃買中心智慧電網產業鏈列入輸配電智慧電表或應用服務,2026-08-26,active,approved
+1504,WIND_EQUIPMENT,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=AB20,櫃買中心風力發電產業鏈列入設備製造材料零組配件或電力系統,2026-08-26,active,approved
+2208,WIND_SERVICE,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=AB20,櫃買中心風力發電產業鏈列入風場規劃營造或風機維護,2026-08-26,active,approved
+6869,WIND_OPERATION,medium,tpex_industry_value_chain,2026-08-23,https://ic.tpex.org.tw/introduce.php?ic=AB20,櫃買中心風力發電產業鏈列入風場開發或發電營運,2026-08-26,active,approved
+2359,ROBOTICS,high,company_official,2025-01-13,https://www.solomon.com.tw/news-events/%E6%89%80%E7%BE%85%E9%96%80%E3%80%81%E8%BC%9D%E9%81%94ces%E5%90%8C%E6%A1%86-%E7%A7%80%E5%85%88%E9%80%B2%E6%A9%9F%E5%99%A8%E4%BA%BA%E6%8A%80%E8%A1%93/,所羅門官方說明AI 3D視覺與機器人技術並整合NVIDIA Isaac機器人平台,2026-08-26,active,approved
+2359,ROBOT_VISION,high,annual_report,2025-11-01,https://www.solomon.com.tw/wp-content/uploads/2025/11/2024-STC-Corporate-Sustainability-Report_EN.pdf,所羅門官方報告說明AI vision涵蓋3D robot vision並整合多品牌機器人與AMR,2026-08-26,active,approved
+2359,AUTOMATION,high,company_official,2026-08-20,https://www.solomon.com.tw/products/,所羅門官網業務明列機械手臂應用與自動化控制系統,2026-08-26,active,approved
+2395,INDUSTRIAL_PC,high,company_official,2026-08-20,https://www.advantech.com/zh-tw,研華官方核心解決方案包含工業與邊緣伺服器及工業設備平台,2026-08-26,active,approved
+2395,AUTOMATION,high,company_official,2026-08-20,https://www.advantech.com/zh-tw/industrial-automation/industry4.0/,研華官方工業4.0方案明列設備自動化運動控制機器視覺機械手臂與AGV整合,2026-08-26,active,approved
+2395,EDGE_AI,high,company_official,2026-08-20,https://www.advantech.com/zh-tw/solutions/iot-edge-intelligence-solutions-and-services,研華官方Edge Intelligence方案明列Edge AI與工廠自動化等AIoT應用,2026-08-26,active,approved
+2395,ROBOTICS,high,company_official,2026-03-17,https://www.advantech.com/emt/resources/news/advantech-and-fort-robotics-collaborate-to-advance-safe-physical-ai-on-mic-735,研華官方發布機器人與AMR實際部署平台及robotics edge AI產品,2026-08-26,active,approved
+2308,DATA_CENTER,high,company_official,2026-08-25,https://www.deltaww.com/zh-TW/landing/Delta-for-AI,台達電官方提供資料中心電力液冷DCIM與AI整合基礎設施,2026-08-26,active,approved
+2308,COOLING,high,company_official,2026-08-25,https://www.deltaww.com/zh-TW/landing/Delta-for-AI,台達電AI方案涵蓋從資料中心設施機櫃伺服器到晶片的氣冷與液冷散熱,2026-08-26,active,approved
+2308,LIQUID_COOLING,high,company_official,2026-08-25,https://www.deltaww.com/zh-TW/landing/Delta-for-AI,台達電官方明列80kW液對氣冷卻系統及完整液冷方案,2026-08-26,active,approved
+2308,AUTOMATION,high,company_official,2026-08-25,https://www.deltaww.com/en-US/products/Industrial-Automation,台達電工業自動化產品線涵蓋motion control PLC machine vision robot智慧設備與軟體,2026-08-26,active,approved
+2308,ROBOTICS,high,company_official,2026-08-25,https://www.deltaww.com/en-US/solutions/robotics,台達電具SCARA articulated modular collaborative robot與控制解決方案,2026-08-26,active,approved
+4590,ROBOT_COMPONENTS,high,company_website,2026-08-31,https://www.fukuta-motor.com.tw/tw/support.html,富田官方直接列出機器人與機器狗關節馬達並說明機器人用高扭矩密度小型馬達,2026-09-01,active,approved
+5443,ROBOTICS,high,company_website,2026-08-31,https://www.gpmcorp.com.tw/products_detail.php?plevel1Id=1&productId=G,均豪官方明列Mobile Robot與機器人彈性加工系統且已導入晶圓及封裝客戶,2026-09-01,active,approved
+4571,ROBOT_COMPONENTS,high,company_website,2019-08-10,https://www.khgears.com/edit_file/file/20190810/20190810144054_57205.pdf,鈞興正式公開說明書支持機器人諧波減速機與小批量訂單且2026法說研究確認機器人齒輪已出貨,2026-09-01,active,approved
+2392,ROBOTICS,high,company_website,2025-06-04,https://www.foxlink.com/web/%E7%89%A9%E7%90%86-ai-%E5%A0%B4%E6%99%AF%E5%9C%A8%E5%8F%B0%E5%AF%A6%E7%8F%BE%EF%BC%81sync-robotic-%E7%99%BC%E5%B8%83-ai-%E6%A9%9F%E5%99%A8%E4%BA%BA%E5%B9%B3%E5%8F%B0%E6%96%B9%E6%A1%88-%E9%A6%96/,正崴官網明列集團旗下星科AI機器人事業並提供集團資源與製造場域符合母子公司歸屬政策,2026-09-01,active,approved
+2049,ROBOTICS,high,company_website,2026-08-19,https://www.hiwin.tw/news_content.aspx?newsID=25594,上銀官方揭露人形機器人關鍵控制與驅動元件布局並展示核心元件驅動人形機器人,2026-09-01,active,approved
+2049,ROBOT_COMPONENTS,high,company_website,2026-06-02,https://www.hiwin.tw/news_content.aspx?newsID=25581,上銀官方明列精密傳動致動模組人形機器人核心模組智慧夾爪及雙臂物流機器人,2026-09-01,active,approved
+1597,ROBOT_COMPONENTS,high,company_website,2026-08-19,https://chieftek.com/zh-hant/products/linear-guide-series/,直得官網明列線性滑軌可用於機器人且產品涵蓋伺服馬達驅動器多軸模組與微型六軸機械手臂,2026-09-01,active,approved
+1597,ROBOTICS,high,company_website,2026-08-19,https://chieftek.com/zh-hant/products/linear-guide-series/,直得官網具微型六軸機械手臂及多項機器人運動控制相關產品,2026-09-01,active,approved
+4540,ROBOT_COMPONENTS,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,全球傳動布局人形機器人線性執行器與靈巧手微型滾珠螺桿,2026-09-01,active,approved
+4540,ROBOTICS,medium,financial_media,2026-01-15,https://money.udn.com/money/story/11162/9265994,全球傳動列入台灣AI機器人手臂與傳動供應鏈,2026-09-01,active,approved
+6215,ROBOTICS,medium,financial_media,2025-07-23,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f8ef0767-9959-4067-9166-cb8abf276e80,和椿具人形機器人實績並整合AMR無人堆高機與智慧工廠流程,2026-09-01,active,approved
+7750,ROBOTICS,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,新代為控制器大廠並展示機器人相關產品與智慧自動化方案,2026-09-01,active,approved
+8374,ROBOTICS,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,羅昇為自動化解決方案廠並列入機器人相關參展供應商,2026-09-01,active,approved
+4555,ROBOT_COMPONENTS,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,氣立為機器人與自動化應用之氣動元件供應商,2026-09-01,active,approved
+4576,ROBOT_COMPONENTS,medium,financial_media,2026-01-15,https://money.udn.com/money/story/11162/9265994,大銀微系統列為AI機器人驅動系統供應商並展示人形機器人關鍵元件,2026-09-01,active,approved
+4585,ROBOTICS,high,company_website,,https://www2.tm-robot.com/zh-hant/company-profile/,達明官方定位為協作機器人品牌與生產商並提供內建視覺協作型機器人及智慧工廠方案,2026-09-01,active,approved
+6570,ROBOT_VISION,high,company_website,,https://www.aplex.com/index.php/content/news_detail/112,維田官方公開結合機械手臂與AI運算平台的AOI視覺檢測手臂方案及AI Machine Vision產品線,2026-09-01,active,approved
+4566,ROBOT_COMPONENTS,medium,news_agency,2026-07-20,https://www.cna.com.tw/news/afe/202607200165.aspx,時碩工業布局人形機器人精密金屬關鍵零配件及機器人關節零件與減速器,2026-09-01,active,approved
+1536,ROBOT_COMPONENTS,high,investor_conference,,https://www.hota.com.tw/stockholder.html,和大法說資料明列人形機器人用諧波與行星減速器並標示脖子肩膀腰與髖關節應用,2026-09-01,active,approved
+2464,ROBOTICS,high,company_website,2026-01-19,https://www.mirle.com.tw/news-detail/661/,盟立成立具身智能事業群涵蓋輪型與四足機器人平台自主運動控制AI感知及量產規劃,2026-09-01,active,approved
+2464,ROBOT_COMPONENTS,high,company_website,2026-01-19,https://www.mirle.com.tw/news-detail/661/,盟立官方揭露自製精密諧波減速機與機器人關節模組,2026-09-01,active,approved
+1504,ROBOTICS,high,company_website,2026-07-15,https://www.teco.com.tw/zh-tw/press/news/dong-yuan-xie-zhi-hui-dong-li-jie-jue-fang-an-qian-jin-ri-ben-TJM-Series-quan-ji-lie-ji-qi-ren-guan-jie-mo-zu-shou-du-wan-zheng-liang-xiang,東元官方展示TJM Series機器人關節模組並明確應用於機械手臂四足及人形機器人,2026-09-01,active,approved
+2233,ROBOT_COMPONENTS,medium,financial_media,2026-07-02,https://www.cna.com.tw/news/afe/202607020195.aspx,宇隆持續朝減速機與人形機器人新事業轉型並具諧波與微型行星減速機及致動器,2026-09-01,active,approved
+4583,ROBOT_COMPONENTS,medium,official_regulator,2026-08-18,https://www.ctsp.gov.tw/chinese/03-Intro/05-search_view.aspx?fr=1028&no=1033&sn=C0072&v=1,官方園區資料明列台灣精銳產品為超精密行星齒輪減速機機電整合伺服驅動系統及工業用機器人,2026-09-01,active,approved
+6166,ROBOTICS,high,company_website,2026-08-31,https://www.adlinktech.com/tw/robotics,凌華官方Industrial Robotics方案涵蓋AMR四足與人形機器人Edge AI運算並展示Moby人形機器人,2026-09-01,active,approved
+2317,ROBOTICS,high,company_website,2026-03-17,https://www.foxconn.com.tw/en-us/press-center/events/foxconn-events/1975,鴻海官方展示自研工業人形機器人並與NVIDIA合作且已進入製造場域驗證與部署,2026-09-01,active,approved
+8234,ROBOT_CONTROL_SYSTEM,high,company_website,,https://www.aiotmart.nexcom.com/faq.php?lang=tw&tb=1,官方資料直接列出工業機器人控制器產品與應用,2026-09-02,active,approved
+8234,ROBOT_EDGE_AI,high,company_website,,https://www.aiotmart.nexcom.com/faq.php?lang=tw&tb=1,官方資料明列AI邊緣運算電腦並用於機器人場域,2026-09-02,active,approved
+8234,ROBOT_AMR,high,company_website,,https://www.aiotmart.nexcom.com/faq.php?lang=tw&tb=1,官方資料明列自主移動機器人應用,2026-09-02,active,approved
+2359,ROBOT_SYSTEM_INTEGRATION,high,company_website,2026-08-20,https://www.solomon.com.tw/products/,官方產品頁涵蓋機械手臂應用自動化控制與AI視覺整合,2026-09-02,active,approved
+2359,ROBOT_AMR,high,annual_report,2025-11-01,https://www.solomon.com.tw/wp-content/uploads/2025/11/2024-STC-Corporate-Sustainability-Report_EN.pdf,官方報告說明AI視覺整合多品牌機器人與AMR,2026-09-02,active,approved
+2395,ROBOT_EDGE_AI,high,company_website,2026-03-17,https://www.advantech.com/emt/resources/news/advantech-and-fort-robotics-collaborate-to-advance-safe-physical-ai-on-mic-735,官方發布robotics edge AI產品及安全Physical AI運算平台,2026-09-02,active,approved
+2395,ROBOT_AMR,high,company_website,2026-03-17,https://www.advantech.com/emt/resources/news/advantech-and-fort-robotics-collaborate-to-advance-safe-physical-ai-on-mic-735,官方資料支持機器人與AMR實際部署平台,2026-09-02,active,approved
+2395,ROBOT_SYSTEM_INTEGRATION,high,company_website,2026-08-20,https://www.advantech.com/zh-tw/industrial-automation/industry4.0/,官方工業4.0方案涵蓋運動控制機器視覺機械手臂與AGV整合,2026-09-02,active,approved
+2308,ROBOT_BODY_PLATFORM,high,company_website,2026-08-25,https://www.deltaww.com/en-US/solutions/robotics,官方具SCARA關節型模組化與協作機器人產品,2026-09-02,active,approved
+2308,ROBOT_CONTROL_SYSTEM,high,company_website,2026-08-25,https://www.deltaww.com/en-US/solutions/robotics,官方機器人方案包含控制器與完整控制解決方案,2026-09-02,active,approved
+2308,ROBOT_SYSTEM_INTEGRATION,high,company_website,2026-08-25,https://www.deltaww.com/en-US/solutions/robotics,官方提供機器人本體控制與自動化整合方案,2026-09-02,active,approved
+2049,ROBOT_ACTUATION,high,company_website,2026-06-02,https://www.hiwin.tw/news_content.aspx?newsID=25581,官方明列精密致動模組與人形機器人核心模組,2026-09-02,active,approved
+2049,ROBOT_TRANSMISSION,high,company_website,2026-06-02,https://www.hiwin.tw/news_content.aspx?newsID=25581,官方資料支持機器人用精密傳動產品與模組,2026-09-02,active,approved
+2049,ROBOT_CONTROL_SYSTEM,high,company_website,2026-08-19,https://www.hiwin.tw/news_content.aspx?newsID=25594,官方揭露人形機器人關鍵控制與驅動元件,2026-09-02,active,approved
+2049,ROBOT_END_EFFECTOR,high,company_website,2026-06-02,https://www.hiwin.tw/news_content.aspx?newsID=25581,官方明列智慧夾爪與雙臂物流機器人應用,2026-09-02,active,approved
+1597,ROBOT_TRANSMISSION,high,company_website,2026-08-19,https://chieftek.com/zh-hant/products/linear-guide-series/,官方線性滑軌產品明列機器人應用,2026-09-02,active,approved
+1597,ROBOT_ACTUATION,high,company_website,2026-08-19,https://chieftek.com/zh-hant/products/linear-guide-series/,官方產品線包含伺服馬達驅動器與多軸模組,2026-09-02,active,approved
+1597,ROBOT_CONTROL_SYSTEM,high,company_website,2026-08-19,https://chieftek.com/zh-hant/products/linear-guide-series/,官方產品線具機器人運動控制相關驅動與多軸模組,2026-09-02,active,approved
+1597,ROBOT_BODY_PLATFORM,high,company_website,2026-08-19,https://chieftek.com/zh-hant/products/linear-guide-series/,官方產品線包含微型六軸機械手臂,2026-09-02,active,approved
+4540,ROBOT_TRANSMISSION,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,具體報導公司布局人形機器人用微型滾珠螺桿,2026-09-02,active,approved
+4540,ROBOT_ACTUATION,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,具體報導公司布局人形機器人上肢與下肢線性執行器,2026-09-02,active,approved
+4540,ROBOT_END_EFFECTOR,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,具體報導公司布局靈巧手用微型滾珠螺桿,2026-09-02,active,approved
+6215,ROBOT_SYSTEM_INTEGRATION,medium,financial_media,2025-07-23,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f8ef0767-9959-4067-9166-cb8abf276e80,報導支持人形機器人AMR與智慧工廠流程整合商定位,2026-09-02,active,approved
+6215,ROBOT_AMR,medium,financial_media,2025-07-23,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f8ef0767-9959-4067-9166-cb8abf276e80,報導具體列出AMR無人堆高機應用,2026-09-02,active,approved
+6215,ROBOT_BODY_PLATFORM,medium,financial_media,2025-07-23,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f8ef0767-9959-4067-9166-cb8abf276e80,報導指出公司展出多款人形機器人實績,2026-09-02,active,approved
+7750,ROBOT_CONTROL_SYSTEM,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,報導定位為控制器大廠並展示機器人產品與方案,2026-09-02,active,approved
+8374,ROBOT_SYSTEM_INTEGRATION,medium,financial_media,2026-08-17,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f933aeee-bc0c-4797-afe8-fcebf6f04cbf,報導定位為自動化解決方案廠及機器人應用供應商,2026-09-02,active,approved
+4576,ROBOT_ACTUATION,medium,financial_media,2026-01-15,https://money.udn.com/money/story/11162/9265994,報導定位為AI機器人驅動系統供應商並展示人形機器人關鍵元件,2026-09-02,active,approved
+4585,ROBOT_BODY_PLATFORM,high,company_website,,https://www2.tm-robot.com/zh-hant/company-profile/,官方定位為協作機器人品牌與生產商,2026-09-02,active,approved
+4585,ROBOT_SYSTEM_INTEGRATION,high,company_website,,https://www2.tm-robot.com/zh-hant/company-profile/,官方提供內建視覺協作型機器人與智慧工廠解決方案,2026-09-02,active,approved
+1536,ROBOT_TRANSMISSION,high,investor_conference,,https://www.hota.com.tw/stockholder.html,法說資料明列人形機器人用諧波減速器與行星減速器及關節應用,2026-09-02,active,approved
+2464,ROBOT_BODY_PLATFORM,high,company_website,2026-01-19,https://www.mirle.com.tw/news-detail/661/,官方具身智能事業群明列輪型與四足機器人平台及量產規劃,2026-09-02,active,approved
+2464,ROBOT_CONTROL_SYSTEM,high,company_website,2026-01-19,https://www.mirle.com.tw/news-detail/661/,官方明列自主運動控制與AI感知能力,2026-09-02,active,approved
+2464,ROBOT_ACTUATION,high,company_website,2026-01-19,https://www.mirle.com.tw/news-detail/661/,官方揭露自製機器人關節模組,2026-09-02,active,approved
+2464,ROBOT_TRANSMISSION,high,company_website,2026-01-19,https://www.mirle.com.tw/news-detail/661/,官方揭露自製精密諧波減速機,2026-09-02,active,approved
+2464,ROBOT_AMR,high,company_website,2026-01-19,https://www.mirle.com.tw/news-detail/661/,官方輪型機器人平台結合自主運動控制能力,2026-09-02,active,approved
+1504,ROBOT_ACTUATION,high,company_website,2026-07-15,https://www.teco.com.tw/zh-tw/press/news/dong-yuan-xie-zhi-hui-dong-li-jie-jue-fang-an-qian-jin-ri-ben-TJM-Series-quan-ji-lie-ji-qi-ren-guan-jie-mo-zu-shou-du-wan-zheng-liang-xiang,官方TJM Series機器人關節模組明確應用機械手臂四足及人形機器人,2026-09-02,active,approved
+4590,ROBOT_ACTUATION,high,company_website,2026-08-31,https://www.fukuta-motor.com.tw/tw/support.html,官方直接列出機器人與機器狗關節馬達及高扭矩密度小型馬達,2026-09-02,active,approved
+5443,ROBOT_SYSTEM_INTEGRATION,high,company_website,2026-08-31,https://www.gpmcorp.com.tw/products_detail.php?plevel1Id=1&productId=G,官方智慧物流方案明列機器人彈性加工系統並具客戶導入,2026-09-02,active,approved
+5443,ROBOT_AMR,high,company_website,2026-08-31,https://www.gpmcorp.com.tw/products_detail.php?plevel1Id=1&productId=G,官方智慧物流頁明列Mobile Robot,2026-09-02,active,approved
+4571,ROBOT_TRANSMISSION,high,company_website,2019-08-10,https://www.khgears.com/edit_file/file/20190810/20190810144054_57205.pdf,正式公開說明書支持工業機器人諧波減速機與小批量訂單且後續資料確認出貨,2026-09-02,active,approved
+2233,ROBOT_TRANSMISSION,medium,financial_media,2026-07-02,https://www.cna.com.tw/news/afe/202607020195.aspx,法說報導確認諧波與微型行星減速機及人形機器人新事業,2026-09-02,active,approved
+2233,ROBOT_ACTUATION,medium,financial_media,2026-07-02,https://www.cna.com.tw/news/afe/202607020195.aspx,法說報導確認致動器產品及人形機器人布局,2026-09-02,active,approved
+4583,ROBOT_TRANSMISSION,medium,official_regulator,2026-08-18,https://www.ctsp.gov.tw/chinese/03-Intro/05-search_view.aspx?fr=1028&no=1033&sn=C0072&v=1,官方園區資料明列超精密行星齒輪減速機產品,2026-09-02,active,approved
+4583,ROBOT_ACTUATION,medium,official_regulator,2026-08-18,https://www.ctsp.gov.tw/chinese/03-Intro/05-search_view.aspx?fr=1028&no=1033&sn=C0072&v=1,官方園區資料明列機電整合伺服驅動系統及工業用機器人,2026-09-02,active,approved
+2392,ROBOT_BODY_PLATFORM,high,company_website,2025-06-04,https://www.foxlink.com/web/%E7%89%A9%E7%90%86-ai-%E5%A0%B4%E6%99%AF%E5%9C%A8%E5%8F%B0%E5%AF%A6%E7%8F%BE%EF%BC%81sync-robotic-%E7%99%BC%E5%B8%83-ai-%E6%A9%9F%E5%99%A8%E4%BA%BA%E5%B9%B3%E5%8F%B0%E6%96%B9%E6%A1%88-%E9%A6%96/,母公司官方明列集團旗下AI機器人平台事業且符合母子公司歸屬政策,2026-09-02,active,approved
+2392,ROBOT_SYSTEM_INTEGRATION,high,company_website,2025-06-04,https://www.foxlink.com/web/%E7%89%A9%E7%90%86-ai-%E5%A0%B4%E6%99%AF%E5%9C%A8%E5%8F%B0%E5%AF%A6%E7%8F%BE%EF%BC%81sync-robotic-%E7%99%BC%E5%B8%83-ai-%E6%A9%9F%E5%99%A8%E4%BA%BA%E5%B9%B3%E5%8F%B0%E6%96%B9%E6%A1%88-%E9%A6%96/,官方資料支持集團算力精密製造資源與子公司場域驗證整合,2026-09-02,active,approved
+6166,ROBOT_EDGE_AI,high,company_website,2026-08-31,https://www.adlinktech.com/tw/robotics,官方Industrial Robotics方案明列機器人Edge AI運算,2026-09-02,active,approved
+6166,ROBOT_AMR,high,company_website,2026-08-31,https://www.adlinktech.com/tw/robotics,官方機器人方案明列AMR應用,2026-09-02,active,approved
+6166,ROBOT_BODY_PLATFORM,high,company_website,2026-08-31,https://www.adlinktech.com/tw/robotics,官方展示Moby人形機器人及四足機器人方案,2026-09-02,active,approved
+2317,ROBOT_BODY_PLATFORM,high,company_website,2026-03-17,https://www.foxconn.com.tw/en-us/press-center/events/foxconn-events/1975,官方展示自研工業人形機器人並與NVIDIA合作,2026-09-02,active,approved
+2317,ROBOT_SYSTEM_INTEGRATION,high,company_website,2026-03-17,https://www.foxconn.com.tw/en-us/press-center/events/foxconn-events/1975,官方資料確認機器人已進入製造場域驗證與部署,2026-09-02,active,approved
+2308,AI_COLD_PLATE_CDU,high,company_website,,https://www.deltaww.com/en-US/landing/Computex-2026,台達官方明列Vera Rubin冷板3MW CDU與2.4MW HVDC CDU等AI資料中心液冷產品,2026-09-05,active,approved
+3324,AI_COLD_PLATE_CDU,high,company_website,,https://www.auras.com.tw/CMSFS/InformationCenters/English/ecfc7b18-d55e-4ca3-a673-b449f83d051c.pdf,雙鴻官方液冷資料明列Cold Plate多型CDU與Manifold及AI和HPC應用,2026-09-05,active,approved
+2317,AI_RACK_SYSTEM,high,company_website,2026-06-04,https://www.foxconn.com/zh-tw/press-center/press-releases/latest-news/2053,鴻海官方明列AI伺服器垂直整合機櫃級系統整合與AI資料中心方案,2026-09-05,active,approved
+2382,AI_RACK_SYSTEM,high,company_website,,https://www.qct.io/product/index/Server/rackmount-server/GPGPU-Xeon-Phi?page=1,QCT官方明列多款AI與HPC Rackmount伺服器及整櫃運算平台,2026-09-05,active,approved
+6669,AI_RACK_SYSTEM,high,company_website,,https://www.wiwynn.com/events/computex,緯穎官方明列Vera Rubin NVL72與AMD Helios rack-scale AI平台,2026-09-05,active,approved
+8210,AI_SERVER_CHASSIS,high,company_website,,https://www.chenbro.com/en-US/product/MGX,勤誠官方MGX產品頁明列2U AI Server Chassis及AI伺服器機構方案,2026-09-05,active,approved
+3032,AI_SERVER_CHASSIS,high,investor_conference,2024-12-11,https://www.hec-group.com.tw/fileadmin/downloads/inventory/EarningsCall/1131211_3032_eng.pdf,偉訓官方法說明列與AI伺服器廠合作開發風冷與水冷server chassis且已量產進入核准供應鏈,2026-09-05,active,approved
+6117,AI_SERVER_CHASSIS,high,company_website,,https://ipc.in-win.com/rackmount-chassis-iw-rg658-pro,迎廣官方明列6.5U GPU Rackmount Chassis專為AI深度學習LLM與HPC工作負載設計,2026-09-05,active,approved
+6669,AI_STORAGE_SYSTEM,high,company_website,2026-03-16,https://www.wiwynn.com/news/wiwynn-showcases-nvidia-vera-rubin-nvl72-ai-factory-infrastructure-at-nvidia-gtc-2026,緯穎官方Storage-Next架構以96顆NVMe提供GPU啟動儲存並服務GNN LLM推論與RAG,2026-09-05,active,approved
+3693,AI_STORAGE_SYSTEM,high,company_website,2025-08-19,https://www.aicipc.com/resources-detail/182/,營邦F2026為DPU-ready AI Storage平台具MLPerf Storage驗證並支援AI訓練與LLM checkpointing,2026-09-05,active,approved
+2495,AI_STORAGE_SYSTEM,high,company_website,,https://www.infortrend.com/tw/event/2026/computex2026,普安EonStor GS 5000U明列為AI基礎架構訓練與推論打造的企業級NVMe儲存平台,2026-09-05,active,approved
+6558,BATTERY_CELL,high,company_website,,https://www.synst.com.tw/zh-tw/,興能高官方明列研發設計與生產可充式鋰離子鋰高分子及先進混成電池並具量產出貨紀錄,2026-09-05,active,approved
+8038,BATTERY_CELL,high,company_website,,https://www.caec.com.tw/_i/assets/file/shareholder/ba94d5af979c71985b4b6604e36054e8.pdf,長園科官方資料明列從鋰鐵材料電池芯到電池模組與管理系統的研發製造鏈,2026-09-05,active,approved
+1513,SMART_METER,high,company_website,,https://www.chem.com.tw/tc/products_info.aspx?Class1=1&Class2=1159,中興電官方明列自主開發AMI智慧電表並供應台電作民用與工業使用,2026-09-05,active,approved
+2371,SMART_METER,high,company_website,,https://www.tatung.com/products/index/489,大同官方明列單相三相及CT型智慧電表AMI系統與能源管理系統產品,2026-09-05,active,approved
+4588,SMART_METER,high,company_website,,https://www.archmeter.com/zh-tw/download-c17925/%E5%85%AC%E5%8F%B8%E9%87%8D%E5%A4%A7%E8%A8%8A%E6%81%AF.html,玖鼎電力官方明列電子式電表智慧電表晶片及電力監控產品並具低壓AMI角色,2026-09-05,active,approved
+1711,SEMICONDUCTOR_MATERIALS,high,company_website,,https://ecbu.ecic.com/,永光官方明列半導體與封裝黃光製程用光阻顯影液研磨液及濕製程化學品,2026-09-05,active,approved
+1717,SEMICONDUCTOR_MATERIALS,high,company_website,,https://www.eternal-group.com/ProductPage?AttributeID=ATT2023060700079&CategoryID=PC2023060200003,長興官方明列IC載板及IC封裝精密蝕刻與電鍍使用的乾膜光阻材料,2026-09-05,active,approved
+1727,SEMICONDUCTOR_MATERIALS,high,company_website,,https://www.chciworld.com.tw/product/ppt_ppb_electronic_grade_sulfuric_acid/,中華化官方明列電子級硫酸用於矽晶片清洗光刻與蝕刻等半導體製程,2026-09-05,active,approved
+1785,SEMICONDUCTOR_MATERIALS,high,company_website,,https://www.solartech.com.tw/investors/,光洋科官方明列薄膜濺鍍靶材及貴稀金屬材料應用於電子半導體產業,2026-09-05,active,approved
+2493,SEMICONDUCTOR_MATERIALS,medium,official_regulator,2026-04-22,https://wwwc.twse.com.tw/pdf/ch/2493_ch.pdf,證交所公司資料明列揚博經營半導體製程材料及製程用各式化學品,2026-09-05,active,approved
+3010,SEMICONDUCTOR_MATERIALS,high,company_website,,https://www.wahlee.com/ZH/Products/List/?Top=mlnraXWF1yBMoOm5L83Rww%3D%3D&id=mlnraXWF1yBMoOm5L83Rww%3D%3D,華立官方明列光阻顯影液特殊氣體CMP研磨液石英矽環陶瓷及矽晶圓等半導體材料供應,2026-09-05,active,approved
+3305,SEMICONDUCTOR_MATERIALS,high,company_website,,https://www.shenmao.com/zh-tw/product-c46410/%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%B0%81%E8%A3%9D.html,昇貿官方半導體封裝產品明列BGA錫球與Bumping錫膏,2026-09-05,active,approved
+3663,SEMICONDUCTOR_MATERIALS,high,company_website,,https://www.e-ttmc.com.tw/chinese/series1.html,鑫科官方明列被動元件光學元件及半導體鍍膜用高純度濺鍍靶材,2026-09-05,active,approved
+4722,SEMICONDUCTOR_MATERIALS,high,annual_report,,https://www.qualipoly.com/zh-tw/a3-2820/%E5%85%AC%E5%8F%B8%E5%B9%B4%E5%A0%B1.html,國精化最新公司年報揭露高階半導體製程用特用化學品及EUV光阻相關材料,2026-09-05,active,approved
+4749,SEMICONDUCTOR_MATERIALS,high,company_website,,https://www.aemc.com.tw/,新應材官方明列IC製造清洗化學品先進封裝材料及CMOS影像感測材料,2026-09-05,active,approved
+4755,SEMICONDUCTOR_MATERIALS,high,company_website,,https://www.sfchem.com.tw/zh-hant/page/csr-aboutus,三福化官方明列供應IC半導體顯影剝離蝕刻清洗液及研磨液等濕式化學品,2026-09-05,active,approved
+4768,SEMICONDUCTOR_MATERIALS,high,annual_report,,https://www.ingenteccorp.com/Uploads/Images/%E6%99%B6%E5%91%882022%E5%B9%B4%E5%A0%B1.pdf,晶呈科技年報明列自製蝕刻與雷射特殊氣體並供應國內外半導體客戶,2026-09-05,active,approved
+4772,SEMICONDUCTOR_MATERIALS,high,company_website,,https://www.tscs.com.tw/about,台特化官方明列矽乙烷矽丙烷及無水氟化氫等半導體特氣與化學材料,2026-09-05,active,approved
+5234,SEMICONDUCTOR_MATERIALS,high,company_website,,https://www.daxinmat.com/?c=251&lang=zh-TW&sn=762,達興官方明列先進封裝離型層感光介電材及高純度濕製程與奈米微影化學品,2026-09-05,active,approved
+5434,SEMICONDUCTOR_MATERIALS,high,company_website,2025-08-05,https://www.topco-global.com/archives/129588,崇越官方明列半導體先進製程材料及CoWoS與HBM先進封裝材料供應整合,2026-09-05,active,approved
+1519,WIND_EQUIPMENT,high,company_website,,https://www.fortune.com.tw/tw/about_news_detail.aspx?Id=25,華城官方明列離岸風場陸上變電站工程並製造風機塔內變壓器與電力模組,2026-09-05,active,approved
+2013,WIND_EQUIPMENT,high,company_website,,https://csr.cssc.com.tw/chr_05_03_quality/,中鋼構官方明列離岸風電水下基礎資格及彰芳西島與中能風場製造交貨實績,2026-09-05,active,approved
+2031,WIND_EQUIPMENT,high,company_website,,https://www.hkssteel.com.tw/fin_abu.html,新光鋼官方明列風電水下基礎樁管研發生產中心與離岸風電基礎建設業務,2026-09-05,active,approved
+2308,WIND_EQUIPMENT,high,company_website,,https://landing.deltaww.com/zh-TW/products/Wind-Power-Converter/ALL/,台達電官方明列自行開發生產MW級雙饋式與全功率風力發電變流器,2026-09-05,active,approved
+3708,WIND_EQUIPMENT,high,company_website,,https://www.swancor.com/tw/ir/letter,上緯投控官方明列風機葉片樹脂及國際風機商供應資格與接單進度,2026-09-05,active,approved
+3712,WIND_SERVICE,high,company_website,,https://www.fit-holding.com/%E5%AF%8C%E5%B4%B4%E8%83%BD%E6%BA%90%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%BE%97%E6%A8%99%E5%8F%B0%E9%9B%BB%E3%80%8C%E9%9B%A2%E5%B2%B8%E9%A2%A8%E9%9B%BB%E4%BA%8C%E6%9C%9F%E8%A8%88/,永崴投控旗下受控制能源事業得標台電300MW離岸風場建置案,2026-09-05,active,approved
+7786,WIND_SERVICE,high,company_website,,https://www.dfo.com.tw/news/Track-record/,東方風能官方明列離岸風場建置服務及十二年與十五年長期運維合約,2026-09-05,active,approved
+8926,WIND_SERVICE,high,company_website,,https://esg.cogen.com.tw/tw/environment-renewable,台汽電官方明列風力EPC離岸風電陸域輸變電工程及116座風機運維實績,2026-09-05,active,approved
+1102,WIND_OPERATION,high,company_website,,https://www.acc.com.tw/news-center/latest-news/670-111,亞泥官方明列持續增加風電投資並與RWE推動竹風風力發電計畫,2026-09-05,active,approved
+3712,WIND_OPERATION,high,company_website,,https://www.fit-holding.com/invest/,永崴投控透過持有控制性股權的森崴能源布局風電開發投資與營運,2026-09-05,active,approved
+8926,WIND_OPERATION,high,company_website,,https://esg.cogen.com.tw/tw/environment-renewable,台汽電官方明列風電投資開發98MW及苗栗與星寶風場發電營運實績,2026-09-05,active,approved
+2308,BATTERY_MODULE,high,company_website,,https://filecenter.deltaww.com/Products/download/21/2102/Catalogue/ESS_LFP%20Battery%20Cabinet_Leaflet_CHT_20230714.pdf,台達官方儲能型錄明列從電池模組機櫃到系統均由台達自主設計生產,2026-09-05,active,approved
+3015,BATTERY_MODULE,high,company_website,,https://www.fsp-group.com/tw/microsite/smart-energy/index.html,全漢官方明列24V與48V模組化電池及依儲能需求設計串並聯組合,2026-09-05,active,approved
+3211,BATTERY_MODULE,high,company_website,,https://www.dynapack.com.tw/h/Data?key=iczce&set=24,順達官方明列資訊醫療BBU UPS儲能與電動載具電池模組設計製造,2026-09-05,active,approved
+3323,BATTERY_MODULE,high,company_website,,https://zh-tw.celxpert.com.tw/products,加百裕官方明列筆電網通工具儲能備援與電動載具電池組設計製造,2026-09-05,active,approved
+3625,BATTERY_MODULE,high,annual_report,,https://www.c-techone.com/uploads/images/ShareholdersMeeting/%E8%A5%BF%E5%8B%9D113%E5%B9%B4%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E8%AD%B0%E4%BA%8B%E6%89%8B%E5%86%8A.pdf,西勝官方文件明列BBU UPS ESS 3C電動自行車及AGV鋰電池模組,2026-09-05,active,approved
+4931,BATTERY_MODULE,high,company_website,,https://www.stl-tech.com/product_list.asp,新盛力官方明列自研BMS搭配外購電芯生產BESS UPS BBU與載具電池模組,2026-09-05,active,approved
+5309,BATTERY_MODULE,high,investor_conference,2024-12-04,https://www.sysgration.com/uploads/investor-conference-information/TW/Sysgration_Investor_Conference_TC_20241204.pdf,系統電官方法說明列SMR BBU與UPS鋰電池包量產及業務進度,2026-09-05,active,approved
+6121,BATTERY_MODULE,high,company_website,,https://www.simplo.com.tw/article_d.php?id=300&lang=tw&tb=1,新普官方定位為電池模組解決方案供應商並明列筆電電池模組設計製造,2026-09-05,active,approved
+8038,BATTERY_MODULE,high,investor_conference,,https://www.caec.com.tw/_i/assets/file/shareholder/ba94d5af979c71985b4b6604e36054e8.pdf,長園科官方簡報明列從材料電池芯到電池模組與管理系統的完整研發製造鏈,2026-09-05,active,approved
+8171,BATTERY_MODULE,high,company_website,,https://www.feii.com.tw/products,天宇官方明列AGV BBU UPS動力與特殊用途電池模組及OEM ODM服務,2026-09-05,active,approved
+2439,BATTERY_MODULE,high,company_website,,https://www.merry.com.tw/page/product_merry/index.aspx?kind=59,美律官方明列輕型電動交通醫療工業IoT與儲能用電池組及BMS技術,2026-09-05,active,approved
+6441,BATTERY_MODULE,high,company_website,,https://www.ibasesolution.com/battery-stack/,廣錠官方230K電池堆疊產品由十一個可更換電池包與監控單元構成,2026-09-05,active,approved
+5543,BATTERY_MODULE,high,company_website,,https://www.buima.com.tw/zh-tw/application-65,桓鼎官方明列穿戴工具醫療輕型載具與儲能鋰電池模組研發製造銷售,2026-09-05,active,approved
